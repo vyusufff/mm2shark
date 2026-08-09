@@ -1,0 +1,4 @@
+# Cloudflare Pages project (static Astro → dist/)
+name = "mm2shark"
+compatibility_date = "2026-08-09"
+pages_build_output_dir = "dist"

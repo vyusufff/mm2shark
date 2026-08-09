@@ -1,0 +1,107 @@
+---
+import '../styles/global.css'
+
+interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'MM2 Value List & Trade Calculator | MM2Shark',
+  description = 'Up-to-date Murder Mystery 2 value list and trade calculator. Check MM2 godlies, chromas, ancients, knives, guns, and sets before you trade.',
+} = Astro.props
+
+const canonical = Astro.site
+  ? new URL(Astro.url.pathname, Astro.site).toString()
+  : Astro.url.pathname
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#060607" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="MM2Shark.com" />
+    <link rel="preload" href="/fonts/oswald-600.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/oswald-700.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/figtree-400.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/figtree-700.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <img src="/favicon.svg" alt="" width="28" height="28" />
+          <span class="brand-name">MM2Shark.com</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/" aria-current={path === '/' ? 'page' : undefined}>Home</a>
+          <a href="/values" aria-current={path === '/values' ? 'page' : undefined}>Value List</a>
+          <a href="/calculator" aria-current={path === '/calculator' ? 'page' : undefined}>Calculator</a>
+          <a href="/faq" aria-current={path === '/faq' ? 'page' : undefined}>FAQ</a>
+        </nav>
+        <a class="top-cta" href="/values">Open Values</a>
+      </header>
+
+      <main class="main">
+        <slot />
+      </main>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div class="footer-brand-col">
+            <a class="footer-brand" href="/">
+              <img src="/favicon.svg" alt="" width="22" height="22" loading="lazy" decoding="async" />
+              <span>MM2Shark.com</span>
+            </a>
+            <p>
+              Providing Murder Mystery 2 values, demand, and a trade calculator for the Roblox
+              trading community.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Socials</h3>
+            <a href="https://discord.gg/" target="_blank" rel="noreferrer">Discord</a>
+          </div>
+
+          <div class="footer-col">
+            <h3>Links</h3>
+            <a href="/values">Value List</a>
+            <a href="/calculator">Calculator</a>
+            <a href="/faq">FAQ</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            Roblox® and Murder Mystery 2 are trademarks of their respective owners. MM2Shark.com is
+            not affiliated with, endorsed by, or sponsored by Roblox Corporation or Nikilis.
+          </p>
+          <p class="footer-copy">
+            Copyright © MM2Shark.com 2026 ·
+            <a href="mailto:contact@mm2shark.com">contact@mm2shark.com</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

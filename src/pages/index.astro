@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { faqs } from '../data/faqs'
+
+const strips = [
+  {
+    label: 'Values',
+    text: 'Full MM2 value list for knives, guns, pets, godlies, and chromas — with demand.',
+    href: '/values',
+    cta: 'Browse',
+  },
+  {
+    label: 'Calculator',
+    text: 'Add items on both sides and see if the trade is a Win, Fair, or Lose.',
+    href: '/calculator',
+    cta: 'Compare',
+  },
+  {
+    label: 'Sets',
+    text: 'Complete set values so you can price bundle trades in one glance.',
+    href: '/values?type=Set',
+    cta: 'Browse sets',
+  },
+]
+
+const homeFaqs = faqs.slice(0, 4)
+
+const props = [
+  { src: '/items/shark-gun.png', class: 'prop-shark-gun' },
+  { src: '/items/seer-knife.png', class: 'prop-seer' },
+  { src: '/items/chroma-shark-gun.png', class: 'prop-chroma' },
+  { src: '/items/luger-gun.png', class: 'prop-luger' },
+  { src: '/items/fang-knife.png', class: 'prop-fang' },
+]
+---
+
+<Layout>
+  <section class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <div class="hero-bg"></div>
+      <div class="hero-props">
+        {
+          props.map((p) => (
+            <img class={`prop ${p.class}`} src={p.src} alt="" width="128" height="128" loading="eager" />
+          ))
+        }
+      </div>
+      <div class="hero-shade"></div>
+    </div>
+
+    <div class="hero-inner">
+      <p class="hero-kicker">For Nikilis’ Murder Mystery 2</p>
+      <p class="hero-brand">MM2<span>Shark</span>.com</p>
+      <h1 class="hero-title">Murder Mystery 2 Values</h1>
+      <p class="hero-sub">
+        Fast MM2 value list and trade calculator for knives, guns, godlies, Shark, and more.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/values">Open Value List</a>
+        <a class="btn btn-ghost" href="/calculator">Trade Calculator</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tools">
+    <div class="strips">
+      {
+        strips.map((s) => (
+          <a class="strip" href={s.href}>
+            <strong>{s.label}</strong>
+            <p>{s.text}</p>
+            <em>{s.cta} →</em>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section faq-section" id="faq">
+    <div class="section-head">
+      <h2>FAQ</h2>
+      <p>Quick answers — full list on the FAQ page.</p>
+    </div>
+    <div class="faq-list">
+      {
+        homeFaqs.map((item) => (
+          <details class="faq-item">
+            <summary>{item.q}</summary>
+            <p>{item.a}</p>
+          </details>
+        ))
+      }
+    </div>
+    <p class="section-more">
+      <a href="/faq">View all FAQ →</a>
+    </p>
+  </section>
+</Layout>

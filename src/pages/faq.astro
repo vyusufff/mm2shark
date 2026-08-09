@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { faqs } from '../data/faqs'
+---
+
+<Layout
+  title="FAQ | MM2Shark"
+  description="Frequently asked questions about MM2Shark, Murder Mystery 2 values, Seer value, sets, and trading."
+>
+  <article class="legal">
+    <header class="legal-head">
+      <p class="legal-kicker">Help</p>
+      <h1>FAQ</h1>
+      <p>Quick answers about MM2Shark, values, and trading.</p>
+    </header>
+
+    <div class="faq-list">
+      {
+        faqs.map((item) => (
+          <details class="faq-item">
+            <summary>{item.q}</summary>
+            <p>{item.a}</p>
+          </details>
+        ))
+      }
+    </div>
+
+    <p class="legal-note">
+      Still stuck? Email <a href="mailto:contact@mm2shark.com">contact@mm2shark.com</a>, or read
+      <a href="/privacy">Privacy</a> and <a href="/terms">Terms</a>.
+    </p>
+  </article>
+</Layout>
