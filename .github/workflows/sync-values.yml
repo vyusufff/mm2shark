@@ -23,7 +23,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install sync deps
-        run: pip install --quiet curl_cffi
+        run: |
+          pip install --quiet curl_cffi playwright
+          python -m playwright install --with-deps chromium
 
       - name: Fetch Traderie values + images
         run: python scripts/sync_traderie.py

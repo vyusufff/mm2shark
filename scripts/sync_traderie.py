@@ -149,6 +149,59 @@ def warmup_session() -> None:
         print(f"  warmup warning: {exc}")
 
 
+def fetch_api_playwright() -> dict | None:
+    """Solve Cloudflare 'Just a moment' via real Chromium (CI datacenter IPs)."""
+    try:
+        from playwright.sync_api import sync_playwright  # type: ignore
+    except Exception:
+        return None
+
+    print("  using Playwright Chromium…")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
+        context = browser.new_context(
+            user_agent=UA,
+            locale="en-US",
+            extra_http_headers={"Accept-Language": "en-US,en;q=0.9"},
+        )
+        page = context.new_page()
+        page.goto(REFERER, wait_until="domcontentloaded", timeout=90_000)
+        # wait out managed challenge if present
+        for _ in range(30):
+            title = (page.title() or "").lower()
+            if "just a moment" not in title:
+                break
+            page.wait_for_timeout(1000)
+        else:
+            browser.close()
+            raise RuntimeError("Cloudflare challenge did not clear")
+
+        payload = page.evaluate(
+            """async (api) => {
+              const res = await fetch(api, {
+                headers: { Accept: 'application/json', Referer: location.href },
+                credentials: 'include',
+              });
+              if (!res.ok) {
+                const t = await res.text();
+                throw new Error('HTTP ' + res.status + ' ' + t.slice(0, 160));
+              }
+              return await res.json();
+            }""",
+            API,
+        )
+        browser.close()
+
+    if not isinstance(payload, dict) or not isinstance(payload.get("prices"), list):
+        raise RuntimeError("Unexpected Traderie payload (playwright)")
+    RAW.write_text(json.dumps(payload), encoding="utf-8")
+    print(f"  {len(payload['prices'])} prices (version {payload.get('version')})")
+    return payload
+
+
 def fetch_api_cffi() -> dict | None:
     """Prefer chrome-impersonating TLS (helps pass Cloudflare on CI IPs)."""
     try:
@@ -183,13 +236,16 @@ def fetch_api_cffi() -> dict | None:
 
 def fetch_api() -> dict:
     print("Fetching Traderie values API…")
-    # Prefer TLS fingerprint impersonation on GitHub Actions / datacenter IPs
-    try:
-        via_cffi = fetch_api_cffi()
-        if via_cffi is not None:
-            return via_cffi
-    except Exception as exc:
-        print(f"  curl_cffi failed: {exc}")
+    for label, fn in (
+        ("playwright", fetch_api_playwright),
+        ("curl_cffi", fetch_api_cffi),
+    ):
+        try:
+            via = fn()
+            if via is not None:
+                return via
+        except Exception as exc:
+            print(f"  {label} failed: {exc}")
 
     warmup_session()
     last_err: Exception | None = None
