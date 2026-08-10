@@ -1,8 +1,16 @@
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
 /items/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=86400
+  X-Content-Type-Options: nosniff
+
+/data/*
+  Cache-Control: public, max-age=300
 
 /sitemap.xml
   Cache-Control: public, max-age=3600
@@ -12,3 +20,18 @@
 
 /llms.txt
   Cache-Control: public, max-age=3600
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/calculator
+  Cache-Control: public, max-age=0, must-revalidate
+
+/calculator/
+  Cache-Control: public, max-age=0, must-revalidate
+
+/values
+  Cache-Control: public, max-age=0, must-revalidate
+
+/values/
+  Cache-Control: public, max-age=0, must-revalidate
