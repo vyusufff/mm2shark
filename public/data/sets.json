@@ -13,7 +13,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-evergreen-set.webp"
+      "image": "/items/chroma-evergreen-set.jpg"
     },
     {
       "id": "chroma-alien-set-2025",
@@ -24,7 +24,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-alien-set-2025.webp"
+      "image": "/items/chroma-alien-set-2025.jpg"
     },
     {
       "id": "chroma-ornament-set-2025",
@@ -35,7 +35,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-ornament-set-2025.webp"
+      "image": "/items/chroma-ornament-set-2025.jpg"
     },
     {
       "id": "chroma-sun-set",
@@ -46,7 +46,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-sun-set.webp"
+      "image": "/items/chroma-sun-set.jpg"
     },
     {
       "id": "travelers-set",
@@ -57,7 +57,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/travelers-set.webp"
+      "image": "/items/travelers-set.jpg"
     },
     {
       "id": "chroma-snow-set-2025",
@@ -68,7 +68,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-snow-set-2025.webp"
+      "image": "/items/chroma-snow-set-2025.jpg"
     },
     {
       "id": "chroma-blizzard-set-2025",
@@ -79,7 +79,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-blizzard-set-2025.webp"
+      "image": "/items/chroma-blizzard-set-2025.jpg"
     },
     {
       "id": "evergreen-set",
@@ -90,7 +90,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/evergreen-set.webp"
+      "image": "/items/evergreen-set.jpg"
     },
     {
       "id": "chroma-sweet-treat-set",
@@ -101,7 +101,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-sweet-treat-set.webp"
+      "image": "/items/chroma-sweet-treat-set.jpg"
     },
     {
       "id": "celestial-set",
@@ -112,7 +112,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/celestial-set.webp"
+      "image": "/items/celestial-set.jpg"
     },
     {
       "id": "alien-set-2025",
@@ -123,7 +123,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/alien-set-2025.webp"
+      "image": "/items/alien-set-2025.jpg"
     },
     {
       "id": "dark-set",
@@ -134,7 +134,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/dark-set.webp"
+      "image": "/items/dark-set.jpg"
     },
     {
       "id": "vampires-set-2024",
@@ -145,7 +145,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/vampires-set-2024.webp"
+      "image": "/items/vampires-set-2024.jpg"
     },
     {
       "id": "sakura-set",
@@ -156,7 +156,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/sakura-set.webp"
+      "image": "/items/sakura-set.jpg"
     },
     {
       "id": "sun-set",
@@ -167,7 +167,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/sun-set.webp"
+      "image": "/items/sun-set.jpg"
     },
     {
       "id": "snow-set",
@@ -178,7 +178,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/snow-set.webp"
+      "image": "/items/snow-set.jpg"
     },
     {
       "id": "soul-set",
@@ -189,7 +189,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/soul-set.webp"
+      "image": "/items/soul-set.jpg"
     },
     {
       "id": "ornament-set-2025",
@@ -200,7 +200,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ornament-set-2025.webp"
+      "image": "/items/ornament-set-2025.jpg"
     },
     {
       "id": "rainbow-set",
@@ -211,7 +211,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/rainbow-set.webp"
+      "image": "/items/rainbow-set.jpg"
     },
     {
       "id": "bloom-set",
@@ -222,7 +222,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/bloom-set.webp"
+      "image": "/items/bloom-set.jpg"
     },
     {
       "id": "chroma-knife-set",
@@ -233,7 +233,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-knife-set.webp"
+      "image": "/items/chroma-knife-set.jpg"
     },
     {
       "id": "full-chroma-set",
@@ -244,7 +244,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-chroma-set.webp"
+      "image": "/items/full-chroma-set.jpg"
     },
     {
       "id": "ocean-set",
@@ -255,7 +255,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ocean-set.webp"
+      "image": "/items/ocean-set.jpg"
     },
     {
       "id": "chroma-weapon-set",
@@ -266,7 +266,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-weapon-set.webp"
+      "image": "/items/chroma-weapon-set.jpg"
     },
     {
       "id": "xeno-set-2025",
@@ -277,7 +277,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/xeno-set-2025.webp"
+      "image": "/items/xeno-set-2025.jpg"
     },
     {
       "id": "flowerwood-set",
@@ -288,7 +288,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/flowerwood-set.webp"
+      "image": "/items/flowerwood-set.jpg"
     },
     {
       "id": "blizzard-set",
@@ -299,7 +299,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/blizzard-set.webp"
+      "image": "/items/blizzard-set.jpg"
     },
     {
       "id": "corrupt-set",
@@ -310,7 +310,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/corrupt-set.webp"
+      "image": "/items/corrupt-set.jpg"
     },
     {
       "id": "cane-set-2018",
@@ -321,7 +321,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/cane-set-2018.webp"
+      "image": "/items/cane-set-2018.jpg"
     },
     {
       "id": "bow-set",
@@ -332,7 +332,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/bow-set.webp"
+      "image": "/items/bow-set.jpg"
     },
     {
       "id": "pumpkin-set",
@@ -343,7 +343,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/pumpkin-set.webp"
+      "image": "/items/pumpkin-set.jpg"
     },
     {
       "id": "chroma-gun-set",
@@ -354,7 +354,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-gun-set.webp"
+      "image": "/items/chroma-gun-set.jpg"
     },
     {
       "id": "latte-set-2023",
@@ -365,7 +365,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/latte-set-2023.webp"
+      "image": "/items/latte-set-2023.jpg"
     },
     {
       "id": "sweet-treat-set-2026",
@@ -376,7 +376,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/sweet-treat-set-2026.webp"
+      "image": "/items/sweet-treat-set-2026.jpg"
     },
     {
       "id": "ancient-set",
@@ -387,7 +387,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ancient-set.webp"
+      "image": "/items/ancient-set.jpg"
     },
     {
       "id": "borealis-set",
@@ -398,7 +398,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/borealis-set.webp"
+      "image": "/items/borealis-set.jpg"
     },
     {
       "id": "full-ice-set",
@@ -409,7 +409,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-ice-set.webp"
+      "image": "/items/full-ice-set.jpg"
     },
     {
       "id": "full-bringer-set",
@@ -420,7 +420,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-bringer-set.webp"
+      "image": "/items/full-bringer-set.jpg"
     },
     {
       "id": "bats-set",
@@ -431,7 +431,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/bats-set.webp"
+      "image": "/items/bats-set.jpg"
     },
     {
       "id": "full-luger-set",
@@ -442,7 +442,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-luger-set.webp"
+      "image": "/items/full-luger-set.jpg"
     },
     {
       "id": "pearl-set",
@@ -453,7 +453,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/pearl-set.webp"
+      "image": "/items/pearl-set.jpg"
     },
     {
       "id": "bat-set",
@@ -464,7 +464,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/bat-set.webp"
+      "image": "/items/bat-set.png"
     },
     {
       "id": "luger-set",
@@ -475,7 +475,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/luger-set.webp"
+      "image": "/items/luger-set.jpg"
     },
     {
       "id": "sparkle-set",
@@ -486,7 +486,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/sparkle-set.webp"
+      "image": "/items/sparkle-set.jpg"
     },
     {
       "id": "chroma-bringer-set",
@@ -497,7 +497,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-bringer-set.webp"
+      "image": "/items/chroma-bringer-set.jpg"
     },
     {
       "id": "zombified-set",
@@ -508,7 +508,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/zombified-set.webp"
+      "image": "/items/zombified-set.jpg"
     },
     {
       "id": "full-fire-pet-set",
@@ -519,7 +519,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-fire-pet-set.webp"
+      "image": "/items/full-fire-pet-set.jpg"
     },
     {
       "id": "candy-set",
@@ -530,7 +530,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/candy-set.webp"
+      "image": "/items/candy-set.jpg"
     },
     {
       "id": "full-elderwood-set",
@@ -541,7 +541,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-elderwood-set.webp"
+      "image": "/items/full-elderwood-set.jpg"
     },
     {
       "id": "icebreaker-set",
@@ -552,7 +552,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/icebreaker-set.webp"
+      "image": "/items/icebreaker-set.jpg"
     },
     {
       "id": "gingerbread-set-2019",
@@ -563,7 +563,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/gingerbread-set-2019.webp"
+      "image": "/items/gingerbread-set-2019.jpg"
     },
     {
       "id": "chroma-slasher-set",
@@ -574,7 +574,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-slasher-set.webp"
+      "image": "/items/chroma-slasher-set.jpg"
     },
     {
       "id": "full-swirly-set",
@@ -585,7 +585,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-swirly-set.webp"
+      "image": "/items/full-swirly-set.jpg"
     },
     {
       "id": "collectible-set",
@@ -596,7 +596,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/collectible-set.webp"
+      "image": "/items/collectible-set.jpg"
     },
     {
       "id": "elderwood-set",
@@ -607,7 +607,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/elderwood-set.webp"
+      "image": "/items/elderwood-set.jpg"
     },
     {
       "id": "spectre-set",
@@ -618,7 +618,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/spectre-set.webp"
+      "image": "/items/spectre-set.jpg"
     },
     {
       "id": "spectral-set-2021",
@@ -629,7 +629,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/spectral-set-2021.webp"
+      "image": "/items/spectral-set-2021.jpg"
     },
     {
       "id": "full-virtual-set",
@@ -640,7 +640,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-virtual-set.webp"
+      "image": "/items/full-virtual-set.jpg"
     },
     {
       "id": "bringer-set",
@@ -651,7 +651,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/bringer-set.webp"
+      "image": "/items/bringer-set.jpg"
     },
     {
       "id": "vampire-set-2022",
@@ -662,7 +662,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/vampire-set-2022.webp"
+      "image": "/items/vampire-set-2022.jpg"
     },
     {
       "id": "silent-night-set",
@@ -673,7 +673,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/silent-night-set.webp"
+      "image": "/items/silent-night-set.jpg"
     },
     {
       "id": "vintage-set",
@@ -684,7 +684,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/vintage-set.webp"
+      "image": "/items/vintage-set.jpg"
     },
     {
       "id": "swirly-set",
@@ -695,7 +695,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/swirly-set.webp"
+      "image": "/items/swirly-set.jpg"
     },
     {
       "id": "hallow-set",
@@ -706,7 +706,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/hallow-set.webp"
+      "image": "/items/hallow-set.jpg"
     },
     {
       "id": "full-colored-seer-set",
@@ -717,7 +717,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-colored-seer-set.webp"
+      "image": "/items/full-colored-seer-set.jpg"
     },
     {
       "id": "eternal-set",
@@ -728,7 +728,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/eternal-set.webp"
+      "image": "/items/eternal-set.jpg"
     },
     {
       "id": "full-old-glory-set",
@@ -739,7 +739,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-old-glory-set.webp"
+      "image": "/items/full-old-glory-set.jpg"
     },
     {
       "id": "slasher-set",
@@ -750,7 +750,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/slasher-set.webp"
+      "image": "/items/slasher-set.jpg"
     },
     {
       "id": "old-glory-set",
@@ -761,7 +761,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/old-glory-set.webp"
+      "image": "/items/old-glory-set.jpg"
     },
     {
       "id": "iceflake-set",
@@ -772,7 +772,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/iceflake-set.webp"
+      "image": "/items/iceflake-set.jpg"
     },
     {
       "id": "plasma-set",
@@ -783,7 +783,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/plasma-set.webp"
+      "image": "/items/plasma-set.jpg"
     },
     {
       "id": "icicles-set",
@@ -794,7 +794,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/icicles-set.webp"
+      "image": "/items/icicles-set.jpg"
     },
     {
       "id": "xmas-collectible-set",
@@ -805,7 +805,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/xmas-collectible-set.webp"
+      "image": "/items/xmas-collectible-set.jpg"
     },
     {
       "id": "shadow-set",
@@ -816,7 +816,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/shadow-set.webp"
+      "image": "/items/shadow-set.jpg"
     },
     {
       "id": "logchopper-set",
@@ -827,7 +827,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/logchopper-set.webp"
+      "image": "/items/logchopper-set.jpg"
     },
     {
       "id": "virtual-set",
@@ -838,7 +838,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/virtual-set.webp"
+      "image": "/items/virtual-set.jpg"
     },
     {
       "id": "skate-set",
@@ -849,7 +849,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/skate-set.webp"
+      "image": "/items/skate-set.jpg"
     },
     {
       "id": "ginger-set-godly",
@@ -860,7 +860,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ginger-set-godly.webp"
+      "image": "/items/ginger-set-godly.jpg"
     },
     {
       "id": "clockwork-set",
@@ -871,7 +871,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/clockwork-set.webp"
+      "image": "/items/clockwork-set.jpg"
     },
     {
       "id": "chroma-pet-set",
@@ -882,7 +882,7 @@
       "rarityColor": "#ff4dc4",
       "type": "Set",
       "chroma": true,
-      "image": "/items/chroma-pet-set.webp"
+      "image": "/items/chroma-pet-set.jpg"
     },
     {
       "id": "battleaxe-set",
@@ -893,7 +893,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/battleaxe-set.webp"
+      "image": "/items/battleaxe-set.jpg"
     },
     {
       "id": "cookie-set",
@@ -904,7 +904,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/cookie-set.webp"
+      "image": "/items/cookie-set.jpg"
     },
     {
       "id": "8-bit-set",
@@ -915,7 +915,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/8-bit-set.webp"
+      "image": "/items/8-bit-set.jpg"
     },
     {
       "id": "eternalcane-set",
@@ -926,7 +926,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/eternalcane-set.webp"
+      "image": "/items/eternalcane-set.jpg"
     },
     {
       "id": "ice-shard-set",
@@ -937,7 +937,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ice-shard-set.webp"
+      "image": "/items/ice-shard-set.jpg"
     },
     {
       "id": "elf-set",
@@ -948,7 +948,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/elf-set.webp"
+      "image": "/items/elf-set.jpg"
     },
     {
       "id": "full-valentine-set",
@@ -959,7 +959,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-valentine-set.webp"
+      "image": "/items/full-valentine-set.jpg"
     },
     {
       "id": "hallows-set",
@@ -970,7 +970,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/hallows-set.webp"
+      "image": "/items/hallows-set.jpg"
     },
     {
       "id": "pals-set",
@@ -981,7 +981,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/pals-set.webp"
+      "image": "/items/pals-set.jpg"
     },
     {
       "id": "colored-seer-set",
@@ -992,7 +992,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/colored-seer-set.webp"
+      "image": "/items/colored-seer-set.jpg"
     },
     {
       "id": "wrapping-paper-set",
@@ -1003,7 +1003,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/wrapping-paper-set.webp"
+      "image": "/items/wrapping-paper-set.jpg"
     },
     {
       "id": "ghost-set-godly",
@@ -1014,7 +1014,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ghost-set-godly.webp"
+      "image": "/items/ghost-set-godly.jpg"
     },
     {
       "id": "halloween-2017-set",
@@ -1025,7 +1025,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/halloween-2017-set.webp"
+      "image": "/items/halloween-2017-set.jpg"
     },
     {
       "id": "frostbite-set",
@@ -1036,7 +1036,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/frostbite-set.webp"
+      "image": "/items/frostbite-set.jpg"
     },
     {
       "id": "pumpkin-set-2019",
@@ -1047,7 +1047,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/pumpkin-set-2019.webp"
+      "image": "/items/pumpkin-set-2019.jpg"
     },
     {
       "id": "aurora-set",
@@ -1058,7 +1058,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/aurora-set.webp"
+      "image": "/items/aurora-set.jpg"
     },
     {
       "id": "eye-set",
@@ -1069,7 +1069,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/eye-set.webp"
+      "image": "/items/eye-set.jpg"
     },
     {
       "id": "wrapped-set",
@@ -1080,7 +1080,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/wrapped-set.webp"
+      "image": "/items/wrapped-set.jpg"
     },
     {
       "id": "godly-pet-set",
@@ -1091,7 +1091,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/godly-pet-set.webp"
+      "image": "/items/godly-pet-set.jpg"
     },
     {
       "id": "fire-pet-set",
@@ -1102,7 +1102,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/fire-pet-set.webp"
+      "image": "/items/fire-pet-set.jpg"
     },
     {
       "id": "toxic-set",
@@ -1113,7 +1113,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/toxic-set.webp"
+      "image": "/items/toxic-set.jpg"
     },
     {
       "id": "cavern-set",
@@ -1124,7 +1124,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/cavern-set.webp"
+      "image": "/items/cavern-set.jpg"
     },
     {
       "id": "zombie-set",
@@ -1135,7 +1135,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/zombie-set.webp"
+      "image": "/items/zombie-set.jpg"
     },
     {
       "id": "ghost-set-legendary",
@@ -1146,7 +1146,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ghost-set-legendary.webp"
+      "image": "/items/ghost-set-legendary.jpg"
     },
     {
       "id": "ginger-set-legendary",
@@ -1157,7 +1157,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ginger-set-legendary.webp"
+      "image": "/items/ginger-set-legendary.jpg"
     },
     {
       "id": "icecracker-set-2020",
@@ -1168,7 +1168,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/icecracker-set-2020.webp"
+      "image": "/items/icecracker-set-2020.jpg"
     },
     {
       "id": "valentine-set",
@@ -1179,7 +1179,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/valentine-set.webp"
+      "image": "/items/valentine-set.jpg"
     },
     {
       "id": "scratch-set",
@@ -1190,7 +1190,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/scratch-set.webp"
+      "image": "/items/scratch-set.jpg"
     },
     {
       "id": "full-elite-set",
@@ -1201,7 +1201,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/full-elite-set.webp"
+      "image": "/items/full-elite-set.jpg"
     },
     {
       "id": "santas-set-legendary",
@@ -1212,7 +1212,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/santas-set-legendary.webp"
+      "image": "/items/santas-set-legendary.jpg"
     },
     {
       "id": "jack-set",
@@ -1223,7 +1223,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/jack-set.webp"
+      "image": "/items/jack-set.jpg"
     },
     {
       "id": "vampire-set",
@@ -1234,7 +1234,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/vampire-set.webp"
+      "image": "/items/vampire-set.jpg"
     },
     {
       "id": "snakebite-set",
@@ -1245,7 +1245,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/snakebite-set.webp"
+      "image": "/items/snakebite-set.jpg"
     },
     {
       "id": "easter-set",
@@ -1256,7 +1256,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/easter-set.webp"
+      "image": "/items/easter-set.jpg"
     },
     {
       "id": "potion-set",
@@ -1267,7 +1267,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/potion-set.webp"
+      "image": "/items/potion-set.jpg"
     },
     {
       "id": "frozen-set",
@@ -1278,7 +1278,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/frozen-set.webp"
+      "image": "/items/frozen-set.jpg"
     },
     {
       "id": "marble-set",
@@ -1289,7 +1289,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/marble-set.webp"
+      "image": "/items/marble-set.jpg"
     },
     {
       "id": "candy-swirl-set",
@@ -1300,7 +1300,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/candy-swirl-set.webp"
+      "image": "/items/candy-swirl-set.jpg"
     },
     {
       "id": "fire-set",
@@ -1311,7 +1311,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/fire-set.webp"
+      "image": "/items/fire-set.jpg"
     },
     {
       "id": "mummy-set",
@@ -1322,7 +1322,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/mummy-set.webp"
+      "image": "/items/mummy-set.jpg"
     },
     {
       "id": "grave-set",
@@ -1333,7 +1333,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/grave-set.webp"
+      "image": "/items/grave-set.jpg"
     },
     {
       "id": "slime-set",
@@ -1344,7 +1344,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/slime-set.webp"
+      "image": "/items/slime-set.jpg"
     },
     {
       "id": "lights-set",
@@ -1355,7 +1355,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/lights-set.webp"
+      "image": "/items/lights-set.jpg"
     },
     {
       "id": "web-set",
@@ -1366,7 +1366,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/web-set.webp"
+      "image": "/items/web-set.jpg"
     },
     {
       "id": "santa-set",
@@ -1377,7 +1377,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/santa-set.webp"
+      "image": "/items/santa-set.jpg"
     },
     {
       "id": "cane-set-2015",
@@ -1388,7 +1388,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/cane-set-2015.webp"
+      "image": "/items/cane-set-2015.jpg"
     },
     {
       "id": "nutcracker-set",
@@ -1399,7 +1399,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/nutcracker-set.webp"
+      "image": "/items/nutcracker-set.jpg"
     },
     {
       "id": "snowman-set",
@@ -1410,7 +1410,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/snowman-set.webp"
+      "image": "/items/snowman-set.jpg"
     },
     {
       "id": "haunted-set",
@@ -1421,7 +1421,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/haunted-set.webp"
+      "image": "/items/haunted-set.jpg"
     },
     {
       "id": "tree-set",
@@ -1432,7 +1432,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/tree-set.webp"
+      "image": "/items/tree-set.jpg"
     },
     {
       "id": "ornament-set",
@@ -1443,7 +1443,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ornament-set.webp"
+      "image": "/items/ornament-set.jpg"
     },
     {
       "id": "ornament2-set",
@@ -1454,7 +1454,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ornament2-set.webp"
+      "image": "/items/ornament2-set.jpg"
     },
     {
       "id": "ginger-set-rare",
@@ -1465,7 +1465,7 @@
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ginger-set-rare.webp"
+      "image": "/items/ginger-set-rare.jpg"
     }
   ]
 }

@@ -34,25 +34,10 @@ async function convertFile(filePath) {
 }
 
 function rewriteJson(filePath) {
-  if (!fs.existsSync(filePath)) return 0
-  const raw = fs.readFileSync(filePath, 'utf8')
-  const data = JSON.parse(raw)
-  const key = data.items ? 'items' : 'sets'
-  const rows = data[key] || []
-  let n = 0
-  for (const row of rows) {
-    if (!row.image || typeof row.image !== 'string') continue
-    const next = row.image.replace(/\.(png|jpe?g|gif)$/i, '.webp')
-    if (next !== row.image) {
-      const abs = path.join(ROOT, 'public', next.replace(/^\//, ''))
-      if (fs.existsSync(abs)) {
-        row.image = next
-        n++
-      }
-    }
-  }
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n')
-  return n
+  // Keep JSON on original png/jpg paths — Cloudflare has been caching HTML
+  // fallbacks for missing/poisoned .webp URLs. WebP files can still be generated
+  // for future use; ValueList/Calculator should keep using the source paths.
+  return 0
 }
 
 const files = fs.readdirSync(ITEMS_DIR)
