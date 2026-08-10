@@ -353,6 +353,7 @@ function SidePanel({
                 type="button"
                 className={`calc-slot is-filled${isChroma ? ' is-chroma' : ''}`}
                 onClick={() => onRemove(index)}
+                aria-label={`Remove ${slot.item.name}${slot.amount > 1 ? ` x${slot.amount}` : ''} from ${title}`}
               >
                 <span className="calc-slot-art">
                   {slot.item.image ? (
@@ -378,9 +379,11 @@ function SidePanel({
               className={`calc-slot is-empty${isAdd ? ' is-add' : ''}`}
               onClick={isAdd ? onAdd : undefined}
               disabled={!isAdd}
-              aria-label={isAdd ? 'Add item' : undefined}
+              aria-label={
+                isAdd ? `Add item to ${title}` : `${title} empty slot ${index + 1}`
+              }
             >
-              {isAdd ? '+' : null}
+              {isAdd ? <span aria-hidden="true">+</span> : null}
             </button>
           )
         })}
