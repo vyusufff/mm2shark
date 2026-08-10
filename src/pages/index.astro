@@ -26,11 +26,11 @@ const strips = [
 const homeFaqs = faqs.slice(0, 4)
 
 const props = [
-  { src: '/items/shark-gun.png', class: 'prop-shark-gun' },
-  { src: '/items/seer-knife.png', class: 'prop-seer' },
-  { src: '/items/chroma-shark-gun.png', class: 'prop-chroma' },
-  { src: '/items/luger-gun.png', class: 'prop-luger' },
-  { src: '/items/fang-knife.png', class: 'prop-fang' },
+  { src: '/items/shark-gun.webp', class: 'prop-shark-gun' },
+  { src: '/items/seer-knife.webp', class: 'prop-seer' },
+  { src: '/items/chroma-shark-gun.webp', class: 'prop-chroma' },
+  { src: '/items/luger-gun.webp', class: 'prop-luger' },
+  { src: '/items/fang-knife.webp', class: 'prop-fang' },
 ]
 ---
 
@@ -40,8 +40,17 @@ const props = [
       <div class="hero-bg"></div>
       <div class="hero-props">
         {
-          props.map((p) => (
-            <img class={`prop ${p.class}`} src={p.src} alt="" width="128" height="128" loading="eager" />
+          props.map((p, i) => (
+            <img
+              class={`prop ${p.class}`}
+              src={p.src}
+              alt=""
+              width="128"
+              height="128"
+              loading={i === 0 ? 'eager' : 'lazy'}
+              decoding="async"
+              fetchpriority={i === 0 ? 'high' : 'low'}
+            />
           ))
         }
       </div>

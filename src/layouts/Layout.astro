@@ -23,6 +23,8 @@ const topCta =
     : path === '/calculator'
       ? { href: '/values', label: 'Open Values' }
       : { href: '/values', label: 'Open Values' }
+
+const isTools = path === '/values' || path === '/calculator'
 ---
 
 <!doctype html>
@@ -40,16 +42,22 @@ const topCta =
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content="MM2Shark.com" />
-    <link rel="preload" href="/fonts/oswald-600.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="preload" href="/fonts/oswald-700.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="preload" href="/fonts/figtree-400.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="preload" href="/fonts/figtree-700.ttf" as="font" type="font/ttf" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
-      rel="stylesheet"
-    />
+    {
+      path === '/' ? (
+        <>
+          <link rel="preload" href="/fonts/oswald-600.ttf" as="font" type="font/ttf" crossorigin />
+          <link rel="preload" href="/fonts/oswald-500.ttf" as="font" type="font/ttf" crossorigin />
+          <link rel="preload" href="/fonts/figtree-400.ttf" as="font" type="font/ttf" crossorigin />
+        </>
+      ) : isTools ? (
+        <>
+          <link rel="preload" href="/fonts/fredoka-one.ttf" as="font" type="font/ttf" crossorigin />
+          <link rel="preload" href="/fonts/figtree-400.ttf" as="font" type="font/ttf" crossorigin />
+        </>
+      ) : (
+        <link rel="preload" href="/fonts/figtree-400.ttf" as="font" type="font/ttf" crossorigin />
+      )
+    }
   </head>
   <body>
     <div class="shell">

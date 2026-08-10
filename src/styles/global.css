@@ -3,7 +3,7 @@
   src: url('/fonts/oswald-500.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: url('/fonts/oswald-600.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   src: url('/fonts/oswald-700.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   src: url('/fonts/figtree-400.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   src: url('/fonts/figtree-600.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 @font-face {
@@ -43,7 +43,15 @@
   src: url('/fonts/figtree-700.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fredoka One';
+  src: url('/fonts/fredoka-one.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -613,20 +621,20 @@ img {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--shark);
+  color: #ff5c6c;
 }
 
 .footer-brand-col p {
   margin: 0.75rem 0 0;
   max-width: 28rem;
-  color: var(--muted);
+  color: #c4c4cc;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 .footer-col h3 {
   margin: 0 0 0.75rem;
-  color: #7f8794;
+  color: #c0c4cc;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -636,12 +644,12 @@ img {
 .footer-col a {
   display: block;
   margin: 0.4rem 0;
-  color: #a7a7b0;
+  color: #d0d0d8;
   font-weight: 600;
 }
 
 .footer-col a:hover {
-  color: #e8e8ec;
+  color: #f4f4f5;
 }
 
 .footer-bottom {
@@ -654,7 +662,7 @@ img {
 
 .footer-bottom p {
   margin: 0;
-  color: #7a7a84;
+  color: #b8b8c2;
   font-size: 0.78rem;
   line-height: 1.5;
   max-width: 52rem;
@@ -666,14 +674,14 @@ img {
 }
 
 .footer-copy a {
-  color: inherit;
+  color: #e8e8ec;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .footer-copy a:hover {
-  color: #c8c8d0;
+  color: #ffffff;
 }
 
 @keyframes rise {

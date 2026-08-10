@@ -1,0 +1,21 @@
+# MM2Shark
+
+Murder Mystery 2 value list and trade calculator.
+
+## Site
+
+- [Home](https://mm2shark.com/)
+- [Value List](https://mm2shark.com/values/)
+- [Trade Calculator](https://mm2shark.com/calculator/)
+- [FAQ](https://mm2shark.com/faq/)
+- [Privacy](https://mm2shark.com/privacy/)
+- [Terms](https://mm2shark.com/terms/)
+
+## Contact
+
+- Email: contact@mm2shark.com
+
+## Notes
+
+MM2Shark is a fan-made unofficial site. Not affiliated with Roblox or Nikilis.
+Values are community estimates from public trading data (Traderie).
