@@ -149,8 +149,48 @@ def warmup_session() -> None:
         print(f"  warmup warning: {exc}")
 
 
+def fetch_api_cffi() -> dict | None:
+    """Prefer chrome-impersonating TLS (helps pass Cloudflare on CI IPs)."""
+    try:
+        from curl_cffi import requests as cffi_requests  # type: ignore
+    except Exception:
+        return None
+
+    print("  using curl_cffi chrome impersonation…")
+    session = cffi_requests.Session()
+    # warm HTML page
+    session.get(REFERER, impersonate="chrome124", timeout=45)
+    resp = session.get(
+        API,
+        impersonate="chrome124",
+        headers={
+            "Referer": REFERER,
+            "Accept": "application/json,text/plain,*/*",
+            "Origin": "https://traderie.com",
+        },
+        timeout=60,
+    )
+    if resp.status_code != 200:
+        preview = (resp.text or "")[:180]
+        raise RuntimeError(f"HTTP {resp.status_code} via cffi body={preview!r}")
+    payload = resp.json()
+    if not isinstance(payload.get("prices"), list):
+        raise RuntimeError("Unexpected Traderie payload (cffi)")
+    RAW.write_bytes(resp.content)
+    print(f"  {len(payload['prices'])} prices (version {payload.get('version')})")
+    return payload
+
+
 def fetch_api() -> dict:
     print("Fetching Traderie values API…")
+    # Prefer TLS fingerprint impersonation on GitHub Actions / datacenter IPs
+    try:
+        via_cffi = fetch_api_cffi()
+        if via_cffi is not None:
+            return via_cffi
+    except Exception as exc:
+        print(f"  curl_cffi failed: {exc}")
+
     warmup_session()
     last_err: Exception | None = None
     for attempt in range(1, 4):
@@ -159,6 +199,8 @@ def fetch_api() -> dict:
             text = data.decode("utf-8", errors="replace").strip()
             if not text:
                 raise RuntimeError("empty response body (likely blocked CI IP)")
+            if text.lstrip().startswith("<!"):
+                raise RuntimeError("got Cloudflare challenge HTML instead of JSON")
             payload = json.loads(text)
             if not isinstance(payload.get("prices"), list):
                 raise RuntimeError("Unexpected Traderie payload")
