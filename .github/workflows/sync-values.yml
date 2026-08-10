@@ -35,6 +35,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/data/items.json src/data/sets.json public/data public/items
+          # UI/layout/pages are never touched by sync — only value data + item images
           if git diff --staged --quiet; then
             echo "No value changes"
             exit 0

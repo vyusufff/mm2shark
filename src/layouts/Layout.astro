@@ -16,6 +16,13 @@ const canonical = Astro.site
   : Astro.url.pathname
 
 const path = Astro.url.pathname.replace(/\/$/, '') || '/'
+
+const topCta =
+  path === '/values'
+    ? { href: '/calculator', label: 'Open Calculator' }
+    : path === '/calculator'
+      ? { href: '/values', label: 'Open Values' }
+      : { href: '/values', label: 'Open Values' }
 ---
 
 <!doctype html>
@@ -29,6 +36,7 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/'
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap.xml" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content="MM2Shark.com" />
@@ -56,7 +64,7 @@ const path = Astro.url.pathname.replace(/\/$/, '') || '/'
           <a href="/calculator" aria-current={path === '/calculator' ? 'page' : undefined}>Calculator</a>
           <a href="/faq" aria-current={path === '/faq' ? 'page' : undefined}>FAQ</a>
         </nav>
-        <a class="top-cta" href="/values">Open Values</a>
+        <a class="top-cta" href={topCta.href}>{topCta.label}</a>
       </header>
 
       <main class="main">
