@@ -15,6 +15,10 @@ const canonical = Astro.site
   ? new URL(Astro.url.pathname, Astro.site).toString()
   : Astro.url.pathname
 
+const ogImage = Astro.site
+  ? new URL('/og.png', Astro.site).toString()
+  : '/og.png'
+
 const path = Astro.url.pathname.replace(/\/$/, '') || '/'
 
 const topCta =
@@ -39,9 +43,20 @@ const isTools = path === '/values' || path === '/calculator'
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content="MM2Shark.com" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MM2Shark.com — Murder Mystery 2 value list and trade calculator" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     {
       path === '/' ? (
         <>

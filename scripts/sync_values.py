@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Full value sync from Traderie."""
 
 from __future__ import annotations
