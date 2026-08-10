@@ -73,18 +73,39 @@ def curl_bin() -> str:
     return "curl"
 
 
-def curl_get(url: str, out: Path | None = None) -> bytes:
+COOKIE_JAR = ROOT / "scripts" / "_traderie_cookies.txt"
+
+
+def curl_get(
+    url: str,
+    out: Path | None = None,
+    *,
+    use_cookies: bool = True,
+    accept: str = "*/*",
+) -> bytes:
     cmd = [
         curl_bin(),
         "-sS",
         "-L",
+        "--compressed",
+        "--max-time",
+        "60",
         "-A",
         UA,
         "-H",
         f"Referer: {REFERER}",
         "-H",
-        "Accept: */*",
+        f"Accept: {accept}",
+        "-H",
+        "Accept-Language: en-US,en;q=0.9",
+        "-H",
+        "Origin: https://traderie.com",
+        "-w",
+        "\n__HTTP_STATUS__:%{http_code}",
     ]
+    if use_cookies:
+        COOKIE_JAR.parent.mkdir(parents=True, exist_ok=True)
+        cmd += ["-c", str(COOKIE_JAR), "-b", str(COOKIE_JAR)]
     if out is not None:
         cmd += ["-o", str(out)]
     else:
@@ -93,9 +114,61 @@ def curl_get(url: str, out: Path | None = None) -> bytes:
     proc = subprocess.run(cmd, capture_output=True, check=False)
     if proc.returncode != 0:
         raise RuntimeError(proc.stderr.decode("utf-8", errors="replace") or "curl failed")
+
     if out is not None:
-        return out.read_bytes()
-    return proc.stdout
+        # status written to stdout when -o is used
+        status_blob = proc.stdout.decode("utf-8", errors="replace")
+        body = out.read_bytes()
+    else:
+        raw = proc.stdout
+        # split trailing status marker
+        marker = b"\n__HTTP_STATUS__:"
+        idx = raw.rfind(marker)
+        if idx >= 0:
+            body = raw[:idx]
+            status_blob = raw[idx + 1 :].decode("utf-8", errors="replace")
+        else:
+            body = raw
+            status_blob = ""
+
+    status = "0"
+    if "__HTTP_STATUS__:" in status_blob:
+        status = status_blob.strip().split("__HTTP_STATUS__:")[-1].strip()[:3]
+
+    if status and status not in {"200", "0"}:
+        preview = body[:200].decode("utf-8", errors="replace")
+        raise RuntimeError(f"HTTP {status} from {url} body={preview!r}")
+    return body
+
+
+def warmup_session() -> None:
+    """Hit the public values page first so CI IPs get cookies / pass soft bot checks."""
+    try:
+        curl_get(REFERER, use_cookies=True, accept="text/html,application/xhtml+xml,*/*")
+    except Exception as exc:
+        print(f"  warmup warning: {exc}")
+
+
+def fetch_api() -> dict:
+    print("Fetching Traderie values API…")
+    warmup_session()
+    last_err: Exception | None = None
+    for attempt in range(1, 4):
+        try:
+            data = curl_get(API, RAW, accept="application/json,text/plain,*/*")
+            text = data.decode("utf-8", errors="replace").strip()
+            if not text:
+                raise RuntimeError("empty response body (likely blocked CI IP)")
+            payload = json.loads(text)
+            if not isinstance(payload.get("prices"), list):
+                raise RuntimeError("Unexpected Traderie payload")
+            print(f"  {len(payload['prices'])} prices (version {payload.get('version')})")
+            return payload
+        except Exception as exc:
+            last_err = exc
+            print(f"  attempt {attempt}/3 failed: {exc}")
+            time.sleep(2 * attempt)
+    raise RuntimeError(f"Traderie API failed after retries: {last_err}")
 
 
 def encode_cdn_url(url: str) -> str:
@@ -152,23 +225,12 @@ def resolve_rarity(raw_type: str, tags: dict[str, list[str]], name: str) -> tupl
     if raw_type in RARITY_TYPES:
         return raw_type, False
     if raw_type == "Pets":
-        # rarity often in tags without category rarity
         for vals in tags.values():
             for t in vals:
                 if t in RARITY_COLORS and t not in {"Chroma"}:
                     return t, False
         return "Common", False
     return "Misc", False
-
-
-def fetch_api() -> dict:
-    print("Fetching Traderie values API…")
-    data = curl_get(API, RAW)
-    payload = json.loads(data.decode("utf-8"))
-    if not isinstance(payload.get("prices"), list):
-        raise RuntimeError("Unexpected Traderie payload")
-    print(f"  {len(payload['prices'])} prices (version {payload.get('version')})")
-    return payload
 
 
 def normalize(payload: dict) -> tuple[list[dict], list[dict]]:

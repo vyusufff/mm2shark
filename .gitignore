@@ -20,6 +20,7 @@ pnpm-debug.log*
 
 # sync caches
 scripts/_traderie_raw.json
+scripts/_traderie_cookies.txt
 scripts/_*.json
 
 # macOS-specific files
