@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T19:30:42Z",
+  "updatedAt": "2026-08-10T09:56:09Z",
   "source": "traderie",
   "count": 943,
   "rarityColors": {
@@ -479,17 +479,6 @@
       "image": "/items/zombie-dog.png"
     },
     {
-      "id": "sunset-knife-2025",
-      "name": "Sunset Knife 2025",
-      "value": 625.0,
-      "demand": 5,
-      "rarity": "Godly",
-      "rarityColor": "#ff4dc4",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/sunset-knife-2025.png"
-    },
-    {
       "id": "cane-knife-2018",
       "name": "Cane Knife 2018",
       "value": 625.0,
@@ -499,6 +488,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/cane-knife-2018.png"
+    },
+    {
+      "id": "sunset-knife-2025",
+      "name": "Sunset Knife 2025",
+      "value": 625.0,
+      "demand": 5,
+      "rarity": "Godly",
+      "rarityColor": "#ff4dc4",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/sunset-knife-2025.png"
     },
     {
       "id": "soul-gun-2024",
@@ -526,7 +526,7 @@
       "id": "elf",
       "name": "Elf",
       "value": 575.0,
-      "demand": 2,
+      "demand": 4,
       "rarity": "Uncommon",
       "rarityColor": "#4da6ff",
       "type": "Pet",
@@ -655,17 +655,6 @@
       "image": "/items/flowerwood-gun.png"
     },
     {
-      "id": "flowerwood-knife",
-      "name": "Flowerwood Knife",
-      "value": 260.0,
-      "demand": 4,
-      "rarity": "Godly",
-      "rarityColor": "#ff4dc4",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/flowerwood-knife.png"
-    },
-    {
       "id": "snowstorm",
       "name": "Snowstorm Knife 2025",
       "value": 260.0,
@@ -675,6 +664,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/snowstorm.png"
+    },
+    {
+      "id": "flowerwood-knife",
+      "name": "Flowerwood Knife",
+      "value": 260.0,
+      "demand": 4,
+      "rarity": "Godly",
+      "rarityColor": "#ff4dc4",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/flowerwood-knife.png"
     },
     {
       "id": "blizzard",
@@ -724,7 +724,7 @@
       "id": "bats-knife-2018",
       "name": "Bats Knife 2018",
       "value": 240.0,
-      "demand": 1,
+      "demand": 3,
       "rarity": "Common",
       "rarityColor": "#c8c8c8",
       "type": "Knife",
@@ -897,6 +897,17 @@
       "image": "/items/brains-knife-2019.png"
     },
     {
+      "id": "zombified-knife-2019",
+      "name": "Zombified Knife 2019",
+      "value": 120.0,
+      "demand": 3,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/zombified-knife-2019.png"
+    },
+    {
       "id": "bat-knife-2022",
       "name": "Bat Knife 2022",
       "value": 120.0,
@@ -917,17 +928,6 @@
       "type": "Pet",
       "chroma": false,
       "image": "/items/red-pumpkin.png"
-    },
-    {
-      "id": "zombified-knife-2019",
-      "name": "Zombified Knife 2019",
-      "value": 120.0,
-      "demand": 3,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/zombified-knife-2019.png"
     },
     {
       "id": "ghoulish-knife-2023",
@@ -955,7 +955,7 @@
       "id": "vampire-gun-2022",
       "name": "Vampire Gun 2022",
       "value": 90.0,
-      "demand": 1,
+      "demand": 3,
       "rarity": "Legendary",
       "rarityColor": "#ff3b3b",
       "type": "Gun",
@@ -1007,6 +1007,17 @@
       "image": "/items/candy-knife-2015.png"
     },
     {
+      "id": "gingerbread-knife-2019",
+      "name": "Gingerbread Knife 2019",
+      "value": 80.0,
+      "demand": 3,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/gingerbread-knife-2019.png"
+    },
+    {
       "id": "pearl-knife",
       "name": "Pearl Knife",
       "value": 80.0,
@@ -1016,17 +1027,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/pearl-knife.png"
-    },
-    {
-      "id": "gingerbread-knife-2019",
-      "name": "Gingerbread Knife 2019",
-      "value": 80.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/gingerbread-knife-2019.png"
     },
     {
       "id": "darkknife-knife-2023",
@@ -1150,21 +1150,10 @@
       "image": "/items/mr-reindeer.png"
     },
     {
-      "id": "spectral-knife-2021",
-      "name": "Spectral Knife 2021",
-      "value": 55.0,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/spectral-knife-2021.png"
-    },
-    {
       "id": "snowflake-knife-2018",
       "name": "Snowflake Knife 2018",
       "value": 55.0,
-      "demand": 1,
+      "demand": 3,
       "rarity": "Uncommon",
       "rarityColor": "#4da6ff",
       "type": "Knife",
@@ -1181,6 +1170,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/traveler-gun-2023.png"
+    },
+    {
+      "id": "spectral-knife-2021",
+      "name": "Spectral Knife 2021",
+      "value": 55.0,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/spectral-knife-2021.png"
     },
     {
       "id": "branches-knife-2019",
@@ -1205,17 +1205,6 @@
       "image": "/items/chroma-luger-gun.png"
     },
     {
-      "id": "silent-night-knife-2020",
-      "name": "Silent Night Knife 2020",
-      "value": 50.0,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/silent-night-knife-2020.png"
-    },
-    {
       "id": "aurora-gun-2021",
       "name": "Aurora Gun 2021",
       "value": 50.0,
@@ -1225,6 +1214,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/aurora-gun-2021.png"
+    },
+    {
+      "id": "silent-night-knife-2020",
+      "name": "Silent Night Knife 2020",
+      "value": 50.0,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/silent-night-knife-2020.png"
     },
     {
       "id": "makeshift-knife-2022",
@@ -1252,7 +1252,7 @@
       "id": "zombified-knife-2022",
       "name": "Zombified Knife 2022",
       "value": 40.0,
-      "demand": 3,
+      "demand": 2,
       "rarity": "Rare",
       "rarityColor": "#5bdb49",
       "type": "Knife",
@@ -1428,7 +1428,7 @@
       "id": "makeshift-gun-2022",
       "name": "Makeshift Gun 2022",
       "value": 33.0,
-      "demand": 2,
+      "demand": 1,
       "rarity": "Godly",
       "rarityColor": "#ff4dc4",
       "type": "Gun",
@@ -1601,6 +1601,17 @@
       "image": "/items/mummified-knife-2019.png"
     },
     {
+      "id": "snowflakes-gun-2019",
+      "name": "Snowflakes Gun 2019",
+      "value": 30.0,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/snowflakes-gun-2019.png"
+    },
+    {
       "id": "wrapped-gun-2018",
       "name": "Wrapped Gun 2018",
       "value": 30.0,
@@ -1621,17 +1632,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/hallowscythe-knife-2020.png"
-    },
-    {
-      "id": "snowflakes-gun-2019",
-      "name": "Snowflakes Gun 2019",
-      "value": 30.0,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/snowflakes-gun-2019.png"
     },
     {
       "id": "jd-knife",
@@ -1744,17 +1744,6 @@
       "image": "/items/snowman-gun-2018.png"
     },
     {
-      "id": "ecto-knife-2017",
-      "name": "Ecto Knife 2017",
-      "value": 25.0,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/ecto-knife-2017.png"
-    },
-    {
       "id": "starry-gun-2021",
       "name": "Starry Gun 2021",
       "value": 25.0,
@@ -1764,6 +1753,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/starry-gun-2021.png"
+    },
+    {
+      "id": "ecto-knife-2017",
+      "name": "Ecto Knife 2017",
+      "value": 25.0,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/ecto-knife-2017.png"
     },
     {
       "id": "chroma-saw-knife",
@@ -2074,28 +2074,6 @@
       "image": "/items/blaster-gun.png"
     },
     {
-      "id": "zombified-gun-2019",
-      "name": "Zombified Gun 2019",
-      "value": 15.0,
-      "demand": 3,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/zombified-gun-2019.png"
-    },
-    {
-      "id": "elf-knife-2015",
-      "name": "Elf Knife 2015",
-      "value": 15.0,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/elf-knife-2015.png"
-    },
-    {
       "id": "old-glory-knife",
       "name": "Old Glory Knife",
       "value": 15.0,
@@ -2116,6 +2094,28 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/gemstone-knife.png"
+    },
+    {
+      "id": "elf-knife-2015",
+      "name": "Elf Knife 2015",
+      "value": 15.0,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/elf-knife-2015.png"
+    },
+    {
+      "id": "magma-gun-2021",
+      "name": "Magma Gun 2021",
+      "value": 15.0,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/magma-gun-2021.png"
     },
     {
       "id": "iceflake-knife-2021",
@@ -2184,6 +2184,17 @@
       "image": "/items/coal-knife-2018.png"
     },
     {
+      "id": "zombified-gun-2019",
+      "name": "Zombified Gun 2019",
+      "value": 15.0,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/zombified-gun-2019.png"
+    },
+    {
       "id": "slasher-knife",
       "name": "Slasher Knife",
       "value": 15.0,
@@ -2193,17 +2204,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/slasher-knife.png"
-    },
-    {
-      "id": "magma-gun-2021",
-      "name": "Magma Gun 2021",
-      "value": 15.0,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/magma-gun-2021.png"
     },
     {
       "id": "nebula-knife",
@@ -2316,39 +2316,6 @@
       "image": "/items/jinglegun-gun-2020.png"
     },
     {
-      "id": "silent-night-gun-2020",
-      "name": "Silent Night Gun 2020",
-      "value": 12.0,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/silent-night-gun-2020.png"
-    },
-    {
-      "id": "snowflakes-knife-2020",
-      "name": "Snowflakes Knife 2020",
-      "value": 12.0,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/snowflakes-knife-2020.png"
-    },
-    {
-      "id": "elf-gun-2018",
-      "name": "Elf Gun 2018",
-      "value": 12.0,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/elf-gun-2018.png"
-    },
-    {
       "id": "prism-knife",
       "name": "Prism Knife",
       "value": 12.0,
@@ -2382,6 +2349,17 @@
       "image": "/items/candy-corn-knife-2019.png"
     },
     {
+      "id": "snowflakes-knife-2020",
+      "name": "Snowflakes Knife 2020",
+      "value": 12.0,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/snowflakes-knife-2020.png"
+    },
+    {
       "id": "void-knife",
       "name": "Void Knife",
       "value": 12.0,
@@ -2402,6 +2380,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/swirly-blade-knife-2021.png"
+    },
+    {
+      "id": "silent-night-gun-2020",
+      "name": "Silent Night Gun 2020",
+      "value": 12.0,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/silent-night-gun-2020.png"
     },
     {
       "id": "battleaxe-knife-2017",
@@ -2448,15 +2437,15 @@
       "image": "/items/wrap-gun-2020.png"
     },
     {
-      "id": "phantom-knife-2017",
-      "name": "Phantom Knife 2017",
-      "value": 10.0,
-      "demand": 1,
+      "id": "elf-gun-2018",
+      "name": "Elf Gun 2018",
+      "value": 12.0,
+      "demand": 2,
       "rarity": "Common",
       "rarityColor": "#c8c8c8",
-      "type": "Knife",
+      "type": "Gun",
       "chroma": false,
-      "image": "/items/phantom-knife-2017.png"
+      "image": "/items/elf-gun-2018.png"
     },
     {
       "id": "frostsaber-knife-2017",
@@ -2602,26 +2591,26 @@
       "image": "/items/sparkle4-knife.png"
     },
     {
+      "id": "phantom-knife-2017",
+      "name": "Phantom Knife 2017",
+      "value": 10.0,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/phantom-knife-2017.png"
+    },
+    {
       "id": "zombie-knife-2017",
       "name": "Zombie Knife 2017",
       "value": 10.0,
-      "demand": 1,
+      "demand": 2,
       "rarity": "Common",
       "rarityColor": "#c8c8c8",
       "type": "Knife",
       "chroma": false,
       "image": "/items/zombie-knife-2017.png"
-    },
-    {
-      "id": "laser-gun-classic",
-      "name": "Laser Gun",
-      "value": 8.0,
-      "demand": 1,
-      "rarity": "Vintage",
-      "rarityColor": "#ffd34e",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/laser-gun-classic.png"
     },
     {
       "id": "eternal-iv-knife",
@@ -2655,6 +2644,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/eternal-iii-knife.png"
+    },
+    {
+      "id": "ghost-knife",
+      "name": "Ghost Knife",
+      "value": 8.0,
+      "demand": 1,
+      "rarity": "Vintage",
+      "rarityColor": "#ffd34e",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/ghost-knife.png"
     },
     {
       "id": "steel-gun-2023",
@@ -2734,15 +2734,15 @@
       "image": "/items/sparkle5-knife.png"
     },
     {
-      "id": "ghost-knife",
-      "name": "Ghost Knife",
+      "id": "laser-gun-classic",
+      "name": "Laser Gun",
       "value": 8.0,
       "demand": 1,
       "rarity": "Vintage",
       "rarityColor": "#ffd34e",
-      "type": "Knife",
+      "type": "Gun",
       "chroma": false,
-      "image": "/items/ghost-knife.png"
+      "image": "/items/laser-gun-classic.png"
     },
     {
       "id": "toxic-knife-2018",
@@ -2800,6 +2800,17 @@
       "image": "/items/ghastly-gun-2023.png"
     },
     {
+      "id": "gingerbread-knife-2020",
+      "name": "Gingerbread Knife 2020",
+      "value": 7.0,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/gingerbread-knife-2020.png"
+    },
+    {
       "id": "pumpking-knife-2017",
       "name": "Pumpking Knife 2017",
       "value": 7.0,
@@ -2831,6 +2842,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/eternal-ii-knife.png"
+    },
+    {
+      "id": "zombie-knife-2021",
+      "name": "Zombie Knife 2021",
+      "value": 7.0,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/zombie-knife-2021.png"
     },
     {
       "id": "aurora-knife-2019",
@@ -2976,32 +2998,10 @@
       "image": "/items/cavern-knife-2019.png"
     },
     {
-      "id": "zombie-knife-2021",
-      "name": "Zombie Knife 2021",
-      "value": 7.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/zombie-knife-2021.png"
-    },
-    {
-      "id": "gingerbread-knife-2020",
-      "name": "Gingerbread Knife 2020",
-      "value": 7.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/gingerbread-knife-2020.png"
-    },
-    {
       "id": "vampire-gun-2018",
       "name": "Vampire Gun 2018",
       "value": 7.0,
-      "demand": 1,
+      "demand": 2,
       "rarity": "Rare",
       "rarityColor": "#5bdb49",
       "type": "Knife",
@@ -3029,17 +3029,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/prince-knife.png"
-    },
-    {
-      "id": "ghost-knife-2018",
-      "name": "Ghost Knife 2018",
-      "value": 5.0,
-      "demand": 1,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/ghost-knife-2018.png"
     },
     {
       "id": "pumpkin-patch-knife-2019",
@@ -3196,6 +3185,17 @@
       "image": "/items/icedriller-gun-2020.png"
     },
     {
+      "id": "ghost-knife-2018",
+      "name": "Ghost Knife 2018",
+      "value": 5.0,
+      "demand": 1,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/ghost-knife-2018.png"
+    },
+    {
       "id": "starry-gun-2020",
       "name": "Starry Gun 2020",
       "value": 5.0,
@@ -3238,17 +3238,6 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/zombie-gun-2018.png"
-    },
-    {
-      "id": "skulls-knife-2019",
-      "name": "Skulls Knife 2019",
-      "value": 4.0,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/skulls-knife-2019.png"
     },
     {
       "id": "ollie-knife",
@@ -3383,6 +3372,17 @@
       "image": "/items/scratch-knife-2016.png"
     },
     {
+      "id": "skulls-knife-2019",
+      "name": "Skulls Knife 2019",
+      "value": 4.0,
+      "demand": 1,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/skulls-knife-2019.png"
+    },
+    {
       "id": "euro-knife",
       "name": "Euro Knife",
       "value": 4.0,
@@ -3392,39 +3392,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/euro-knife.png"
-    },
-    {
-      "id": "spectral-gun-2021",
-      "name": "Spectral Gun 2021",
-      "value": 3.0,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/spectral-gun-2021.png"
-    },
-    {
-      "id": "magma-knife-2017",
-      "name": "Magma Knife 2017",
-      "value": 3.0,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/magma-knife-2017.png"
-    },
-    {
-      "id": "aurora-knife-2021",
-      "name": "Aurora Knife 2021",
-      "value": 3.0,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/aurora-knife-2021.png"
     },
     {
       "id": "blue-seer-knife",
@@ -3447,6 +3414,17 @@
       "type": "Pet",
       "chroma": true,
       "image": "/items/chroma-fire-fox.png"
+    },
+    {
+      "id": "bats-knife-2020",
+      "name": "Bats Knife 2020",
+      "value": 3.0,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/bats-knife-2020.png"
     },
     {
       "id": "purple-pumpkin",
@@ -3581,6 +3559,17 @@
       "image": "/items/mechbug.png"
     },
     {
+      "id": "aurora-knife-2021",
+      "name": "Aurora Knife 2021",
+      "value": 3.0,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/aurora-knife-2021.png"
+    },
+    {
       "id": "green-pumpkin-2019",
       "name": "Green Pumpkin 2019",
       "value": 3.0,
@@ -3590,6 +3579,17 @@
       "type": "Pet",
       "chroma": false,
       "image": "/items/green-pumpkin-2019.png"
+    },
+    {
+      "id": "spectral-gun-2021",
+      "name": "Spectral Gun 2021",
+      "value": 3.0,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/spectral-gun-2021.png"
     },
     {
       "id": "chroma-fire-cat",
@@ -3669,6 +3669,17 @@
       "image": "/items/chroma-fire-dog.png"
     },
     {
+      "id": "frozen-gun-2019",
+      "name": "Frozen Gun 2019",
+      "value": 3.0,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/frozen-gun-2019.png"
+    },
+    {
       "id": "red-pumpkin-2019",
       "name": "Red Pumpkin 2019",
       "value": 3.0,
@@ -3678,6 +3689,17 @@
       "type": "Pet",
       "chroma": false,
       "image": "/items/red-pumpkin-2019.png"
+    },
+    {
+      "id": "magma-knife-2017",
+      "name": "Magma Knife 2017",
+      "value": 3.0,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/magma-knife-2017.png"
     },
     {
       "id": "snakebite-knife-2019",
@@ -3700,6 +3722,17 @@
       "type": "Pet",
       "chroma": true,
       "image": "/items/chroma-fire-bat.png"
+    },
+    {
+      "id": "potion-knife-2017",
+      "name": "Potion Knife 2017",
+      "value": 3.0,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/potion-knife-2017.png"
     },
     {
       "id": "seahorsey",
@@ -3779,6 +3812,17 @@
       "image": "/items/eyeball.png"
     },
     {
+      "id": "vampire-knife-2022",
+      "name": "Vampire Knife 2022",
+      "value": 3.0,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/vampire-knife-2022.png"
+    },
+    {
       "id": "splitter-knife",
       "name": "Splitter Knife",
       "value": 3.0,
@@ -3801,6 +3845,17 @@
       "image": "/items/chroma-fire-bunny.png"
     },
     {
+      "id": "gingerbread-gun-2020",
+      "name": "Gingerbread Gun 2020",
+      "value": 3.0,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/gingerbread-gun-2020.png"
+    },
+    {
       "id": "red-seer-knife",
       "name": "Red Seer Knife",
       "value": 3.0,
@@ -3810,6 +3865,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/red-seer-knife.png"
+    },
+    {
+      "id": "zombie-knife-2023",
+      "name": "Zombie Knife 2023",
+      "value": 3.0,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/zombie-knife-2023.png"
     },
     {
       "id": "infected-gun-2022",
@@ -3944,94 +4010,6 @@
       "image": "/items/traveler-knife-2023.png"
     },
     {
-      "id": "potion-knife-2017",
-      "name": "Potion Knife 2017",
-      "value": 3.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/potion-knife-2017.png"
-    },
-    {
-      "id": "bats-knife-2020",
-      "name": "Bats Knife 2020",
-      "value": 3.0,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/bats-knife-2020.png"
-    },
-    {
-      "id": "zombie-knife-2023",
-      "name": "Zombie Knife 2023",
-      "value": 3.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/zombie-knife-2023.png"
-    },
-    {
-      "id": "frozen-gun-2019",
-      "name": "Frozen Gun 2019",
-      "value": 3.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/frozen-gun-2019.png"
-    },
-    {
-      "id": "vampire-knife-2022",
-      "name": "Vampire Knife 2022",
-      "value": 3.0,
-      "demand": 1,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/vampire-knife-2022.png"
-    },
-    {
-      "id": "gingerbread-gun-2020",
-      "name": "Gingerbread Gun 2020",
-      "value": 3.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/gingerbread-gun-2020.png"
-    },
-    {
-      "id": "toxic-gun-2018",
-      "name": "Toxic Gun 2018",
-      "value": 2.0,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/toxic-gun-2018.png"
-    },
-    {
-      "id": "ghost-gun-2018",
-      "name": "Ghost Gun 2018",
-      "value": 2.0,
-      "demand": 1,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/ghost-gun-2018.png"
-    },
-    {
       "id": "asteroid-gun",
       "name": "Asteroid Gun",
       "value": 2.0,
@@ -4164,6 +4142,28 @@
       "image": "/items/meltdown-knife-2023.png"
     },
     {
+      "id": "candy-swirl-gun-2019",
+      "name": "Candy Swirl Gun 2019",
+      "value": 2.0,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/candy-swirl-gun-2019.png"
+    },
+    {
+      "id": "lights-gun-2019",
+      "name": "Lights Gun 2019",
+      "value": 2.0,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/lights-gun-2019.png"
+    },
+    {
       "id": "box-of-purple-wrapping-paper",
       "name": "Box of Purple Wrapping Paper",
       "value": 2.0,
@@ -4173,6 +4173,17 @@
       "type": "Misc",
       "chroma": false,
       "image": "/items/box-of-purple-wrapping-paper.png"
+    },
+    {
+      "id": "toxic-gun-2018",
+      "name": "Toxic Gun 2018",
+      "value": 2.0,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/toxic-gun-2018.png"
     },
     {
       "id": "yellow-seer-knife",
@@ -4217,6 +4228,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/orange-marble-knife-2016.png"
+    },
+    {
+      "id": "ghost-gun-2018",
+      "name": "Ghost Gun 2018",
+      "value": 2.0,
+      "demand": 1,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/ghost-gun-2018.png"
     },
     {
       "id": "box-of-fertilizer-2018",
@@ -4307,94 +4329,6 @@
       "image": "/items/bats-knife-2016.png"
     },
     {
-      "id": "candy-swirl-gun-2019",
-      "name": "Candy Swirl Gun 2019",
-      "value": 2.0,
-      "demand": 1,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/candy-swirl-gun-2019.png"
-    },
-    {
-      "id": "lights-gun-2019",
-      "name": "Lights Gun 2019",
-      "value": 2.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/lights-gun-2019.png"
-    },
-    {
-      "id": "aurora-gun-2019",
-      "name": "Aurora Gun 2019",
-      "value": 1.0,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/aurora-gun-2019.png"
-    },
-    {
-      "id": "cavern-gun-2019",
-      "name": "Cavern Gun 2019",
-      "value": 1.0,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/cavern-gun-2019.png"
-    },
-    {
-      "id": "ghosty-pet",
-      "name": "Ghosty",
-      "value": 1.0,
-      "demand": 2,
-      "rarity": "Godly",
-      "rarityColor": "#ff4dc4",
-      "type": "Pet",
-      "chroma": false,
-      "image": "/items/ghosty-pet.png"
-    },
-    {
-      "id": "snakebite-gun-2019",
-      "name": "Snakebite Gun 2019",
-      "value": 1.0,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/snakebite-gun-2019.png"
-    },
-    {
-      "id": "bats-gun-2018",
-      "name": "Bats Gun 2018",
-      "value": 1.0,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/bats-gun-2018.png"
-    },
-    {
-      "id": "zombie-knife-2018",
-      "name": "Zombie Knife 2018",
-      "value": 1.0,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/zombie-knife-2018.png"
-    },
-    {
       "id": "haunted-gun-2018",
       "name": "Haunted Gun 2018",
       "value": 1.0,
@@ -4428,6 +4362,17 @@
       "image": "/items/chroma-chromatic-knife.png"
     },
     {
+      "id": "aurora-gun-2019",
+      "name": "Aurora Gun 2019",
+      "value": 1.0,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/aurora-gun-2019.png"
+    },
+    {
       "id": "blue-pumpkin-2019",
       "name": "Blue Pumpkin 2019",
       "value": 1.0,
@@ -4437,6 +4382,17 @@
       "type": "Pet",
       "chroma": false,
       "image": "/items/blue-pumpkin-2019.png"
+    },
+    {
+      "id": "ghosty-pet",
+      "name": "Ghosty",
+      "value": 1.0,
+      "demand": 1,
+      "rarity": "Godly",
+      "rarityColor": "#ff4dc4",
+      "type": "Pet",
+      "chroma": false,
+      "image": "/items/ghosty-pet.png"
     },
     {
       "id": "gingerbread-knife-2017",
@@ -4459,6 +4415,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/slime-gun-2018.png"
+    },
+    {
+      "id": "snakebite-gun-2019",
+      "name": "Snakebite Gun 2019",
+      "value": 1.0,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/snakebite-gun-2019.png"
     },
     {
       "id": "candy-swirl-knife-2019",
@@ -4530,7 +4497,7 @@
       "id": "gingerbread-gun-2019",
       "name": "Gingerbread Gun 2019",
       "value": 1.0,
-      "demand": 1,
+      "demand": 2,
       "rarity": "Uncommon",
       "rarityColor": "#4da6ff",
       "type": "Gun",
@@ -4547,6 +4514,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/moonlight-gun-2022.png"
+    },
+    {
+      "id": "zombie-knife-2018",
+      "name": "Zombie Knife 2018",
+      "value": 1.0,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/zombie-knife-2018.png"
     },
     {
       "id": "slime-knife-2018",
@@ -4569,6 +4547,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/haunted-knife-2018.png"
+    },
+    {
+      "id": "bats-gun-2018",
+      "name": "Bats Gun 2018",
+      "value": 1.0,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/bats-gun-2018.png"
     },
     {
       "id": "vampire-knife-2016",
@@ -4692,6 +4681,17 @@
       "image": "/items/mystery-key.png"
     },
     {
+      "id": "cavern-gun-2019",
+      "name": "Cavern Gun 2019",
+      "value": 1.0,
+      "demand": 1,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/cavern-gun-2019.png"
+    },
+    {
       "id": "icecracker-knife-2020",
       "name": "Icecracker Knife 2020",
       "value": 1.0,
@@ -4701,204 +4701,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/icecracker-knife-2020.png"
-    },
-    {
-      "id": "sunset-gun",
-      "name": "Sunset Gun",
-      "value": 0.4,
-      "demand": 5,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/sunset-gun.png"
-    },
-    {
-      "id": "blossom-knife",
-      "name": "Blossom Knife",
-      "value": 0.4,
-      "demand": 6,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/blossom-knife.png"
-    },
-    {
-      "id": "bones-knife-2016",
-      "name": "Bones Knife 2016",
-      "value": 0.4,
-      "demand": 3,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/bones-knife-2016.png"
-    },
-    {
-      "id": "brains-knife-2016",
-      "name": "Brains Knife 2016",
-      "value": 0.4,
-      "demand": 3,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/brains-knife-2016.png"
-    },
-    {
-      "id": "wrapped-gun-2015",
-      "name": "Wrapped Gun 2015",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/wrapped-gun-2015.png"
-    },
-    {
-      "id": "wrapped-knife-2015",
-      "name": "Wrapped Knife 2015",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/wrapped-knife-2015.png"
-    },
-    {
-      "id": "elf-gun-2015",
-      "name": "Elf Gun 2015",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/elf-gun-2015.png"
-    },
-    {
-      "id": "arctic-knife-2022",
-      "name": "Arctic Knife 2022",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/arctic-knife-2022.png"
-    },
-    {
-      "id": "gothic-knife-2021",
-      "name": "Gothic Knife 2021",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/gothic-knife-2021.png"
-    },
-    {
-      "id": "starry-knife-2021",
-      "name": "Starry Knife 2021",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/starry-knife-2021.png"
-    },
-    {
-      "id": "ginger-knife-2015",
-      "name": "Ginger Knife 2015",
-      "value": 0.4,
-      "demand": 1,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/ginger-knife-2015.png"
-    },
-    {
-      "id": "ginger-gun-2015",
-      "name": "Ginger Gun 2015",
-      "value": 0.4,
-      "demand": 1,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/ginger-gun-2015.png"
-    },
-    {
-      "id": "infected-knife-2022",
-      "name": "Infected Knife 2022",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/infected-knife-2022.png"
-    },
-    {
-      "id": "apocalypse-knife-2022",
-      "name": "Apocalypse Knife 2022",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/apocalypse-knife-2022.png"
-    },
-    {
-      "id": "energized-knife-2025",
-      "name": "Energized Knife 2025",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/energized-knife-2025.png"
-    },
-    {
-      "id": "gingerbread-gun-2022",
-      "name": "Gingerbread Gun 2022",
-      "value": 0.4,
-      "demand": 1,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/gingerbread-gun-2022.png"
-    },
-    {
-      "id": "chroma-chromatic-gun",
-      "name": "Chromatic Gun",
-      "value": 0.4,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/chroma-chromatic-gun.png"
-    },
-    {
-      "id": "frozen-gun-2025",
-      "name": "Frozen Gun 2025",
-      "value": 0.4,
-      "demand": 1,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/frozen-gun-2025.png"
     },
     {
       "id": "mummy-gun-2015",
@@ -4954,6 +4756,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/cane-gun-2015.png"
+    },
+    {
+      "id": "bones-knife-2016",
+      "name": "Bones Knife 2016",
+      "value": 0.4,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/bones-knife-2016.png"
     },
     {
       "id": "cookie-knife-2021",
@@ -5020,6 +4833,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/patrick-knife.png"
+    },
+    {
+      "id": "starry-knife-2021",
+      "name": "Starry Knife 2021",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/starry-knife-2021.png"
     },
     {
       "id": "ornament-knife-2015",
@@ -5176,6 +5000,17 @@
       "image": "/items/web-knife-2015.png"
     },
     {
+      "id": "infected-knife-2022",
+      "name": "Infected Knife 2022",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/infected-knife-2022.png"
+    },
+    {
       "id": "witch-knife-2016",
       "name": "Witch Knife 2016",
       "value": 0.4,
@@ -5209,6 +5044,17 @@
       "image": "/items/carrot-knife-2016.png"
     },
     {
+      "id": "sunset-gun",
+      "name": "Sunset Gun",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/sunset-gun.png"
+    },
+    {
       "id": "green-fire-knife-2017",
       "name": "Green Fire Knife 2017",
       "value": 0.4,
@@ -5240,6 +5086,28 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/roses-knife.png"
+    },
+    {
+      "id": "arctic-knife-2022",
+      "name": "Arctic Knife 2022",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/arctic-knife-2022.png"
+    },
+    {
+      "id": "gingerbread-gun-2022",
+      "name": "Gingerbread Gun 2022",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/gingerbread-gun-2022.png"
     },
     {
       "id": "snowman-knife-2015",
@@ -5286,6 +5154,61 @@
       "image": "/items/predator-knife.png"
     },
     {
+      "id": "wrapped-gun-2015",
+      "name": "Wrapped Gun 2015",
+      "value": 0.4,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/wrapped-gun-2015.png"
+    },
+    {
+      "id": "chroma-chromatic-gun",
+      "name": "Chromatic Gun",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/chroma-chromatic-gun.png"
+    },
+    {
+      "id": "frozen-gun-2025",
+      "name": "Frozen Gun 2025",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/frozen-gun-2025.png"
+    },
+    {
+      "id": "wrapped-knife-2015",
+      "name": "Wrapped Knife 2015",
+      "value": 0.4,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/wrapped-knife-2015.png"
+    },
+    {
+      "id": "brains-knife-2016",
+      "name": "Brains Knife 2016",
+      "value": 0.4,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/brains-knife-2016.png"
+    },
+    {
       "id": "bunny",
       "name": "Bunny",
       "value": 0.4,
@@ -5297,6 +5220,17 @@
       "image": "/items/bunny.png"
     },
     {
+      "id": "energized-knife-2025",
+      "name": "Energized Knife 2025",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/energized-knife-2025.png"
+    },
+    {
       "id": "goo-knife",
       "name": "Goo Knife",
       "value": 0.4,
@@ -5306,6 +5240,61 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/goo-knife.png"
+    },
+    {
+      "id": "elf-gun-2015",
+      "name": "Elf Gun 2015",
+      "value": 0.4,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/elf-gun-2015.png"
+    },
+    {
+      "id": "apocalypse-knife-2022",
+      "name": "Apocalypse Knife 2022",
+      "value": 0.4,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/apocalypse-knife-2022.png"
+    },
+    {
+      "id": "ginger-knife-2015",
+      "name": "Ginger Knife 2015",
+      "value": 0.4,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/ginger-knife-2015.png"
+    },
+    {
+      "id": "ginger-gun-2015",
+      "name": "Ginger Gun 2015",
+      "value": 0.4,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/ginger-gun-2015.png"
+    },
+    {
+      "id": "blossom-knife",
+      "name": "Blossom Knife",
+      "value": 0.4,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/blossom-knife.png"
     },
     {
       "id": "ornament2-gun-2015",
@@ -5352,92 +5341,15 @@
       "image": "/items/ornament1-gun-2015.png"
     },
     {
-      "id": "frosted-gun-2019",
-      "name": "Frosted Gun 2019",
-      "value": 0.3,
+      "id": "gothic-knife-2021",
+      "name": "Gothic Knife 2021",
+      "value": 0.4,
       "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
       "type": "Knife",
       "chroma": false,
-      "image": "/items/frosted-gun-2019.png"
-    },
-    {
-      "id": "webbed-knife-2019",
-      "name": "Webbed Knife 2019",
-      "value": 0.3,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/webbed-knife-2019.png"
-    },
-    {
-      "id": "watcher-knife-2021",
-      "name": "Watcher Knife 2021",
-      "value": 0.3,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/watcher-knife-2021.png"
-    },
-    {
-      "id": "magma-knife-2021",
-      "name": "Magma Knife 2021",
-      "value": 0.3,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/magma-knife-2021.png"
-    },
-    {
-      "id": "infected-knife",
-      "name": "Infected Knife",
-      "value": 0.3,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/infected-knife.png"
-    },
-    {
-      "id": "icicles-knife-2018",
-      "name": "Icicles Knife 2018",
-      "value": 0.3,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/icicles-knife-2018.png"
-    },
-    {
-      "id": "frostfade-gun-2023",
-      "name": "Frostfade Gun 2023",
-      "value": 0.3,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/frostfade-gun-2023.png"
-    },
-    {
-      "id": "frozen-knife-2025",
-      "name": "Frozen Knife 2025",
-      "value": 0.3,
-      "demand": 1,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/frozen-knife-2025.png"
+      "image": "/items/gothic-knife-2021.png"
     },
     {
       "id": "snowy-knife-2017",
@@ -5449,6 +5361,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/snowy-knife-2017.png"
+    },
+    {
+      "id": "frosted-gun-2019",
+      "name": "Frosted Gun 2019",
+      "value": 0.3,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/frosted-gun-2019.png"
     },
     {
       "id": "electro",
@@ -5473,6 +5396,17 @@
       "image": "/items/palms-gun.png"
     },
     {
+      "id": "magma-knife-2021",
+      "name": "Magma Knife 2021",
+      "value": 0.3,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/magma-knife-2021.png"
+    },
+    {
       "id": "steambird",
       "name": "Steambird",
       "value": 0.3,
@@ -5482,6 +5416,17 @@
       "type": "Pet",
       "chroma": false,
       "image": "/items/steambird.png"
+    },
+    {
+      "id": "frostfade-gun-2023",
+      "name": "Frostfade Gun 2023",
+      "value": 0.3,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/frostfade-gun-2023.png"
     },
     {
       "id": "traveller",
@@ -5504,6 +5449,17 @@
       "type": "Pet",
       "chroma": false,
       "image": "/items/icey.png"
+    },
+    {
+      "id": "infected-knife",
+      "name": "Infected Knife",
+      "value": 0.3,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/infected-knife.png"
     },
     {
       "id": "ice-phoenix",
@@ -5559,6 +5515,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/midnight-knife.png"
+    },
+    {
+      "id": "watcher-knife-2021",
+      "name": "Watcher Knife 2021",
+      "value": 0.3,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/watcher-knife-2021.png"
     },
     {
       "id": "cursed-gun-2024",
@@ -5627,6 +5594,28 @@
       "image": "/items/frostbird.png"
     },
     {
+      "id": "frozen-knife-2025",
+      "name": "Frozen Knife 2025",
+      "value": 0.3,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/frozen-knife-2025.png"
+    },
+    {
+      "id": "icicles-knife-2018",
+      "name": "Icicles Knife 2018",
+      "value": 0.3,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/icicles-knife-2018.png"
+    },
+    {
       "id": "hunter-knife-2022",
       "name": "Hunter Knife 2022",
       "value": 0.3,
@@ -5693,6 +5682,17 @@
       "image": "/items/tnl-knife.png"
     },
     {
+      "id": "webbed-knife-2019",
+      "name": "Webbed Knife 2019",
+      "value": 0.3,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/webbed-knife-2019.png"
+    },
+    {
       "id": "phoenix",
       "name": "Phoenix",
       "value": 0.3,
@@ -5704,26 +5704,15 @@
       "image": "/items/phoenix.png"
     },
     {
-      "id": "gifts-gun-2019",
-      "name": "Gifts Gun 2019",
+      "id": "ripper-gun-2020",
+      "name": "Ripper Gun 2020",
       "value": 0.2,
-      "demand": 3,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
       "type": "Gun",
       "chroma": false,
-      "image": "/items/gifts-gun-2019.png"
-    },
-    {
-      "id": "gifts-2015",
-      "name": "Gifts 2015",
-      "value": 0.2,
-      "demand": 3,
-      "rarity": "Misc",
-      "rarityColor": "#9bb39a",
-      "type": "Misc",
-      "chroma": false,
-      "image": "/items/gifts-2015.png"
+      "image": "/items/ripper-gun-2020.png"
     },
     {
       "id": "snowflakes-knife-2019",
@@ -5735,50 +5724,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/snowflakes-knife-2019.png"
-    },
-    {
-      "id": "steel-knife-2023",
-      "name": "Steel Knife 2023",
-      "value": 0.2,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/steel-knife-2023.png"
-    },
-    {
-      "id": "ghastly-knife-2023",
-      "name": "Ghastly Knife 2023",
-      "value": 0.2,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/ghastly-knife-2023.png"
-    },
-    {
-      "id": "ginger-knife-2018",
-      "name": "Ginger Knife 2018",
-      "value": 0.2,
-      "demand": 1,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/ginger-knife-2018.png"
-    },
-    {
-      "id": "ripper-gun-2020",
-      "name": "Ripper Gun 2020",
-      "value": 0.2,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/ripper-gun-2020.png"
     },
     {
       "id": "fire-bear",
@@ -5803,6 +5748,17 @@
       "image": "/items/ribbons-knife-2021.png"
     },
     {
+      "id": "steel-knife-2023",
+      "name": "Steel Knife 2023",
+      "value": 0.2,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/steel-knife-2023.png"
+    },
+    {
       "id": "molten-gun",
       "name": "Molten Gun",
       "value": 0.2,
@@ -5823,6 +5779,28 @@
       "type": "Pet",
       "chroma": true,
       "image": "/items/fire-cat.png"
+    },
+    {
+      "id": "gifts-gun-2019",
+      "name": "Gifts Gun 2019",
+      "value": 0.2,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/gifts-gun-2019.png"
+    },
+    {
+      "id": "ghastly-knife-2023",
+      "name": "Ghastly Knife 2023",
+      "value": 0.2,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/ghastly-knife-2023.png"
     },
     {
       "id": "snowflake-key-2018",
@@ -5946,6 +5924,17 @@
       "image": "/items/cupid-knife-2026.png"
     },
     {
+      "id": "gifts-2015",
+      "name": "Gifts 2015",
+      "value": 0.2,
+      "demand": 1,
+      "rarity": "Misc",
+      "rarityColor": "#9bb39a",
+      "type": "Misc",
+      "chroma": false,
+      "image": "/items/gifts-2015.png"
+    },
+    {
       "id": "logcutter-knife-2024",
       "name": "Logcutter Knife 2024",
       "value": 0.2,
@@ -5957,6 +5946,17 @@
       "image": "/items/logcutter-knife-2024.png"
     },
     {
+      "id": "ginger-knife-2018",
+      "name": "Ginger Knife 2018",
+      "value": 0.2,
+      "demand": 2,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/ginger-knife-2018.png"
+    },
+    {
       "id": "aquarium-knife-2025",
       "name": "Aquarium Knife 2025",
       "value": 0.2,
@@ -5966,50 +5966,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/aquarium-knife-2025.png"
-    },
-    {
-      "id": "candleflame-gun-2024",
-      "name": "Candleflame Gun 2024",
-      "value": 0.1,
-      "demand": 1,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/candleflame-gun-2024.png"
-    },
-    {
-      "id": "snowflake-knife-2022",
-      "name": "Snowflake Knife 2022",
-      "value": 0.1,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/snowflake-knife-2022.png"
-    },
-    {
-      "id": "wraith-gun-2022",
-      "name": "Wraith Gun 2022",
-      "value": 0.1,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/wraith-gun-2022.png"
-    },
-    {
-      "id": "gingerbread-knife-2022",
-      "name": "Gingerbread Knife 2022",
-      "value": 0.1,
-      "demand": 1,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/gingerbread-knife-2022.png"
     },
     {
       "id": "frostflame-knife-2024",
@@ -6089,6 +6045,17 @@
       "image": "/items/plasmite-knife.png"
     },
     {
+      "id": "wraith-gun-2022",
+      "name": "Wraith Gun 2022",
+      "value": 0.1,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/wraith-gun-2022.png"
+    },
+    {
       "id": "predator-gun",
       "name": "Predator Gun",
       "value": 0.1,
@@ -6133,6 +6100,17 @@
       "image": "/items/spitfire-gun.png"
     },
     {
+      "id": "gingerbread-knife-2022",
+      "name": "Gingerbread Knife 2022",
+      "value": 0.1,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/gingerbread-knife-2022.png"
+    },
+    {
       "id": "teddy",
       "name": "Teddy",
       "value": 0.1,
@@ -6142,6 +6120,17 @@
       "type": "Pet",
       "chroma": false,
       "image": "/items/teddy.png"
+    },
+    {
+      "id": "snowflake-knife-2022",
+      "name": "Snowflake Knife 2022",
+      "value": 0.1,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/snowflake-knife-2022.png"
     },
     {
       "id": "butterflies-gun",
@@ -6221,6 +6210,17 @@
       "image": "/items/storm-knife-2024.png"
     },
     {
+      "id": "candleflame-gun-2024",
+      "name": "Candleflame Gun 2024",
+      "value": 0.1,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/candleflame-gun-2024.png"
+    },
+    {
       "id": "pool-noodle-knife",
       "name": "Pool Noodle Knife",
       "value": 0.1,
@@ -6265,50 +6265,6 @@
       "image": "/items/painted-knife.png"
     },
     {
-      "id": "sunset-gun-2026",
-      "name": "Sunset Gun 2026",
-      "value": 0.075,
-      "demand": 5,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/sunset-gun-2026.png"
-    },
-    {
-      "id": "bones-knife-2020",
-      "name": "Bones Knife 2020",
-      "value": 0.075,
-      "demand": 3,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/bones-knife-2020.png"
-    },
-    {
-      "id": "pine-gun-2019",
-      "name": "Pine Gun 2019",
-      "value": 0.075,
-      "demand": 3,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/pine-gun-2019.png"
-    },
-    {
-      "id": "hazard-knife-2022",
-      "name": "Hazard Knife 2022",
-      "value": 0.075,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/hazard-knife-2022.png"
-    },
-    {
       "id": "xeno-knife-2025",
       "name": "Xeno Knife 2025",
       "value": 0.075,
@@ -6351,6 +6307,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/hologram-gun-2025.png"
+    },
+    {
+      "id": "sunset-gun-2026",
+      "name": "Sunset Gun 2026",
+      "value": 0.075,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/sunset-gun-2026.png"
     },
     {
       "id": "spearmint-gun-2025",
@@ -6408,6 +6375,17 @@
       "image": "/items/curse-knife-2022.png"
     },
     {
+      "id": "bones-knife-2020",
+      "name": "Bones Knife 2020",
+      "value": 0.075,
+      "demand": 2,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/bones-knife-2020.png"
+    },
+    {
       "id": "sunny-gun",
       "name": "Sunny Gun",
       "value": 0.075,
@@ -6450,6 +6428,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/frostflame-gun-2024.png"
+    },
+    {
+      "id": "hazard-knife-2022",
+      "name": "Hazard Knife 2022",
+      "value": 0.075,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/hazard-knife-2022.png"
     },
     {
       "id": "mistletoe-gun-2022",
@@ -6507,37 +6496,15 @@
       "image": "/items/rb-knife.png"
     },
     {
-      "id": "waves-knife-2024",
-      "name": "Waves Knife 2024",
-      "value": 0.05,
-      "demand": 4,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
+      "id": "pine-gun-2019",
+      "name": "Pine Gun 2019",
+      "value": 0.075,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
       "type": "Knife",
       "chroma": false,
-      "image": "/items/waves-knife-2024.png"
-    },
-    {
-      "id": "floral-gun",
-      "name": "Floral Gun",
-      "value": 0.05,
-      "demand": 2,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/floral-gun.png"
-    },
-    {
-      "id": "snowflake-gun-2023",
-      "name": "Snowflake Gun 2023",
-      "value": 0.05,
-      "demand": 1,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/snowflake-gun-2023.png"
+      "image": "/items/pine-gun-2019.png"
     },
     {
       "id": "hologram-knife-2025",
@@ -6606,6 +6573,17 @@
       "image": "/items/snowglobe-knife-2023.png"
     },
     {
+      "id": "waves-knife-2024",
+      "name": "Waves Knife 2024",
+      "value": 0.05,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/waves-knife-2024.png"
+    },
+    {
       "id": "yummy-knife-2026",
       "name": "Yummy Knife 2026",
       "value": 0.05,
@@ -6637,6 +6615,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/tree-gun-2022.png"
+    },
+    {
+      "id": "snowflake-gun-2023",
+      "name": "Snowflake Gun 2023",
+      "value": 0.05,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/snowflake-gun-2023.png"
     },
     {
       "id": "gingerheart-knife-2024",
@@ -6771,59 +6760,15 @@
       "image": "/items/kraken-knife-2024.png"
     },
     {
-      "id": "rainbow-gun-rare",
-      "name": "Rainbow Gun",
-      "value": 0.025,
-      "demand": 5,
+      "id": "floral-gun",
+      "name": "Floral Gun",
+      "value": 0.05,
+      "demand": 1,
       "rarity": "Rare",
       "rarityColor": "#5bdb49",
       "type": "Gun",
       "chroma": false,
-      "image": "/items/rainbow-gun-rare.png"
-    },
-    {
-      "id": "rainbow-knife-rare",
-      "name": "Rainbow Knife",
-      "value": 0.025,
-      "demand": 5,
-      "rarity": "Rare",
-      "rarityColor": "#5bdb49",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/rainbow-knife-rare.png"
-    },
-    {
-      "id": "wrapped-gun-2024",
-      "name": "Wrapped Gun 2024",
-      "value": 0.025,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/wrapped-gun-2024.png"
-    },
-    {
-      "id": "snowflake-gun-2018",
-      "name": "Snowflake Gun 2018",
-      "value": 0.025,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/snowflake-gun-2018.png"
-    },
-    {
-      "id": "holly-knife-2018",
-      "name": "Holly Knife 2018",
-      "value": 0.025,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/holly-knife-2018.png"
+      "image": "/items/floral-gun.png"
     },
     {
       "id": "melon-gun",
@@ -6890,6 +6835,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/forest-gun-2024.png"
+    },
+    {
+      "id": "snowflake-gun-2018",
+      "name": "Snowflake Gun 2018",
+      "value": 0.025,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/snowflake-gun-2018.png"
     },
     {
       "id": "krypto-knife",
@@ -6991,6 +6947,17 @@
       "image": "/items/squire-knife.png"
     },
     {
+      "id": "rainbow-gun-rare",
+      "name": "Rainbow Gun",
+      "value": 0.025,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/rainbow-gun-rare.png"
+    },
+    {
       "id": "galactic-gun",
       "name": "Galactic Gun",
       "value": 0.025,
@@ -7055,6 +7022,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/hacker-gun.png"
+    },
+    {
+      "id": "rainbow-knife-rare",
+      "name": "Rainbow Knife",
+      "value": 0.025,
+      "demand": 1,
+      "rarity": "Rare",
+      "rarityColor": "#5bdb49",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/rainbow-knife-rare.png"
     },
     {
       "id": "black-knife",
@@ -7145,6 +7123,17 @@
       "image": "/items/frosty-knife-2017.png"
     },
     {
+      "id": "wrapped-gun-2024",
+      "name": "Wrapped Gun 2024",
+      "value": 0.025,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/wrapped-gun-2024.png"
+    },
+    {
       "id": "ornaments-gun-2020",
       "name": "Ornaments Gun 2020",
       "value": 0.025,
@@ -7156,92 +7145,15 @@
       "image": "/items/ornaments-gun-2020.png"
     },
     {
-      "id": "brains-gun-2022",
-      "name": "Brains Gun 2022",
-      "value": 0.019,
-      "demand": 3,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/brains-gun-2022.png"
-    },
-    {
-      "id": "floral-gun-2026",
-      "name": "Floral Gun 2026",
-      "value": 0.019,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/floral-gun-2026.png"
-    },
-    {
-      "id": "snowflake-gun-2022",
-      "name": "Snowflake Gun 2022",
-      "value": 0.019,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/snowflake-gun-2022.png"
-    },
-    {
-      "id": "stars-gun-2023",
-      "name": "Stars Gun 2023",
-      "value": 0.019,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/stars-gun-2023.png"
-    },
-    {
-      "id": "gingerbread-gun-2021",
-      "name": "Gingerbread Gun 2021",
-      "value": 0.019,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/gingerbread-gun-2021.png"
-    },
-    {
-      "id": "monster-knife-2024",
-      "name": "Monster Knife 2024",
-      "value": 0.019,
+      "id": "holly-knife-2018",
+      "name": "Holly Knife 2018",
+      "value": 0.025,
       "demand": 1,
       "rarity": "Uncommon",
       "rarityColor": "#4da6ff",
       "type": "Knife",
       "chroma": false,
-      "image": "/items/monster-knife-2024.png"
-    },
-    {
-      "id": "gingerbread-gun-2025",
-      "name": "Gingerbread Gun 2025",
-      "value": 0.019,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/gingerbread-gun-2025.png"
-    },
-    {
-      "id": "moons-knife-2024",
-      "name": "Moons Knife 2024",
-      "value": 0.019,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/moons-knife-2024.png"
+      "image": "/items/holly-knife-2018.png"
     },
     {
       "id": "eclipse-knife-2023",
@@ -7442,6 +7354,17 @@
       "image": "/items/deep-sea-knife.png"
     },
     {
+      "id": "gingerbread-gun-2021",
+      "name": "Gingerbread Gun 2021",
+      "value": 0.019,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/gingerbread-gun-2021.png"
+    },
+    {
       "id": "coal-knife-2021",
       "name": "Coal Knife 2021",
       "value": 0.019,
@@ -7486,6 +7409,17 @@
       "image": "/items/treats-gun-2025.png"
     },
     {
+      "id": "floral-gun-2026",
+      "name": "Floral Gun 2026",
+      "value": 0.019,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/floral-gun-2026.png"
+    },
+    {
       "id": "fall-camo-gun-2021",
       "name": "Fall Camo Gun 2021",
       "value": 0.019,
@@ -7517,6 +7451,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/pumpkin-knife-2025.png"
+    },
+    {
+      "id": "brains-gun-2022",
+      "name": "Brains Gun 2022",
+      "value": 0.019,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/brains-gun-2022.png"
     },
     {
       "id": "stockings-gun-2022",
@@ -7585,6 +7530,17 @@
       "image": "/items/pumpkin-2019.png"
     },
     {
+      "id": "snowflake-gun-2022",
+      "name": "Snowflake Gun 2022",
+      "value": 0.019,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/snowflake-gun-2022.png"
+    },
+    {
       "id": "carrot-knife",
       "name": "Carrot Knife",
       "value": 0.019,
@@ -7629,6 +7585,17 @@
       "image": "/items/mummy-gun-2020.png"
     },
     {
+      "id": "monster-knife-2024",
+      "name": "Monster Knife 2024",
+      "value": 0.019,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/monster-knife-2024.png"
+    },
+    {
       "id": "future-knife",
       "name": "Future Knife",
       "value": 0.019,
@@ -7638,6 +7605,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/future-knife.png"
+    },
+    {
+      "id": "stars-gun-2023",
+      "name": "Stars Gun 2023",
+      "value": 0.019,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/stars-gun-2023.png"
     },
     {
       "id": "carrot-gun",
@@ -7662,6 +7640,17 @@
       "image": "/items/decorated-knife.png"
     },
     {
+      "id": "gingerbread-gun-2025",
+      "name": "Gingerbread Gun 2025",
+      "value": 0.019,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/gingerbread-gun-2025.png"
+    },
+    {
       "id": "painted-gun",
       "name": "Painted Gun",
       "value": 0.019,
@@ -7684,6 +7673,17 @@
       "image": "/items/meadow-gun.png"
     },
     {
+      "id": "moons-knife-2024",
+      "name": "Moons Knife 2024",
+      "value": 0.019,
+      "demand": 2,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/moons-knife-2024.png"
+    },
+    {
       "id": "tree-knife-2017",
       "name": "Tree Knife 2017",
       "value": 0.019,
@@ -7704,83 +7704,6 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/wraiths-gun-2021.png"
-    },
-    {
-      "id": "blossom-knife-2026",
-      "name": "Blossom Knife 2026",
-      "value": 0.013,
-      "demand": 6,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/blossom-knife-2026.png"
-    },
-    {
-      "id": "bones-knife-2024",
-      "name": "Bones Knife 2024",
-      "value": 0.013,
-      "demand": 3,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/bones-knife-2024.png"
-    },
-    {
-      "id": "bat",
-      "name": "Bat",
-      "value": 0.013,
-      "demand": 2,
-      "rarity": "Legendary",
-      "rarityColor": "#ff3b3b",
-      "type": "Pet",
-      "chroma": false,
-      "image": "/items/bat.png"
-    },
-    {
-      "id": "wrapped-knife-2024",
-      "name": "Wrapped Knife 2024",
-      "value": 0.013,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/wrapped-knife-2024.png"
-    },
-    {
-      "id": "starry-knife-2026",
-      "name": "Starry Knife 2026",
-      "value": 0.013,
-      "demand": 2,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/starry-knife-2026.png"
-    },
-    {
-      "id": "webs-gun-2022",
-      "name": "Webs Gun 2022",
-      "value": 0.013,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/webs-gun-2022.png"
-    },
-    {
-      "id": "gingerbread-knife-2025",
-      "name": "Gingerbread Knife 2025",
-      "value": 0.013,
-      "demand": 1,
-      "rarity": "Uncommon",
-      "rarityColor": "#4da6ff",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/gingerbread-knife-2025.png"
     },
     {
       "id": "wreaths-knife-2024",
@@ -7838,6 +7761,17 @@
       "image": "/items/snowman-knife-2024.png"
     },
     {
+      "id": "wrapped-knife-2024",
+      "name": "Wrapped Knife 2024",
+      "value": 0.013,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/wrapped-knife-2024.png"
+    },
+    {
       "id": "witchs-brew-knife-2024",
       "name": "Witch's Brew Knife 2024",
       "value": 0.013,
@@ -7882,6 +7816,17 @@
       "image": "/items/candied-knife-2022.png"
     },
     {
+      "id": "bones-knife-2024",
+      "name": "Bones Knife 2024",
+      "value": 0.013,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/bones-knife-2024.png"
+    },
+    {
       "id": "jellyfish-knife",
       "name": "Jellyfish Knife",
       "value": 0.013,
@@ -7924,6 +7869,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/portal-gun-2020.png"
+    },
+    {
+      "id": "webs-gun-2022",
+      "name": "Webs Gun 2022",
+      "value": 0.013,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/webs-gun-2022.png"
     },
     {
       "id": "pumpkin-knife-2020",
@@ -8091,6 +8047,17 @@
       "image": "/items/pumpkin-patch-gun-2025.png"
     },
     {
+      "id": "bat",
+      "name": "Bat",
+      "value": 0.013,
+      "demand": 1,
+      "rarity": "Legendary",
+      "rarityColor": "#ff3b3b",
+      "type": "Pet",
+      "chroma": false,
+      "image": "/items/bat.png"
+    },
+    {
       "id": "sweater-gun-2025",
       "name": "Sweater Gun 2025",
       "value": 0.013,
@@ -8113,6 +8080,28 @@
       "image": "/items/treats-knife-2025.png"
     },
     {
+      "id": "starry-knife-2026",
+      "name": "Starry Knife 2026",
+      "value": 0.013,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/starry-knife-2026.png"
+    },
+    {
+      "id": "blossom-knife-2026",
+      "name": "Blossom Knife 2026",
+      "value": 0.013,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/blossom-knife-2026.png"
+    },
+    {
       "id": "paws-gun-2026",
       "name": "Paws Gun 2026",
       "value": 0.013,
@@ -8124,6 +8113,17 @@
       "image": "/items/paws-gun-2026.png"
     },
     {
+      "id": "gingerbread-knife-2025",
+      "name": "Gingerbread Knife 2025",
+      "value": 0.013,
+      "demand": 1,
+      "rarity": "Uncommon",
+      "rarityColor": "#4da6ff",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/gingerbread-knife-2025.png"
+    },
+    {
       "id": "ornaments-knife-2025",
       "name": "Ornaments Knife 2025",
       "value": 0.013,
@@ -8133,17 +8133,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/ornaments-knife-2025.png"
-    },
-    {
-      "id": "reindeer-knife-2025",
-      "name": "Reindeer Knife 2025",
-      "value": 0.006,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/reindeer-knife-2025.png"
     },
     {
       "id": "santa-dog",
@@ -8608,6 +8597,17 @@
       "image": "/items/bluesteel-knife.png"
     },
     {
+      "id": "reindeer-knife-2025",
+      "name": "Reindeer Knife 2025",
+      "value": 0.006,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/reindeer-knife-2025.png"
+    },
+    {
       "id": "doge",
       "name": "Doge",
       "value": 0.006,
@@ -8628,83 +8628,6 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/ribbon-knife-2023.png"
-    },
-    {
-      "id": "gifts-knife-2024",
-      "name": "Gifts Knife 2024",
-      "value": 0.005,
-      "demand": 3,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/gifts-knife-2024.png"
-    },
-    {
-      "id": "wrapped-knife-2018",
-      "name": "Wrapped Knife 2018",
-      "value": 0.005,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/wrapped-knife-2018.png"
-    },
-    {
-      "id": "elf-knife-2017",
-      "name": "Elf Knife 2017",
-      "value": 0.005,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/elf-knife-2017.png"
-    },
-    {
-      "id": "watcher-gun-2020",
-      "name": "Watcher Gun 2020",
-      "value": 0.005,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/watcher-gun-2020.png"
-    },
-    {
-      "id": "bats-gun-2024",
-      "name": "Bats Gun 2024",
-      "value": 0.005,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/bats-gun-2024.png"
-    },
-    {
-      "id": "haunted-knife-2025",
-      "name": "Haunted Knife 2025",
-      "value": 0.005,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/haunted-knife-2025.png"
-    },
-    {
-      "id": "frozen-knife-2023",
-      "name": "Frozen Knife 2023",
-      "value": 0.005,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/frozen-knife-2023.png"
     },
     {
       "id": "darkness-gun-2022",
@@ -8738,6 +8661,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/carved-gun-2020.png"
+    },
+    {
+      "id": "haunted-knife-2025",
+      "name": "Haunted Knife 2025",
+      "value": 0.005,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/haunted-knife-2025.png"
     },
     {
       "id": "candy-corn-knife-2020",
@@ -8782,6 +8716,39 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/santa-knife-2018.png"
+    },
+    {
+      "id": "elf-knife-2017",
+      "name": "Elf Knife 2017",
+      "value": 0.005,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/elf-knife-2017.png"
+    },
+    {
+      "id": "watcher-gun-2020",
+      "name": "Watcher Gun 2020",
+      "value": 0.005,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/watcher-gun-2020.png"
+    },
+    {
+      "id": "bats-gun-2024",
+      "name": "Bats Gun 2024",
+      "value": 0.005,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/bats-gun-2024.png"
     },
     {
       "id": "carrots-knife",
@@ -8894,6 +8861,17 @@
       "image": "/items/candied-gun-2022.png"
     },
     {
+      "id": "wrapped-knife-2018",
+      "name": "Wrapped Knife 2018",
+      "value": 0.005,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/wrapped-knife-2018.png"
+    },
+    {
       "id": "high-tech-knife",
       "name": "High Tech Knife",
       "value": 0.005,
@@ -8903,6 +8881,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/high-tech-knife.png"
+    },
+    {
+      "id": "frozen-knife-2023",
+      "name": "Frozen Knife 2023",
+      "value": 0.005,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/frozen-knife-2023.png"
     },
     {
       "id": "coal-knife-2017",
@@ -8958,6 +8947,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/graffiti-knife.png"
+    },
+    {
+      "id": "gifts-knife-2024",
+      "name": "Gifts Knife 2024",
+      "value": 0.005,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/gifts-knife-2024.png"
     },
     {
       "id": "wavy-gun",
@@ -9040,7 +9040,7 @@
       "id": "frozen-gun-2022",
       "name": "Frozen Gun 2022",
       "value": 0.003125,
-      "demand": 1,
+      "demand": 0,
       "rarity": "Common",
       "rarityColor": "#c8c8c8",
       "type": "Gun",
@@ -9051,133 +9051,12 @@
       "id": "elf-gun-2023",
       "name": "Elf Gun 2023",
       "value": 0.003,
-      "demand": 2,
+      "demand": 1,
       "rarity": "Common",
       "rarityColor": "#c8c8c8",
       "type": "Gun",
       "chroma": false,
       "image": "/items/elf-gun-2023.png"
-    },
-    {
-      "id": "watcher-knife-2020",
-      "name": "Watcher Knife 2020",
-      "value": 0.003,
-      "demand": 2,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/watcher-knife-2020.png"
-    },
-    {
-      "id": "spider-knife-2023",
-      "name": "Spider Knife 2023",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/spider-knife-2023.png"
-    },
-    {
-      "id": "peppermint-gun-2025",
-      "name": "Peppermint Gun 2025",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/peppermint-gun-2025.png"
-    },
-    {
-      "id": "peppermint-knife-2025",
-      "name": "Peppermint Knife 2025",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/peppermint-knife-2025.png"
-    },
-    {
-      "id": "eyeball-knife-2022",
-      "name": "Eyeball Knife 2022",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/eyeball-knife-2022.png"
-    },
-    {
-      "id": "reindeer-knife-2024",
-      "name": "Reindeer Knife 2024",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/reindeer-knife-2024.png"
-    },
-    {
-      "id": "bats-knife-2024",
-      "name": "Bats Knife 2024",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/bats-knife-2024.png"
-    },
-    {
-      "id": "haunted-knife-2021",
-      "name": "Haunted Knife 2021",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/haunted-knife-2021.png"
-    },
-    {
-      "id": "lights-gun-2025",
-      "name": "Lights Gun 2025",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/lights-gun-2025.png"
-    },
-    {
-      "id": "lights-knife-2025",
-      "name": "Lights Knife 2025",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Knife",
-      "chroma": false,
-      "image": "/items/lights-knife-2025.png"
-    },
-    {
-      "id": "frozen-gun-2023",
-      "name": "Frozen Gun 2023",
-      "value": 0.003,
-      "demand": 1,
-      "rarity": "Common",
-      "rarityColor": "#c8c8c8",
-      "type": "Gun",
-      "chroma": false,
-      "image": "/items/frozen-gun-2023.png"
     },
     {
       "id": "starfish-knife",
@@ -9233,6 +9112,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/leaves-knife-2023.png"
+    },
+    {
+      "id": "watcher-knife-2020",
+      "name": "Watcher Knife 2020",
+      "value": 0.003,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/watcher-knife-2020.png"
     },
     {
       "id": "snowman-knife-2022",
@@ -9400,6 +9290,17 @@
       "image": "/items/stickers-knife-2024-common.png"
     },
     {
+      "id": "eyeball-knife-2022",
+      "name": "Eyeball Knife 2022",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/eyeball-knife-2022.png"
+    },
+    {
       "id": "stickers-knife",
       "name": "Stickers Knife",
       "value": 0.003,
@@ -9409,6 +9310,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/stickers-knife.png"
+    },
+    {
+      "id": "bats-knife-2024",
+      "name": "Bats Knife 2024",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/bats-knife-2024.png"
     },
     {
       "id": "ghosts-knife-2024",
@@ -9499,6 +9411,17 @@
       "image": "/items/igloo-knife-2024.png"
     },
     {
+      "id": "reindeer-knife-2024",
+      "name": "Reindeer Knife 2024",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/reindeer-knife-2024.png"
+    },
+    {
       "id": "striped-gun-2025",
       "name": "Striped Gun 2025",
       "value": 0.003,
@@ -9554,6 +9477,17 @@
       "image": "/items/coal-knife-2022.png"
     },
     {
+      "id": "haunted-knife-2021",
+      "name": "Haunted Knife 2021",
+      "value": 0.003,
+      "demand": 2,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/haunted-knife-2021.png"
+    },
+    {
       "id": "stickers-knife-2021-common",
       "name": "Stickers Knife 2021",
       "value": 0.003,
@@ -9607,6 +9541,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/ufos-gun-2025.png"
+    },
+    {
+      "id": "peppermint-gun-2025",
+      "name": "Peppermint Gun 2025",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/peppermint-gun-2025.png"
     },
     {
       "id": "pumpkin-2020",
@@ -9741,6 +9686,17 @@
       "image": "/items/candycorn-knife-2025.png"
     },
     {
+      "id": "lights-gun-2025",
+      "name": "Lights Gun 2025",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/lights-gun-2025.png"
+    },
+    {
       "id": "cherries-gun-2026",
       "name": "Cherries Gun 2026",
       "value": 0.003,
@@ -9750,6 +9706,17 @@
       "type": "Gun",
       "chroma": false,
       "image": "/items/cherries-gun-2026.png"
+    },
+    {
+      "id": "lights-knife-2025",
+      "name": "Lights Knife 2025",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/lights-knife-2025.png"
     },
     {
       "id": "candies-2016",
@@ -9818,6 +9785,28 @@
       "image": "/items/tourist-knife-2026.png"
     },
     {
+      "id": "peppermint-knife-2025",
+      "name": "Peppermint Knife 2025",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/peppermint-knife-2025.png"
+    },
+    {
+      "id": "frozen-gun-2023",
+      "name": "Frozen Gun 2023",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Gun",
+      "chroma": false,
+      "image": "/items/frozen-gun-2023.png"
+    },
+    {
       "id": "sandy-gun",
       "name": "Sandy Gun",
       "value": 0.003,
@@ -9838,6 +9827,17 @@
       "type": "Knife",
       "chroma": false,
       "image": "/items/candy-corn-knife-2022.png"
+    },
+    {
+      "id": "spider-knife-2023",
+      "name": "Spider Knife 2023",
+      "value": 0.003,
+      "demand": 1,
+      "rarity": "Common",
+      "rarityColor": "#c8c8c8",
+      "type": "Knife",
+      "chroma": false,
+      "image": "/items/spider-knife-2023.png"
     },
     {
       "id": "pea-gun",
