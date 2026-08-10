@@ -1007,20 +1007,33 @@ img {
 }
 
 .demand-stars {
-  display: inline-flex;
-  gap: 0.12rem;
+  position: relative;
+  display: inline-block;
   margin-top: 0.45rem;
+  height: 1rem;
+  font-size: 0.82rem;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  color: rgba(225, 29, 46, 0.28);
+  user-select: none;
+}
+
+.demand-stars-bg,
+.demand-stars-fill {
+  display: block;
+  white-space: nowrap;
+}
+
+.demand-stars-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  overflow: hidden;
   color: #e11d2e;
 }
 
-.demand-star {
-  display: inline-flex;
-  line-height: 0;
-  opacity: 0.95;
-}
-
-.demand-star svg {
-  display: block;
+.values-sentinel {
+  height: 1px;
+  margin-top: 1rem;
 }
 
 .values-card-value {
@@ -1090,9 +1103,8 @@ img {
     font-size: 0.72rem;
   }
 
-  .demand-star svg {
-    width: 11px;
-    height: 11px;
+  .demand-stars {
+    font-size: 0.74rem;
   }
 
   .values-card-value {

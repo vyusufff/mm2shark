@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { SIDEBAR_FILTERS, type Mm2Item } from '../../data/catalog'
-import { ITEMS, SETS } from '../../data/items'
 import { DemandStars } from './DemandStars'
 
 type SortKey = 'value-desc' | 'value-asc' | 'name' | 'demand'
+
+const PAGE = 48
 
 function formatValue(value: number) {
   if (!Number.isFinite(value)) return '0'
@@ -46,15 +47,50 @@ function writeParams(filter: string, sort: SortKey, q: string) {
   window.history.replaceState(null, '', next)
 }
 
-export function ValueList() {
-  const items = ITEMS
-  const sets = SETS
+function toWebpSrc(src: string) {
+  if (!src) return src
+  if (src.endsWith('.webp')) return src
+  return src.replace(/\.(png|jpe?g|gif)$/i, '.webp')
+}
 
+export function ValueList() {
   const initial = readParams()
+  const [items, setItems] = useState<Mm2Item[]>([])
+  const [sets, setSets] = useState<Mm2Item[]>([])
+  const [ready, setReady] = useState(false)
   const [query, setQuery] = useState(initial.q)
   const [filter, setFilter] = useState(initial.filter)
   const [sort, setSort] = useState<SortKey>(initial.sort)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [visible, setVisible] = useState(PAGE)
+  const sentinelRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      try {
+        const [itemsRes, setsRes] = await Promise.all([
+          fetch('/data/items.json'),
+          fetch('/data/sets.json'),
+        ])
+        const itemsJson = await itemsRes.json()
+        const setsJson = await setsRes.json()
+        if (cancelled) return
+        setItems((itemsJson.items || []) as Mm2Item[])
+        setSets((setsJson.sets || []) as Mm2Item[])
+      } catch {
+        if (!cancelled) {
+          setItems([])
+          setSets([])
+        }
+      } finally {
+        if (!cancelled) setReady(true)
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
   const pool = useMemo(() => [...items, ...sets] as Mm2Item[], [items, sets])
 
@@ -90,8 +126,25 @@ export function ValueList() {
 
   useEffect(() => {
     writeParams(filter, sort, query)
+    setVisible(PAGE)
   }, [filter, sort, query])
 
+  useEffect(() => {
+    const el = sentinelRef.current
+    if (!el) return
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setVisible((n) => Math.min(n + PAGE, filtered.length))
+        }
+      },
+      { rootMargin: '600px 0px' },
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [filtered.length])
+
+  const shown = filtered.slice(0, visible)
   const activeLabel =
     SIDEBAR_FILTERS.find((f) => f.id === filter)?.label || 'All Items'
 
@@ -126,7 +179,7 @@ export function ValueList() {
                 }}
               >
                 <span>{f.label}</span>
-                <em>{counts[f.id] ?? 0}</em>
+                <em>{ready ? (counts[f.id] ?? 0) : '—'}</em>
               </button>
             ))}
           </nav>
@@ -154,50 +207,65 @@ export function ValueList() {
           </div>
 
           <p className="values-meta">
-            Showing <strong>{filtered.length}</strong> · {activeLabel}
+            {ready ? (
+              <>
+                Showing <strong>{shown.length}</strong>
+                {shown.length < filtered.length ? ` of ${filtered.length}` : ''} · {activeLabel}
+              </>
+            ) : (
+              <>Loading values…</>
+            )}
           </p>
 
           <div className="values-grid">
-            {filtered.map((item) => (
-              <article key={item.id} className="values-card">
-                <div className="values-card-img">
-                  {item.image ? (
-                    <img
-                      src={item.image}
-                      alt=""
-                      width={96}
-                      height={96}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  ) : (
-                    <span className="values-card-empty">?</span>
-                  )}
-                </div>
-                <div className="values-card-body">
-                  <h2>{item.name}</h2>
-                  <p
-                    className={
-                      item.rarity === 'Chroma' ? 'rarity-chroma' : 'values-card-rarity'
-                    }
-                    style={
-                      item.rarity !== 'Chroma'
-                        ? { color: item.rarityColor || undefined }
-                        : undefined
-                    }
-                  >
-                    {item.rarity} · {item.type}
-                  </p>
-                  <DemandStars demand={item.demand} />
-                  <p className="values-card-value">{formatValue(item.value)}</p>
-                </div>
-              </article>
-            ))}
+            {shown.map((item) => {
+              const src = toWebpSrc(item.image || '')
+              return (
+                <article key={item.id} className="values-card">
+                  <div className="values-card-img">
+                    {src ? (
+                      <img
+                        src={src}
+                        alt=""
+                        width={96}
+                        height={96}
+                        loading="lazy"
+                        decoding="async"
+                        onError={(e) => {
+                          const img = e.currentTarget
+                          if (item.image && img.src !== item.image) img.src = item.image
+                        }}
+                      />
+                    ) : (
+                      <span className="values-card-empty">?</span>
+                    )}
+                  </div>
+                  <div className="values-card-body">
+                    <h2>{item.name}</h2>
+                    <p
+                      className={
+                        item.rarity === 'Chroma' ? 'rarity-chroma' : 'values-card-rarity'
+                      }
+                      style={
+                        item.rarity !== 'Chroma'
+                          ? { color: item.rarityColor || undefined }
+                          : undefined
+                      }
+                    >
+                      {item.rarity} · {item.type}
+                    </p>
+                    <DemandStars demand={item.demand} />
+                    <p className="values-card-value">{formatValue(item.value)}</p>
+                  </div>
+                </article>
+              )
+            })}
           </div>
 
-          {filtered.length === 0 && (
+          {ready && filtered.length === 0 && (
             <p className="values-empty">No items match this filter.</p>
           )}
+          {shown.length < filtered.length && <div ref={sentinelRef} className="values-sentinel" />}
         </div>
       </div>
     </section>

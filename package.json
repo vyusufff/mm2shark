@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "sync:values": "python scripts/sync_traderie.py",
-    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=mm2shark"
+    "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=mm2shark",
+    "optimize:images": "node scripts/optimize_images.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.2",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@astrojs/cloudflare": "^14.2.0",
+    "sharp": "^0.35.3",
     "wrangler": "^4.120.0"
   }
 }
