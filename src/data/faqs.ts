@@ -1,7 +1,7 @@
 export const faqs = [
   {
     q: 'What is MM2Shark?',
-    a: 'MM2Shark.com is an independent Murder Mystery 2 value list and trade calculator. Use it to check item values, demand, and whether a trade looks fair before you accept.',
+    a: 'MM2Shark.com is a Murder Mystery 2 value list and trade calculator. Check item values, demand, and whether a trade is Win, Fair, or Lose before you accept. Built for MM2 traders — not affiliated with Roblox or Nikilis.',
   },
   {
     q: 'How are values measured?',

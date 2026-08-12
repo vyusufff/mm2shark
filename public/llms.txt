@@ -1,6 +1,8 @@
 # MM2Shark
 
-Murder Mystery 2 value list and trade calculator.
+Murder Mystery 2 value list and trade calculator at https://mm2shark.com.
+
+Check item values, demand, and whether a trade is Win, Fair, or Lose before you accept.
 
 ## Site
 
@@ -17,5 +19,5 @@ Murder Mystery 2 value list and trade calculator.
 
 ## Notes
 
-MM2Shark is a fan-made unofficial site. Not affiliated with Roblox or Nikilis.
+MM2Shark is fan-made and unofficial. Not affiliated with Roblox or Nikilis.
 Values are community estimates from public trading data (Traderie).
