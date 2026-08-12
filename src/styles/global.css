@@ -1320,7 +1320,7 @@ img {
   display: grid;
   place-items: center;
   padding: 0.45rem 0.35rem 0.55rem;
-  background: #101218;
+  background: #12131a;
 }
 
 .calc-slot-art img {
@@ -1365,7 +1365,7 @@ img {
 
 .calc-slot.is-empty {
   cursor: default;
-  background: #0a0b0e;
+  background: #12131a;
 }
 
 .calc-slot.is-add {
@@ -1504,29 +1504,16 @@ img {
   display: grid;
   grid-template-columns: 1fr 5.75rem;
   gap: 0.65rem;
+  align-items: end;
   padding: 0 1.05rem 0.75rem;
   flex-shrink: 0;
 }
 
-.picker-toolbar > input {
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: #08090c;
-  color: var(--text);
-  border-radius: 12px;
-  padding: 0.78rem 0.9rem;
-  font: inherit;
-}
-
-.picker-toolbar > input:focus,
-.picker-amount input:focus {
-  outline: none;
-  border-color: rgba(225, 29, 46, 0.55);
-}
-
+.picker-search,
 .picker-amount {
   display: grid;
   gap: 0.28rem;
+  min-width: 0;
   font-size: 0.68rem;
   color: var(--muted);
   text-transform: uppercase;
@@ -1534,16 +1521,39 @@ img {
   font-weight: 700;
 }
 
+.picker-search input,
 .picker-amount input {
   width: 100%;
+  box-sizing: border-box;
+  height: 2.75rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: #08090c;
+  background: #0d0e12;
   color: var(--text);
   border-radius: 12px;
-  padding: 0.72rem 0.4rem;
+  padding: 0 0.9rem;
   font: inherit;
+  font-size: 1rem;
   font-weight: 700;
+}
+
+.picker-amount input {
+  padding: 0 0.4rem;
   text-align: center;
+  /* no spinner — text + inputMode numeric */
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.picker-amount input::-webkit-outer-spin-button,
+.picker-amount input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.picker-search input:focus,
+.picker-amount input:focus {
+  outline: none;
+  border-color: rgba(225, 29, 46, 0.55);
 }
 
 .picker-rarities {
@@ -1854,13 +1864,10 @@ img {
     padding: 0 0.85rem 0.55rem;
   }
 
-  .picker-toolbar > input {
-    padding: 0.65rem 0.7rem;
-    font-size: 16px; /* iOS: avoid zoom-on-focus */
-  }
-
+  .picker-search input,
   .picker-amount input {
-    font-size: 16px;
+    height: 2.6rem;
+    font-size: 16px; /* iOS: avoid zoom-on-focus */
   }
 
   .picker-rarities {

@@ -89,7 +89,7 @@ export function Calculator() {
   const [pickerSide, setPickerSide] = useState<Side | null>(null)
   const [query, setQuery] = useState('')
   const [rarity, setRarity] = useState<(typeof RARITY_FILTERS)[number]>('All')
-  const [amount, setAmount] = useState(1)
+  const [amountText, setAmountText] = useState('1')
   const searchRef = useRef<HTMLInputElement>(null)
 
   const youValue = sideTotal(you)
@@ -159,7 +159,31 @@ export function Calculator() {
     setPickerSide(side)
     setQuery('')
     setRarity('All')
-    setAmount(1)
+    setAmountText('1')
+  }
+
+  function parseAmount() {
+    const n = Math.floor(Number(amountText))
+    if (!Number.isFinite(n) || n < 1) return 1
+    return Math.min(MAX_AMOUNT, n)
+  }
+
+  function onAmountChange(raw: string) {
+    const digits = raw.replace(/\D/g, '')
+    if (digits === '') {
+      setAmountText('')
+      return
+    }
+    const n = Number(digits)
+    if (!Number.isFinite(n)) {
+      setAmountText('')
+      return
+    }
+    setAmountText(String(Math.min(MAX_AMOUNT, n)))
+  }
+
+  function onAmountBlur() {
+    setAmountText(String(parseAmount()))
   }
 
   function removeSlot(side: Side, index: number) {
@@ -173,7 +197,7 @@ export function Calculator() {
 
   function addItem(item: Mm2Item) {
     if (!pickerSide) return
-    const qty = Math.max(1, Math.min(MAX_AMOUNT, Math.floor(amount) || 1))
+    const qty = parseAmount()
     const setter = pickerSide === 'you' ? setYou : setThem
 
     setter((prev) => {
@@ -280,26 +304,29 @@ export function Calculator() {
             </div>
 
             <div className="picker-toolbar">
-              <input
-                ref={searchRef}
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search knives, guns, pets…"
-                autoComplete="off"
-                enterKeyHint="search"
-                inputMode="search"
-              />
+              <label className="picker-search">
+                <span>Search</span>
+                <input
+                  ref={searchRef}
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Knives, guns, pets…"
+                  autoComplete="off"
+                  enterKeyHint="search"
+                  inputMode="search"
+                />
+              </label>
               <label className="picker-amount">
                 <span>Amount</span>
                 <input
-                  type="number"
+                  type="text"
                   inputMode="numeric"
-                  min={1}
-                  max={MAX_AMOUNT}
-                  value={amount}
-                  onChange={(e) =>
-                    setAmount(Math.max(1, Math.min(MAX_AMOUNT, Number(e.target.value) || 1)))
-                  }
+                  pattern="[0-9]*"
+                  enterKeyHint="done"
+                  autoComplete="off"
+                  value={amountText}
+                  onChange={(e) => onAmountChange(e.target.value)}
+                  onBlur={onAmountBlur}
                 />
               </label>
             </div>
