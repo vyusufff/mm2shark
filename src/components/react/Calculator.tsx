@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type CSSProperties } from 'react'
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
 import type { Mm2Item } from '../../data/catalog'
 import { ITEMS, ITEMS_META } from '../../data/items'
 
@@ -90,6 +90,7 @@ export function Calculator() {
   const [query, setQuery] = useState('')
   const [rarity, setRarity] = useState<(typeof RARITY_FILTERS)[number]>('All')
   const [amount, setAmount] = useState(1)
+  const searchRef = useRef<HTMLInputElement>(null)
 
   const youValue = sideTotal(you)
   const themValue = sideTotal(them)
@@ -114,6 +115,42 @@ export function Calculator() {
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
+  }, [pickerSide])
+
+  // Lock page scroll; keep sheet inside the visible viewport (keyboard-safe on mobile).
+  // Do not autofocus search on touch — that pops the keyboard and shoves the close button.
+  useEffect(() => {
+    if (!pickerSide) return
+
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches
+    if (finePointer) {
+      searchRef.current?.focus({ preventScroll: true })
+    }
+
+    const root = document.documentElement
+    const syncViewport = () => {
+      const vv = window.visualViewport
+      const h = vv?.height ?? window.innerHeight
+      const top = vv?.offsetTop ?? 0
+      root.style.setProperty('--picker-vvh', `${Math.round(h)}px`)
+      root.style.setProperty('--picker-vvt', `${Math.round(top)}px`)
+    }
+    syncViewport()
+    window.visualViewport?.addEventListener('resize', syncViewport)
+    window.visualViewport?.addEventListener('scroll', syncViewport)
+    window.addEventListener('resize', syncViewport)
+
+    return () => {
+      document.body.style.overflow = prevOverflow
+      root.style.removeProperty('--picker-vvh')
+      root.style.removeProperty('--picker-vvt')
+      window.visualViewport?.removeEventListener('resize', syncViewport)
+      window.visualViewport?.removeEventListener('scroll', syncViewport)
+      window.removeEventListener('resize', syncViewport)
+    }
   }, [pickerSide])
 
   function openPicker(side: Side) {
@@ -232,23 +269,31 @@ export function Calculator() {
                 <p className="picker-kicker">Add item</p>
                 <h2>{pickerSide === 'you' ? 'You' : 'Them'}</h2>
               </div>
-              <button type="button" className="picker-close" onClick={() => setPickerSide(null)}>
+              <button
+                type="button"
+                className="picker-close"
+                aria-label="Close"
+                onClick={() => setPickerSide(null)}
+              >
                 ✕
               </button>
             </div>
 
             <div className="picker-toolbar">
               <input
+                ref={searchRef}
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search knives, guns, pets…"
                 autoComplete="off"
-                autoFocus
+                enterKeyHint="search"
+                inputMode="search"
               />
               <label className="picker-amount">
                 <span>Amount</span>
                 <input
                   type="number"
+                  inputMode="numeric"
                   min={1}
                   max={MAX_AMOUNT}
                   value={amount}
