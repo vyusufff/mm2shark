@@ -163,27 +163,33 @@ export function Calculator() {
   }
 
   function parseAmount() {
-    const n = Math.floor(Number(amountText))
+    const n = parseInt(amountText, 10)
     if (!Number.isFinite(n) || n < 1) return 1
     return Math.min(MAX_AMOUNT, n)
   }
 
   function onAmountChange(raw: string) {
-    const digits = raw.replace(/\D/g, '')
-    if (digits === '') {
+    // Allow clearing while typing (fixes mobile "can't delete 1 → becomes 11")
+    if (raw === '') {
       setAmountText('')
       return
     }
-    const n = Number(digits)
-    if (!Number.isFinite(n)) {
-      setAmountText('')
+    if (!/^\d+$/.test(raw)) return
+    const n = parseInt(raw, 10)
+    if (!Number.isFinite(n)) return
+    if (n > MAX_AMOUNT) {
+      setAmountText(String(MAX_AMOUNT))
       return
     }
-    setAmountText(String(Math.min(MAX_AMOUNT, n)))
+    setAmountText(raw)
   }
 
   function onAmountBlur() {
     setAmountText(String(parseAmount()))
+  }
+
+  function bumpAmount(delta: number) {
+    setAmountText(String(Math.max(1, Math.min(MAX_AMOUNT, parseAmount() + delta))))
   }
 
   function removeSlot(side: Side, index: number) {
@@ -316,19 +322,38 @@ export function Calculator() {
                   inputMode="search"
                 />
               </label>
-              <label className="picker-amount">
-                <span>Amount</span>
-                <input
-                  type="text"
-                  inputMode="numeric"
-                  pattern="[0-9]*"
-                  enterKeyHint="done"
-                  autoComplete="off"
-                  value={amountText}
-                  onChange={(e) => onAmountChange(e.target.value)}
-                  onBlur={onAmountBlur}
-                />
-              </label>
+              <div className="picker-amount">
+                <span id="picker-amount-label">Amount</span>
+                <div className="picker-amount-controls">
+                  <button
+                    type="button"
+                    className="picker-amount-btn"
+                    aria-label="Decrease amount"
+                    onClick={() => bumpAmount(-1)}
+                  >
+                    −
+                  </button>
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    enterKeyHint="done"
+                    autoComplete="off"
+                    aria-labelledby="picker-amount-label"
+                    value={amountText}
+                    onChange={(e) => onAmountChange(e.target.value)}
+                    onFocus={(e) => e.currentTarget.select()}
+                    onBlur={onAmountBlur}
+                  />
+                  <button
+                    type="button"
+                    className="picker-amount-btn"
+                    aria-label="Increase amount"
+                    onClick={() => bumpAmount(1)}
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
             </div>
 
             <div className="picker-rarities" role="tablist" aria-label="Rarity filter">
