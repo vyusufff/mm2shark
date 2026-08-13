@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T01:24:10Z",
+  "updatedAt": "2026-08-13T06:12:39Z",
   "source": "traderie",
   "note": "Small Set and Full Small Set excluded.",
   "count": 133,
@@ -588,17 +588,6 @@
       "image": "/items/full-swirly-set.jpg"
     },
     {
-      "id": "collectible-set",
-      "name": "Collectible Set",
-      "value": 71.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/collectible-set.jpg"
-    },
-    {
       "id": "elderwood-set",
       "name": "Elderwood Set",
       "value": 71.0,
@@ -608,6 +597,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/elderwood-set.jpg"
+    },
+    {
+      "id": "collectible-set",
+      "name": "Collectible Set",
+      "value": 71.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/collectible-set.jpg"
     },
     {
       "id": "spectre-set",
@@ -742,17 +742,6 @@
       "image": "/items/full-old-glory-set.jpg"
     },
     {
-      "id": "slasher-set",
-      "name": "Slasher Set",
-      "value": 38.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/slasher-set.jpg"
-    },
-    {
       "id": "old-glory-set",
       "name": "Old Glory Set",
       "value": 38.0,
@@ -762,6 +751,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/old-glory-set.jpg"
+    },
+    {
+      "id": "slasher-set",
+      "name": "Slasher Set",
+      "value": 38.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/slasher-set.jpg"
     },
     {
       "id": "iceflake-set",
@@ -775,17 +775,6 @@
       "image": "/items/iceflake-set.jpg"
     },
     {
-      "id": "icicles-set",
-      "name": "Icicles Set",
-      "value": 35.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/icicles-set.jpg"
-    },
-    {
       "id": "plasma-set",
       "name": "Plasma Set",
       "value": 35.0,
@@ -795,6 +784,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/plasma-set.jpg"
+    },
+    {
+      "id": "icicles-set",
+      "name": "Icicles Set",
+      "value": 35.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/icicles-set.jpg"
     },
     {
       "id": "xmas-collectible-set",
@@ -896,17 +896,6 @@
       "image": "/items/battleaxe-set.jpg"
     },
     {
-      "id": "8-bit-set",
-      "name": "8-Bit Set",
-      "value": 26.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/8-bit-set.jpg"
-    },
-    {
       "id": "eternalcane-set",
       "name": "Eternalcane Set",
       "value": 26.0,
@@ -927,6 +916,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/cookie-set.jpg"
+    },
+    {
+      "id": "8-bit-set",
+      "name": "8-Bit Set",
+      "value": 26.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/8-bit-set.jpg"
     },
     {
       "id": "ice-shard-set",
@@ -962,15 +962,15 @@
       "image": "/items/full-valentine-set.jpg"
     },
     {
-      "id": "colored-seer-set",
-      "name": "Colored Seer Set",
+      "id": "pals-set",
+      "name": "Pals Set",
       "value": 16.0,
-      "demand": 1,
+      "demand": 2,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/colored-seer-set.jpg"
+      "image": "/items/pals-set.jpg"
     },
     {
       "id": "hallows-set",
@@ -984,15 +984,15 @@
       "image": "/items/hallows-set.jpg"
     },
     {
-      "id": "pals-set",
-      "name": "Pals Set",
+      "id": "colored-seer-set",
+      "name": "Colored Seer Set",
       "value": 16.0,
-      "demand": 2,
+      "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/pals-set.jpg"
+      "image": "/items/colored-seer-set.jpg"
     },
     {
       "id": "wrapping-paper-set",
