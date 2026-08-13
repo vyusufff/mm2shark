@@ -5,7 +5,7 @@ export const faqs = [
   },
   {
     q: 'How are values measured?',
-    a: 'Values use Seer value — the common MM2 trading unit based on the Seer knife. A higher Seer value usually means the item is worth more in trades. Demand is shown as 1–5 stars (mapped from market demand).',
+    a: 'Each item has a numeric value used for MM2 trading comparisons. A higher value usually means the item is worth more in trades. Demand is shown as 1–5 stars (mapped from market demand).',
   },
   {
     q: 'What are sets?',

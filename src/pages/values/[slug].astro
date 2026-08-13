@@ -30,7 +30,7 @@ function formatValue(value: number) {
 const valueLabel = formatValue(item.value)
 const isChroma = item.rarity === 'Chroma' || !!item.chroma
 const title = `${item.name} Value (MM2) | MM2Shark`
-const description = `${item.name} Murder Mystery 2 value is ${valueLabel} Seers (${item.rarity}${item.type ? ` · ${item.type}` : ''}). Check demand and compare trades on MM2Shark.`
+const description = `${item.name} Murder Mystery 2 value is ${valueLabel} (${item.rarity}${item.type ? ` · ${item.type}` : ''}). Check demand and compare trades on MM2Shark.`
 
 const related = SLUG_ENTRIES
   .map((e) => e.item)
@@ -73,7 +73,7 @@ const related = SLUG_ENTRIES
         <DemandStars client:load demand={item.demand} />
         <p class="item-value">
           <strong>{valueLabel}</strong>
-          <span>Seer value</span>
+          <span>Value</span>
         </p>
         <div class="item-actions">
           <a class="btn btn-primary" href="/calculator/">Open Calculator</a>
@@ -85,7 +85,7 @@ const related = SLUG_ENTRIES
     <section class="item-blurb">
       <h2>About this value</h2>
       <p>
-        On MM2Shark, <strong>{item.name}</strong> is listed at <strong>{valueLabel}</strong> Seers
+        On MM2Shark, <strong>{item.name}</strong> is listed at <strong>{valueLabel}</strong> value
         with demand shown above. Values are community trading references (not official Roblox or
         Nikilis prices) and update from public market data.
         {
