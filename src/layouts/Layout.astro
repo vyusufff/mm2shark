@@ -22,13 +22,13 @@ const ogImage = Astro.site
 const path = Astro.url.pathname.replace(/\/$/, '') || '/'
 
 const topCta =
-  path === '/values'
+  path === '/values' || path.startsWith('/values/')
     ? { href: '/calculator', label: 'Open Calculator' }
     : path === '/calculator'
       ? { href: '/values', label: 'Open Values' }
       : { href: '/values', label: 'Open Values' }
 
-const isTools = path === '/values' || path === '/calculator'
+const isTools = path === '/values' || path.startsWith('/values/') || path === '/calculator'
 ---
 
 <!doctype html>

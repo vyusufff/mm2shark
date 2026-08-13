@@ -1,6 +1,7 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { SIDEBAR_FILTERS, type Mm2Item } from '../../data/catalog'
 import { ITEMS, SETS } from '../../data/items'
+import { itemHref } from '../../data/slugs'
 import { DemandStars } from './DemandStars'
 
 type SortKey = 'value-desc' | 'value-asc' | 'name' | 'demand'
@@ -28,6 +29,8 @@ function readParams() {
   if (cat === 'sets') filter = 'Set'
   else if (rarity) filter = rarity
   else if (type) filter = type
+  // Legacy knife/gun type links still work even if removed from sidebar
+  if ((filter === 'Knife' || filter === 'Gun') && type) filter = type
   const sort = (sp.get('sort') as SortKey) || 'value-desc'
   return { filter, sort, q: sp.get('q') || '' }
 }
@@ -38,6 +41,7 @@ function writeParams(filter: string, sort: SortKey, q: string) {
     const meta = SIDEBAR_FILTERS.find((f) => f.id === filter)
     if (meta?.kind === 'rarity') sp.set('rarity', filter)
     else if (meta?.kind === 'type') sp.set('type', filter)
+    else if (filter === 'Knife' || filter === 'Gun') sp.set('type', filter)
     else sp.set('filter', filter)
   }
   if (sort !== 'value-desc') sp.set('sort', sort)
@@ -55,6 +59,8 @@ export function ValueList() {
   const [filter, setFilter] = useState(initial.filter)
   const [sort, setSort] = useState<SortKey>(initial.sort)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [menuId, setMenuId] = useState<string | null>(null)
+  const menuRef = useRef<HTMLDivElement | null>(null)
 
   const pool = useMemo(() => [...items, ...sets] as Mm2Item[], [items, sets])
 
@@ -74,6 +80,7 @@ export function ValueList() {
     const meta = SIDEBAR_FILTERS.find((f) => f.id === filter)
     let list = pool.filter((item) => {
       if (q && !item.name.toLowerCase().includes(q)) return false
+      if (filter === 'Knife' || filter === 'Gun') return item.type === filter
       if (!meta || meta.kind === 'all') return true
       if (meta.kind === 'rarity') return item.rarity === meta.id
       return item.type === meta.id
@@ -92,8 +99,37 @@ export function ValueList() {
     writeParams(filter, sort, query)
   }, [filter, sort, query])
 
+  useEffect(() => {
+    if (!menuId) return
+    const onDoc = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setMenuId(null)
+      }
+    }
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setMenuId(null)
+    }
+    document.addEventListener('mousedown', onDoc)
+    window.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('mousedown', onDoc)
+      window.removeEventListener('keydown', onKey)
+    }
+  }, [menuId])
+
   const activeLabel =
-    SIDEBAR_FILTERS.find((f) => f.id === filter)?.label || 'All Items'
+    SIDEBAR_FILTERS.find((f) => f.id === filter)?.label ||
+    (filter === 'Knife' ? 'Knives' : filter === 'Gun' ? 'Guns' : 'All Items')
+
+  async function copyLink(item: Mm2Item) {
+    const url = `${window.location.origin}${itemHref(item)}`
+    try {
+      await navigator.clipboard.writeText(url)
+    } catch {
+      // ignore
+    }
+    setMenuId(null)
+  }
 
   return (
     <section className="values-shell">
@@ -158,41 +194,68 @@ export function ValueList() {
           </p>
 
           <div className="values-grid">
-            {filtered.map((item) => (
-              <article key={item.id} className="values-card">
-                <div className="values-card-img">
-                  {item.image ? (
-                    <img
-                      src={item.image}
-                      alt=""
-                      width={96}
-                      height={96}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  ) : (
-                    <span className="values-card-empty">?</span>
-                  )}
-                </div>
-                <div className="values-card-body">
-                  <h2>{item.name}</h2>
-                  <p
-                    className={
-                      item.rarity === 'Chroma' ? 'rarity-chroma' : 'values-card-rarity'
-                    }
-                    style={
-                      item.rarity !== 'Chroma'
-                        ? { color: item.rarityColor || undefined }
-                        : undefined
-                    }
-                  >
-                    {item.rarity} · {item.type}
-                  </p>
-                  <DemandStars demand={item.demand} />
-                  <p className="values-card-value">{formatValue(item.value)}</p>
-                </div>
-              </article>
-            ))}
+            {filtered.map((item) => {
+              const href = itemHref(item)
+              const open = menuId === item.id
+              return (
+                <article key={item.id} className="values-card">
+                  <div className="values-card-menu" ref={open ? menuRef : undefined}>
+                    <button
+                      type="button"
+                      className="values-card-more"
+                      aria-label={`More for ${item.name}`}
+                      aria-expanded={open}
+                      onClick={() => setMenuId(open ? null : item.id)}
+                    >
+                      ⋯
+                    </button>
+                    {open && (
+                      <div className="values-card-dropdown" role="menu">
+                        <a role="menuitem" href={href}>
+                          Open page
+                        </a>
+                        <button type="button" role="menuitem" onClick={() => copyLink(item)}>
+                          Copy link
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                  <a className="values-card-link" href={href}>
+                    <div className="values-card-img">
+                      {item.image ? (
+                        <img
+                          src={item.image}
+                          alt=""
+                          width={96}
+                          height={96}
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      ) : (
+                        <span className="values-card-empty">?</span>
+                      )}
+                    </div>
+                    <div className="values-card-body">
+                      <h2>{item.name}</h2>
+                      <p
+                        className={
+                          item.rarity === 'Chroma' ? 'rarity-chroma' : 'values-card-rarity'
+                        }
+                        style={
+                          item.rarity !== 'Chroma'
+                            ? { color: item.rarityColor || undefined }
+                            : undefined
+                        }
+                      >
+                        {item.rarity} · {item.type}
+                      </p>
+                      <DemandStars demand={item.demand} />
+                      <p className="values-card-value">{formatValue(item.value)}</p>
+                    </div>
+                  </a>
+                </article>
+              )
+            })}
           </div>
 
           {filtered.length === 0 && (

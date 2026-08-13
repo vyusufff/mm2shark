@@ -1,0 +1,135 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { DemandStars } from '../../components/react/DemandStars'
+import { ITEMS_META } from '../../data/items'
+import { SLUG_ENTRIES, itemHref } from '../../data/slugs'
+import type { Mm2Item } from '../../data/catalog'
+
+export function getStaticPaths() {
+  return SLUG_ENTRIES.map(({ slug, item }) => ({
+    params: { slug },
+    props: { item },
+  }))
+}
+
+interface Props {
+  item: Mm2Item
+}
+
+const { item } = Astro.props
+
+function formatValue(value: number) {
+  if (!Number.isFinite(value)) return '0'
+  if (Number.isInteger(value)) return value.toLocaleString('en-US')
+  return value.toLocaleString('en-US', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2,
+  })
+}
+
+const valueLabel = formatValue(item.value)
+const isChroma = item.rarity === 'Chroma' || !!item.chroma
+const title = `${item.name} Value (MM2) | MM2Shark`
+const description = `${item.name} Murder Mystery 2 value is ${valueLabel} Seers (${item.rarity}${item.type ? ` · ${item.type}` : ''}). Check demand and compare trades on MM2Shark.`
+
+const related = SLUG_ENTRIES
+  .map((e) => e.item)
+  .filter(
+    (x) =>
+      x.id !== item.id &&
+      (x.rarity === item.rarity || x.type === item.type),
+  )
+  .sort((a, b) => Math.abs(a.value - item.value) - Math.abs(b.value - item.value))
+  .slice(0, 6)
+---
+
+<Layout title={title} description={description}>
+  <article class="item-page">
+    <nav class="item-crumb" aria-label="Breadcrumb">
+      <a href="/values/">Value List</a>
+      <span aria-hidden="true">/</span>
+      <span>{item.name}</span>
+    </nav>
+
+    <header class="item-hero">
+      <div class="item-art">
+        {
+          item.image ? (
+            <img src={item.image} alt="" width={160} height={160} />
+          ) : (
+            <span class="item-art-empty">?</span>
+          )
+        }
+      </div>
+      <div class="item-copy">
+        <p class="legal-kicker">MM2 item value</p>
+        <h1>{item.name}</h1>
+        <p
+          class={isChroma ? 'rarity-chroma item-tags' : 'item-tags'}
+          style={!isChroma && item.rarityColor ? { color: item.rarityColor } : undefined}
+        >
+          {item.rarity} · {item.type}
+        </p>
+        <DemandStars client:load demand={item.demand} />
+        <p class="item-value">
+          <strong>{valueLabel}</strong>
+          <span>Seer value</span>
+        </p>
+        <div class="item-actions">
+          <a class="btn btn-primary" href="/calculator/">Open Calculator</a>
+          <a class="btn btn-ghost" href="/values/">Back to list</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="item-blurb">
+      <h2>About this value</h2>
+      <p>
+        On MM2Shark, <strong>{item.name}</strong> is listed at <strong>{valueLabel}</strong> Seers
+        with demand shown above. Values are community trading references (not official Roblox or
+        Nikilis prices) and update from public market data.
+        {
+          ITEMS_META.updatedAt ? (
+            <>
+              {' '}
+              Last synced {new Date(ITEMS_META.updatedAt).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+              })}
+              .
+            </>
+          ) : null
+        }
+      </p>
+      <p>
+        Compare this item in a trade with the{' '}
+        <a href="/calculator/">MM2 trade calculator</a>, or browse the full{' '}
+        <a href="/values/">MM2 value list</a>.
+      </p>
+    </section>
+
+    {
+      related.length > 0 && (
+        <section class="item-related">
+          <h2>Similar items</h2>
+          <div class="item-related-grid">
+            {related.map((r) => (
+              <a class="item-related-card" href={itemHref(r)}>
+                {r.image ? (
+                  <img src={r.image} alt="" width={48} height={48} loading="lazy" />
+                ) : (
+                  <span>?</span>
+                )}
+                <span>
+                  <strong>{r.name}</strong>
+                  <em>{formatValue(r.value)}</em>
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </article>
+</Layout>
