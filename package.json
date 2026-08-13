@@ -7,13 +7,14 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/write_value_redirects.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "sync:values": "python scripts/sync_traderie.py",
     "pages:deploy": "npm run build && wrangler pages deploy dist --project-name=mm2shark",
     "optimize:images": "node scripts/optimize_images.mjs",
-    "make:og": "node scripts/make_og.mjs"
+    "make:og": "node scripts/make_og.mjs",
+    "redirects:values": "node scripts/write_value_redirects.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.2",

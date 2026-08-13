@@ -54,12 +54,31 @@ RARITY_TYPES = {
 }
 
 SKIP_NAMES = {"small set", "full small set"}
+YEAR_SUFFIX = re.compile(r"\s+(19|20)\d{2}\s*$")
 
 
 def slugify(value: str) -> str:
     value = value.strip().lower()
     value = re.sub(r"[^a-z0-9]+", "-", value)
     return value.strip("-") or "item"
+
+
+def strip_trailing_year(name: str) -> str:
+    return YEAR_SUFFIX.sub("", name).strip()
+
+
+def drop_redundant_years(rows: list[dict]) -> None:
+    """Remove year suffixes when the base name is unique (Traderie often appends years)."""
+    buckets: dict[str, list[dict]] = {}
+    for row in rows:
+        base = strip_trailing_year(str(row.get("name") or "")) or str(row.get("name") or "")
+        buckets.setdefault(base.lower(), []).append(row)
+    for group in buckets.values():
+        if len(group) != 1:
+            continue
+        cleaned = strip_trailing_year(str(group[0].get("name") or ""))
+        if cleaned:
+            group[0]["name"] = cleaned
 
 
 def curl_bin() -> str:
@@ -446,6 +465,8 @@ def main() -> None:
     t0 = time.time()
     payload = fetch_api()
     items, sets = normalize(payload)
+    drop_redundant_years(items)
+    drop_redundant_years(sets)
     download_all(items + sets)
 
     for row in items + sets:
