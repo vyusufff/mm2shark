@@ -64,25 +64,21 @@ export function ValueList() {
 
   const pool = useMemo(() => [...items, ...sets] as Mm2Item[], [items, sets])
 
-  const counts = useMemo(() => {
-    const map: Record<string, number> = { all: pool.length }
-    for (const f of SIDEBAR_FILTERS) {
-      if (f.kind === 'all') continue
-      map[f.id] = pool.filter((i) =>
-        f.kind === 'rarity' ? i.rarity === f.id : i.type === f.id,
-      ).length
-    }
-    return map
-  }, [pool])
-
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
     const meta = SIDEBAR_FILTERS.find((f) => f.id === filter)
     let list = pool.filter((item) => {
       if (q && !item.name.toLowerCase().includes(q)) return false
       if (filter === 'Knife' || filter === 'Gun') return item.type === filter
-      if (!meta || meta.kind === 'all') return true
-      if (meta.kind === 'rarity') return item.rarity === meta.id
+      if (!meta || meta.kind === 'all') {
+        // All Items: keep pets in the full catalog
+        return true
+      }
+      if (meta.kind === 'rarity') {
+        // Rarity browse excludes pets — pets live only under Pets
+        if (item.type === 'Pet') return false
+        return item.rarity === meta.id
+      }
       return item.type === meta.id
     })
 
@@ -94,6 +90,21 @@ export function ValueList() {
     })
     return list
   }, [pool, query, filter, sort])
+
+  const counts = useMemo(() => {
+    const map: Record<string, number> = {
+      all: pool.length,
+    }
+    for (const f of SIDEBAR_FILTERS) {
+      if (f.kind === 'all') continue
+      if (f.kind === 'rarity') {
+        map[f.id] = pool.filter((i) => i.rarity === f.id && i.type !== 'Pet').length
+      } else {
+        map[f.id] = pool.filter((i) => i.type === f.id).length
+      }
+    }
+    return map
+  }, [pool])
 
   useEffect(() => {
     writeParams(filter, sort, query)
