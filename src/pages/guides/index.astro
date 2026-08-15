@@ -1,32 +1,82 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import { GUIDES } from '../../data/guides'
+
+const [featured, ...rest] = GUIDES
+
+function formatDate(iso: string) {
+  return new Date(iso + 'T12:00:00').toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  })
+}
 ---
 
 <Layout
   title="Guides | MM2Shark"
   description="Short MM2 notes — summer event, how trading works, and common scams."
 >
-  <article class="guide-index">
-    <header class="legal-head">
+  <div class="blog-index">
+    <header class="blog-index-head">
       <p class="legal-kicker">Guides</p>
-      <h1>Guides</h1>
-      <p>Short notes. Values and the calculator stay on their own pages.</p>
+      <h1>From the desk</h1>
+      <p>What traders actually ask about — then jump to values or the calculator.</p>
+      <div class="item-actions">
+        <a class="btn btn-primary" href="/values/">Value List</a>
+        <a class="btn btn-ghost" href="/calculator/">Calculator</a>
+      </div>
     </header>
 
-    <div class="strips guide-strips">
-      {
-        GUIDES.map((g) => (
-          <a class="strip" href={`/guides/${g.slug}/`}>
-            <strong>{g.kicker}</strong>
-            <p>
-              <span class="guide-strip-title">{g.title}</span>
-              {g.teaser}
+    {
+      featured && (
+        <a
+          class={`blog-cover blog-cover--${featured.cover.tone}`}
+          href={`/guides/${featured.slug}/`}
+        >
+          <div class="blog-cover-media" aria-hidden="true">
+            <img src={featured.cover.image} alt="" width="220" height="220" />
+          </div>
+          <div class="blog-cover-copy">
+            <p class="blog-cover-meta">
+              <span>{featured.kicker}</span>
+              <span aria-hidden="true">·</span>
+              <time datetime={featured.updated}>{formatDate(featured.updated)}</time>
             </p>
-            <em>Read →</em>
-          </a>
-        ))
-      }
-    </div>
-  </article>
+            <h2>{featured.title}</h2>
+            <p>{featured.teaser}</p>
+            <span class="blog-cover-cta">Read the guide</span>
+          </div>
+        </a>
+      )
+    }
+
+    {
+      rest.length > 0 && (
+        <section class="blog-rail" aria-label="More guides">
+          <h2 class="blog-rail-title">More reading</h2>
+          <ul class="blog-rail-list">
+            {rest.map((g) => (
+              <li>
+                <a class={`blog-rail-item blog-rail-item--${g.cover.tone}`} href={`/guides/${g.slug}/`}>
+                  <span class="blog-rail-thumb" aria-hidden="true">
+                    <img src={g.cover.image} alt="" width="72" height="72" loading="lazy" />
+                  </span>
+                  <span class="blog-rail-copy">
+                    <span class="blog-rail-meta">
+                      {g.kicker}
+                      <span aria-hidden="true"> · </span>
+                      <time datetime={g.updated}>{formatDate(g.updated)}</time>
+                    </span>
+                    <strong>{g.title}</strong>
+                    <em>{g.teaser}</em>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </div>
 </Layout>

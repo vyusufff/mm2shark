@@ -7,6 +7,11 @@ export type Guide = {
   description: string
   kicker: string
   updated: string
+  /** Cover art on the guides index */
+  cover: {
+    tone: 'heat' | 'steel' | 'ink'
+    image: string
+  }
   sections: Array<{
     h2: string
     paragraphs: string[]
@@ -23,6 +28,7 @@ export const GUIDES: Guide[] = [
       'Quick notes on the MM2 Summer Event 2026 — Shells, box opens, and checking values before you trade.',
     kicker: 'Event',
     updated: '2026-08-16',
+    cover: { tone: 'heat', image: '/items/chroma-shark-gun.png' },
     sections: [
       {
         h2: 'What’s going on',
@@ -66,6 +72,7 @@ export const GUIDES: Guide[] = [
       'How to unlock and use trading in Murder Mystery 2, plus how to read values so you don’t get underpaid.',
     kicker: 'Basics',
     updated: '2026-08-16',
+    cover: { tone: 'steel', image: '/items/seer-knife.png' },
     sections: [
       {
         h2: 'Unlock it',
@@ -100,6 +107,7 @@ export const GUIDES: Guide[] = [
       'Common Murder Mystery 2 trade scams: last-second swaps, lookalike items, and fake Discord middlemen.',
     kicker: 'Safety',
     updated: '2026-08-16',
+    cover: { tone: 'ink', image: '/items/fang-knife.png' },
     sections: [
       {
         h2: 'Last-second swap',
