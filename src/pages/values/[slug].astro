@@ -1,6 +1,6 @@
 ---
-import ValueHubPage from '../../components/ValueHubPage.astro'
 import ItemValuePage from '../../components/ItemValuePage.astro'
+import ValuesHubBrowse from '../../components/ValuesHubBrowse.astro'
 import { SLUG_ENTRIES } from '../../data/slugs'
 import { VALUE_HUBS, HUB_SLUGS } from '../../data/hubs'
 import type { Mm2Item } from '../../data/catalog'
@@ -25,4 +25,4 @@ type Props = { mode: 'hub'; hub: ValueHub } | { mode: 'item'; item: Mm2Item }
 const props = Astro.props as Props
 ---
 
-{props.mode === 'hub' ? <ValueHubPage hub={props.hub} /> : <ItemValuePage item={props.item} />}
+{props.mode === 'hub' ? <ValuesHubBrowse hub={props.hub} /> : <ItemValuePage item={props.item} />}

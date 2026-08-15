@@ -136,8 +136,18 @@ export function hubBySlug(slug: string): ValueHub | undefined {
   return VALUE_HUBS.find((h) => h.slug === slug)
 }
 
+export function hubForFilterId(filterId: string): ValueHub | undefined {
+  return VALUE_HUBS.find((h) => h.id === filterId)
+}
+
 export function hubHref(hub: ValueHub): string {
   return `/values/${hub.slug}/`
+}
+
+/** Pretty list URL for a sidebar filter id (Godly → /values/godly/). */
+export function pathForFilter(filterId: string): string {
+  const hub = hubForFilterId(filterId)
+  return hub ? hubHref(hub) : '/values/'
 }
 
 export function itemsForHub(hub: ValueHub, pool: Mm2Item[] = ALL_TRADEABLES): Mm2Item[] {

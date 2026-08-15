@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { SIDEBAR_FILTERS, type Mm2Item } from '../../data/catalog'
+import { hubBySlug, hubForFilterId, pathForFilter } from '../../data/hubs'
 import { ITEMS, SETS } from '../../data/items'
 import { itemHref } from '../../data/slugs'
 import { DemandStars } from './DemandStars'
@@ -17,18 +18,32 @@ function formatValue(value: number) {
   })
 }
 
-function readParams() {
+function filterFromPath(): string | null {
+  if (typeof window === 'undefined') return null
+  const parts = window.location.pathname.replace(/\/+$/, '').split('/').filter(Boolean)
+  // values / values/rare
+  if (parts[0] !== 'values') return null
+  if (!parts[1]) return 'all'
+  const hub = hubBySlug(parts[1])
+  return hub ? hub.id : null
+}
+
+function readParams(fallbackFilter: string) {
   if (typeof window === 'undefined') {
-    return { filter: 'all', sort: 'value-desc' as SortKey, q: '' }
+    return { filter: fallbackFilter, sort: 'value-desc' as SortKey, q: '' }
   }
   const sp = new URLSearchParams(window.location.search)
+  const pathFilter = filterFromPath()
   const rarity = sp.get('rarity')
   const type = sp.get('type')
   const cat = sp.get('cat')
-  let filter = sp.get('filter') || 'all'
-  if (cat === 'sets') filter = 'Set'
-  else if (rarity) filter = rarity
-  else if (type) filter = type
+  let filter = pathFilter || fallbackFilter || 'all'
+  if (!pathFilter || pathFilter === 'all') {
+    if (cat === 'sets') filter = 'Set'
+    else if (rarity) filter = rarity
+    else if (type) filter = type
+    else if (sp.get('filter')) filter = sp.get('filter') || filter
+  }
   // Legacy knife/gun type links still work even if removed from sidebar
   if ((filter === 'Knife' || filter === 'Gun') && type) filter = type
   const sort = (sp.get('sort') as SortKey) || 'value-desc'
@@ -37,24 +52,32 @@ function readParams() {
 
 function writeParams(filter: string, sort: SortKey, q: string) {
   const sp = new URLSearchParams()
-  if (filter !== 'all') {
+  // Knife/Gun stay on /values/ with ?type= (no dedicated hub)
+  const hub = hubForFilterId(filter)
+  let base = '/values/'
+  if (hub) {
+    base = pathForFilter(filter)
+  } else if (filter === 'Knife' || filter === 'Gun') {
+    sp.set('type', filter)
+  } else if (filter !== 'all') {
     const meta = SIDEBAR_FILTERS.find((f) => f.id === filter)
     if (meta?.kind === 'rarity') sp.set('rarity', filter)
     else if (meta?.kind === 'type') sp.set('type', filter)
-    else if (filter === 'Knife' || filter === 'Gun') sp.set('type', filter)
     else sp.set('filter', filter)
   }
   if (sort !== 'value-desc') sp.set('sort', sort)
   if (q.trim()) sp.set('q', q.trim())
-  const next = `${window.location.pathname}${sp.toString() ? `?${sp}` : ''}`
-  window.history.replaceState(null, '', next)
+  const next = `${base}${sp.toString() ? `?${sp}` : ''}`
+  if (`${window.location.pathname}${window.location.search}` !== next) {
+    window.history.replaceState(null, '', next)
+  }
 }
 
-export function ValueList() {
+export function ValueList({ initialFilter = 'all' }: { initialFilter?: string }) {
   const items = ITEMS
   const sets = SETS
 
-  const initial = readParams()
+  const initial = readParams(initialFilter)
   const [query, setQuery] = useState(initial.q)
   const [filter, setFilter] = useState(initial.filter)
   const [sort, setSort] = useState<SortKey>(initial.sort)

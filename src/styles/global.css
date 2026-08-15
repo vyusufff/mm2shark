@@ -1611,6 +1611,26 @@ img {
   font-size: 0.9rem;
 }
 
+.hub-seo-note {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto 2.5rem;
+  padding-top: 0.25rem;
+  color: #8f8f98;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.hub-seo-note h2 {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  color: #c8c8d0;
+}
+
+.hub-seo-note p {
+  margin: 0 0 0.55rem;
+  max-width: 62ch;
+}
+
 .guide-cards {
   display: grid;
   gap: 0.75rem;
