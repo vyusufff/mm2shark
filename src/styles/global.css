@@ -1081,27 +1081,37 @@ img {
 }
 
 .demand-stars {
-  position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.08em;
   margin-top: 0.45rem;
   height: 1rem;
   font-size: 0.82rem;
   line-height: 1;
-  letter-spacing: 0.06em;
-  color: rgba(225, 29, 46, 0.28);
   user-select: none;
 }
 
-.demand-stars-bg,
-.demand-stars-fill {
-  display: block;
-  white-space: nowrap;
+.demand-star {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  text-align: center;
+  color: rgba(225, 29, 46, 0.28);
 }
 
-.demand-stars-fill {
+.demand-star.is-full {
+  color: #e11d2e;
+}
+
+.demand-star.is-half .demand-star-empty {
+  color: rgba(225, 29, 46, 0.28);
+}
+
+.demand-star.is-half .demand-star-half {
   position: absolute;
-  inset: 0 auto 0 0;
+  inset: 0;
   overflow: hidden;
+  width: 50%;
   color: #e11d2e;
 }
 

@@ -4,19 +4,37 @@ export function demandToStars(demand: number): number {
   return Math.round(n) / 2
 }
 
+type StarKind = 'full' | 'half' | 'empty'
+
+function starKinds(stars: number): StarKind[] {
+  const out: StarKind[] = []
+  for (let i = 1; i <= 5; i++) {
+    if (stars >= i) out.push('full')
+    else if (stars >= i - 0.5) out.push('half')
+    else out.push('empty')
+  }
+  return out
+}
+
 export function DemandStars({ demand }: { demand: number }) {
   const stars = demandToStars(demand)
   const label = `${stars} / 5 demand`
-  const pct = Math.max(0, Math.min(100, (stars / 5) * 100))
+  const kinds = starKinds(stars)
 
   return (
     <div className="demand-stars" role="img" aria-label={label} title={label}>
-      <span className="demand-stars-bg" aria-hidden="true">
-        ★★★★★
-      </span>
-      <span className="demand-stars-fill" aria-hidden="true" style={{ width: `${pct}%` }}>
-        ★★★★★
-      </span>
+      {kinds.map((kind, i) => (
+        <span key={i} className={`demand-star is-${kind}`} aria-hidden="true">
+          {kind === 'half' ? (
+            <>
+              <span className="demand-star-empty">★</span>
+              <span className="demand-star-half">★</span>
+            </>
+          ) : (
+            '★'
+          )}
+        </span>
+      ))}
     </div>
   )
 }
