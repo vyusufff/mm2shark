@@ -146,8 +146,8 @@ export function ValueList() {
     <section className="values-shell">
       <header className="values-head">
         <div>
-          <p className="legal-kicker">Value List · Updated daily</p>
-          <h1>MM2 Item Values</h1>
+          <p className="legal-kicker">Value List</p>
+          <h1>MM2 Values</h1>
         </div>
         <button
           type="button"
@@ -162,32 +162,20 @@ export function ValueList() {
         <aside className={`values-side${mobileOpen ? ' is-open' : ''}`}>
           <p className="values-side-title">Browse</p>
           <nav className="values-nav" aria-label="Item categories">
-            {SIDEBAR_FILTERS.map((f) =>
-              f.hub ? (
-                <a
-                  key={f.id}
-                  href={`/values/${f.hub}/`}
-                  className={filter === f.id ? 'is-active' : undefined}
-                  onClick={() => setMobileOpen(false)}
-                >
-                  <span>{f.label}</span>
-                  <em>{counts[f.id] ?? 0}</em>
-                </a>
-              ) : (
-                <button
-                  key={f.id}
-                  type="button"
-                  className={filter === f.id ? 'is-active' : undefined}
-                  onClick={() => {
-                    setFilter(f.id)
-                    setMobileOpen(false)
-                  }}
-                >
-                  <span>{f.label}</span>
-                  <em>{counts[f.id] ?? 0}</em>
-                </button>
-              ),
-            )}
+            {SIDEBAR_FILTERS.map((f) => (
+              <button
+                key={f.id}
+                type="button"
+                className={filter === f.id ? 'is-active' : undefined}
+                onClick={() => {
+                  setFilter(f.id)
+                  setMobileOpen(false)
+                }}
+              >
+                <span>{f.label}</span>
+                <em>{counts[f.id] ?? 0}</em>
+              </button>
+            ))}
           </nav>
         </aside>
 

@@ -1,7 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import { ValueList } from '../../components/react/ValueList'
-import { VALUE_HUBS, hubHref } from '../../data/hubs'
 import { seoMonthYear } from '../../data/seo'
 import { ITEMS_META } from '../../data/items'
 
@@ -14,20 +13,4 @@ const count = ITEMS_META.count || 0
   description={`Complete Murder Mystery 2 value list (${count}+ items) with demand. Browse godlies, chromas, ancients, pets, and sets. Free trade calculator. Updated regularly.`}
 >
   <ValueList client:load />
-
-  <section class="values-seo-hubs" aria-label="Browse by rarity">
-    <h2>Browse MM2 values by rarity</h2>
-    <p>
-      Indexable rarity and category pages — same data as the filters above, built for search and
-      sharing.
-    </p>
-    <div class="hub-other">
-      {VALUE_HUBS.map((h) => <a href={hubHref(h)}>{h.plural}</a>)}
-    </div>
-    <p class="values-seo-guides">
-      New to trading? Read the <a href="/guides/how-to-trade-in-mm2/">how to trade guide</a>,{' '}
-      <a href="/guides/mm2-summer-event-2026/">Summer Event 2026</a>, or{' '}
-      <a href="/guides/mm2-trading-scams/">scam safety tips</a>.
-    </p>
-  </section>
 </Layout>
