@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import { faqs } from '../data/faqs'
+import { seoMonthYear } from '../data/seo'
+import { ITEMS_META } from '../data/items'
 
 const strips = [
   {
@@ -16,14 +18,16 @@ const strips = [
     cta: 'Compare',
   },
   {
-    label: 'Sets',
-    text: 'Complete set values so you can price bundle trades in one glance.',
-    href: '/values?type=Set',
-    cta: 'Browse sets',
+    label: 'Guides',
+    text: 'Summer Event 2026, how to trade, and scam safety — tied to live values.',
+    href: '/guides',
+    cta: 'Read',
   },
 ]
 
 const homeFaqs = faqs.slice(0, 4)
+const month = seoMonthYear()
+const count = ITEMS_META.count || 0
 
 const props = [
   { src: '/items/shark-gun.png', class: 'prop-shark-gun' },
@@ -34,7 +38,10 @@ const props = [
 ]
 ---
 
-<Layout>
+<Layout
+  title={`MM2 Values List (${month}) — Updated Daily | MM2Shark`}
+  description={`Murder Mystery 2 value list and trade calculator — ${count}+ items, godlies, chromas, pets, and sets. Updated regularly. Never get underpaid.`}
+>
   <section class="hero">
     <div class="hero-media" aria-hidden="true">
       <div class="hero-bg"></div>
@@ -58,11 +65,12 @@ const props = [
     </div>
 
     <div class="hero-inner">
-      <p class="hero-kicker">For Nikilis’ Murder Mystery 2</p>
+      <p class="hero-kicker">For Nikilis’ Murder Mystery 2 · {month}</p>
       <p class="hero-brand">MM2<span>Shark</span>.com</p>
       <h1 class="hero-title">Murder Mystery 2 Values</h1>
       <p class="hero-sub">
-        MM2 value list and trade calculator — check godlies, chromas, Shark, and more before you trade.
+        MM2 value list and trade calculator — check godlies, chromas, Shark, and more before you
+        trade.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="/values">Open Value List</a>
@@ -70,6 +78,12 @@ const props = [
       </div>
     </div>
   </section>
+
+  <p class="home-event-banner">
+    <a href="/guides/mm2-summer-event-2026/">
+      Summer Event 2026 — Shells, Summer Box notes &amp; how to check live item values →
+    </a>
+  </p>
 
   <section class="section" id="tools">
     <div class="strips">
@@ -102,6 +116,10 @@ const props = [
     </div>
     <p class="section-more">
       <a href="/faq">View all FAQ →</a>
+      ·
+      <a href="/values/godly/">Godly values</a>
+      ·
+      <a href="/guides/">Guides</a>
     </p>
   </section>
 </Layout>

@@ -3,12 +3,22 @@
 Murder Mystery 2 value list and trade calculator at https://mm2shark.com.
 
 Check item values, demand, and whether a trade is Win, Fair, or Lose before you accept.
+Values update regularly from public trading data.
 
 ## Site
 
 - [Home](https://mm2shark.com/)
 - [Value List](https://mm2shark.com/values/)
 - [Trade Calculator](https://mm2shark.com/calculator/)
+- [Guides](https://mm2shark.com/guides/)
+- [Godly Values](https://mm2shark.com/values/godly/)
+- [Chroma Values](https://mm2shark.com/values/chroma/)
+- [Ancient Values](https://mm2shark.com/values/ancient/)
+- [Pets](https://mm2shark.com/values/pets/)
+- [Sets](https://mm2shark.com/values/sets/)
+- [Summer Event 2026 Guide](https://mm2shark.com/guides/mm2-summer-event-2026/)
+- [How to Trade in MM2](https://mm2shark.com/guides/how-to-trade-in-mm2/)
+- [MM2 Trading Scams](https://mm2shark.com/guides/mm2-trading-scams/)
 - [FAQ](https://mm2shark.com/faq/)
 - [Privacy](https://mm2shark.com/privacy/)
 - [Terms](https://mm2shark.com/terms/)

@@ -1,0 +1,87 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { GUIDES, guideBySlug } from '../../data/guides'
+import { seoMonthYear } from '../../data/seo'
+
+export function getStaticPaths() {
+  return GUIDES.map((g) => ({
+    params: { slug: g.slug },
+    props: { slug: g.slug },
+  }))
+}
+
+const { slug } = Astro.props
+const guide = guideBySlug(slug)!
+const month = seoMonthYear()
+const title = `${guide.title} | MM2Shark`
+---
+
+<Layout title={title} description={guide.description}>
+  <article class="guide-page">
+    <nav class="item-crumb" aria-label="Breadcrumb">
+      <a href="/guides/">Guides</a>
+      <span aria-hidden="true">/</span>
+      <span>{guide.kicker}</span>
+    </nav>
+
+    <header class="legal-head">
+      <p class="legal-kicker">{guide.kicker} · {month}</p>
+      <h1>{guide.title}</h1>
+      <p>{guide.description}</p>
+      <div class="item-actions" style="margin-top: 1rem">
+        <a class="btn btn-primary" href="/values/">Open Value List</a>
+        <a class="btn btn-ghost" href="/calculator/">Trade Calculator</a>
+      </div>
+    </header>
+
+    {
+      guide.sections.map((section) => (
+        <section class="guide-section">
+          <h2>{section.h2}</h2>
+          {section.paragraphs.map((p) => (
+            <p>{p}</p>
+          ))}
+          {section.bullets && (
+            <ul>
+              {section.bullets.map((b) => (
+                <li>{b}</li>
+              ))}
+            </ul>
+          )}
+          {section.table && (
+            <div class="guide-table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    {section.table.headers.map((h) => (
+                      <th>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {section.table.rows.map((row) => (
+                    <tr>
+                      {row.map((cell) => (
+                        <td>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </section>
+      ))
+    }
+
+    <section class="guide-section guide-cta">
+      <h2>Next steps on MM2Shark</h2>
+      <p>
+        Check live prices on the <a href="/values/">MM2 value list</a>, browse rarity hubs like{' '}
+        <a href="/values/godly/">Godly</a> and <a href="/values/chroma/">Chroma</a>, then confirm the
+        deal in the <a href="/calculator/">trade calculator</a>. More reading in{' '}
+        <a href="/guides/">all guides</a> and the <a href="/faq/">FAQ</a>.
+      </p>
+    </section>
+  </article>
+</Layout>

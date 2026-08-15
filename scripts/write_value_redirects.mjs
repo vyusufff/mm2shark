@@ -33,6 +33,20 @@ function loadRows() {
   return [...items, ...sets]
 }
 
+const HUB_SLUGS = new Set([
+  'godly',
+  'chroma',
+  'ancient',
+  'vintage',
+  'unique',
+  'legendary',
+  'rare',
+  'uncommon',
+  'common',
+  'pets',
+  'sets',
+])
+
 function build() {
   const rows = loadRows()
   const names = rows.map((r) => r.name)
@@ -49,12 +63,14 @@ function build() {
     const collisions = names.filter((n) => stripYear(n).toLowerCase() === baseName.toLowerCase())
     const display = collisions.length <= 1 ? baseName || item.name : item.name
     let base = slugify(display) || `item-${shortId(item.id)}`
+    if (HUB_SLUGS.has(base)) base = `${base}-${shortId(item.id)}`
     const seen = used.get(base) || 0
     used.set(base, seen + 1)
     const slug = seen === 0 ? base : `${base}-${shortId(item.id)}`
 
     for (const from of [slugify(item.id), slugify(item.name)]) {
-      if (from && from !== slug && !redirects.has(from)) {
+      // Never redirect a hub URL onto an item page
+      if (from && from !== slug && !HUB_SLUGS.has(from) && !redirects.has(from)) {
         redirects.set(from, slug)
       }
     }

@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-  title = 'MM2 Value List & Trade Calculator | MM2Shark',
-  description = 'MM2Shark.com — Murder Mystery 2 value list and trade calculator. Check godlies, chromas, knives, guns, and sets, then compare trades before you accept.',
+  title = 'MM2 Values List & Trade Calculator | MM2Shark',
+  description = 'MM2Shark.com — Murder Mystery 2 value list and trade calculator. Check godlies, chromas, knives, guns, and sets, then compare trades before you accept. Updated regularly.',
 } = Astro.props
 
 const canonical = Astro.site
@@ -28,7 +28,12 @@ const topCta =
       ? { href: '/values', label: 'Open Values' }
       : { href: '/values', label: 'Open Values' }
 
-const isTools = path === '/values' || path.startsWith('/values/') || path === '/calculator'
+const isTools =
+  path === '/values' ||
+  path.startsWith('/values/') ||
+  path === '/calculator' ||
+  path === '/guides' ||
+  path.startsWith('/guides/')
 ---
 
 <!doctype html>
@@ -83,8 +88,9 @@ const isTools = path === '/values' || path.startsWith('/values/') || path === '/
         </a>
         <nav class="nav" aria-label="Primary">
           <a href="/" aria-current={path === '/' ? 'page' : undefined}>Home</a>
-          <a href="/values" aria-current={path === '/values' ? 'page' : undefined}>Value List</a>
+          <a href="/values" aria-current={path === '/values' || path.startsWith('/values/') ? 'page' : undefined}>Value List</a>
           <a href="/calculator" aria-current={path === '/calculator' ? 'page' : undefined}>Calculator</a>
+          <a href="/guides" aria-current={path === '/guides' || path.startsWith('/guides/') ? 'page' : undefined}>Guides</a>
           <a href="/faq" aria-current={path === '/faq' ? 'page' : undefined}>FAQ</a>
         </nav>
         <a class="top-cta" href={topCta.href}>{topCta.label}</a>
@@ -116,6 +122,7 @@ const isTools = path === '/values' || path.startsWith('/values/') || path === '/
             <h3>Links</h3>
             <a href="/values">Value List</a>
             <a href="/calculator">Calculator</a>
+            <a href="/guides">Guides</a>
             <a href="/faq">FAQ</a>
             <a href="/privacy">Privacy</a>
             <a href="/terms">Terms</a>

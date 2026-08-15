@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro'
+import { DemandStars } from './react/DemandStars'
+import { ITEMS_META, ALL_TRADEABLES } from '../data/items'
+import { itemHref } from '../data/slugs'
+import { VALUE_HUBS, hubBySlug, hubHref } from '../data/hubs'
+import { formatValue, seoMonthYear } from '../data/seo'
+import type { Mm2Item } from '../data/catalog'
+
+interface Props {
+  item: Mm2Item
+}
+
+const { item } = Astro.props
+const month = seoMonthYear()
+const valueLabel = formatValue(item.value)
+const isChroma = item.rarity === 'Chroma' || !!item.chroma
+const title = `${item.name} MM2 Value (${month}) | MM2Shark`
+const description = `${item.name} Murder Mystery 2 value is ${valueLabel} (${item.rarity}${item.type ? ` · ${item.type}` : ''}, demand ${item.demand}/10). Check demand and compare trades on MM2Shark.`
+const rarityHub =
+  item.type === 'Pet'
+    ? hubBySlug('pets')
+    : item.type === 'Set'
+      ? hubBySlug('sets')
+      : VALUE_HUBS.find((h) => h.kind === 'rarity' && h.id === item.rarity)
+
+const related = ALL_TRADEABLES.filter(
+  (x) => x.id !== item.id && (x.rarity === item.rarity || x.type === item.type),
+)
+  .sort((a, b) => Math.abs(a.value - item.value) - Math.abs(b.value - item.value))
+  .slice(0, 8)
+---
+
+<Layout title={title} description={description}>
+  <article class="item-page">
+    <nav class="item-crumb" aria-label="Breadcrumb">
+      <a href="/values/">Value List</a>
+      {
+        rarityHub && (
+          <>
+            <span aria-hidden="true">/</span>
+            <a href={hubHref(rarityHub)}>{rarityHub.plural}</a>
+          </>
+        )
+      }
+      <span aria-hidden="true">/</span>
+      <span>{item.name}</span>
+    </nav>
+
+    <header class="item-hero">
+      <div class="item-art">
+        {
+          item.image ? (
+            <img src={item.image} alt="" width={160} height={160} />
+          ) : (
+            <span class="item-art-empty">?</span>
+          )
+        }
+      </div>
+      <div class="item-copy">
+        <p class="legal-kicker">MM2 item value · {month}</p>
+        <h1>{item.name}</h1>
+        <p
+          class={isChroma ? 'rarity-chroma item-tags' : 'item-tags'}
+          style={!isChroma && item.rarityColor ? { color: item.rarityColor } : undefined}
+        >
+          {item.rarity} · {item.type}
+        </p>
+        <DemandStars client:load demand={item.demand} />
+        <p class="item-demand-text">Demand {item.demand}/10</p>
+        <p class="item-value">
+          <strong>{valueLabel}</strong>
+          <span>Value</span>
+        </p>
+        <div class="item-actions">
+          <a class="btn btn-primary" href="/calculator/">Open Calculator</a>
+          <a class="btn btn-ghost" href="/values/">Back to list</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="item-blurb">
+      <h2>About {item.name} in Murder Mystery 2</h2>
+      <p>
+        <strong>{item.name}</strong> is a {item.rarity.toLowerCase()}{' '}
+        {item.type.toLowerCase()} in Roblox Murder Mystery 2. On MM2Shark it is listed at{' '}
+        <strong>{valueLabel}</strong> value with demand <strong>{item.demand}/10</strong>. Values
+        are community trading references (not official Roblox or Nikilis prices) and update from
+        public market data
+        {
+          ITEMS_META.updatedAt && (
+            <>
+              {' '}
+              (last sync{' '}
+              {new Date(ITEMS_META.updatedAt).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+              })}
+              )
+            </>
+          )
+        }.
+      </p>
+      <p>
+        Compare this item in a trade with the <a href="/calculator/">MM2 trade calculator</a>
+        {
+          rarityHub && (
+            <>
+              , browse more <a href={hubHref(rarityHub)}>{rarityHub.plural} values</a>
+            </>
+          )
+        }, or open the full <a href="/values/">MM2 value list</a>.
+      </p>
+    </section>
+
+    {
+      related.length > 0 && (
+        <section class="item-related">
+          <h2>Similar items</h2>
+          <div class="item-related-grid">
+            {related.map((r) => (
+              <a class="item-related-card" href={itemHref(r)}>
+                {r.image ? (
+                  <img src={r.image} alt="" width={48} height={48} loading="lazy" />
+                ) : (
+                  <span>?</span>
+                )}
+                <span>
+                  <strong>{r.name}</strong>
+                  <em>{formatValue(r.value)}</em>
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </article>
+</Layout>

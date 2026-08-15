@@ -329,6 +329,29 @@ img {
   font-size: clamp(0.98rem, 2vw, 1.08rem);
 }
 
+.home-event-banner {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0.85rem auto 0;
+}
+
+.home-event-banner a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(225, 29, 46, 0.35);
+  background: rgba(225, 29, 46, 0.1);
+  color: #ffc4c9;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.home-event-banner a:hover {
+  color: #fff;
+  border-color: rgba(225, 29, 46, 0.55);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -867,7 +890,8 @@ img {
   gap: 0.15rem;
 }
 
-.values-nav button {
+.values-nav button,
+.values-nav a {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
@@ -880,26 +904,32 @@ img {
   font-weight: 600;
   text-align: left;
   cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.values-nav button em {
+.values-nav button em,
+.values-nav a em {
   font-style: normal;
   color: #c4c4cc;
   font-size: 0.85rem;
 }
 
-.values-nav button:hover {
+.values-nav button:hover,
+.values-nav a:hover {
   color: #ececef;
   background: rgba(225, 29, 46, 0.06);
 }
 
-.values-nav button.is-active {
+.values-nav button.is-active,
+.values-nav a.is-active {
   color: #fff;
   background: rgba(225, 29, 46, 0.16);
   border-left: 2px solid var(--shark);
 }
 
-.values-nav button.is-active em {
+.values-nav button.is-active em,
+.values-nav a.is-active em {
   color: #ffb0b6;
 }
 
@@ -1370,6 +1400,292 @@ img {
 
   .item-art {
     min-height: 150px;
+  }
+}
+
+.item-demand-text {
+  margin: 0.2rem 0 0;
+  color: #8f8f98;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* —— Rarity / category hubs —— */
+.hub-page,
+.guide-page,
+.guide-index {
+  width: min(860px, calc(100% - 2rem));
+  margin: 1.1rem auto 2.75rem;
+}
+
+.hub-hero {
+  padding: 1.15rem 1.2rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0c0d11;
+  border-radius: 14px;
+}
+
+.hub-hero h1 {
+  margin: 0.15rem 0 0.55rem;
+  font-family: 'Fredoka One', var(--display);
+  font-size: clamp(1.45rem, 4vw, 2.05rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+.hub-lead {
+  margin: 0 0 1rem;
+  color: #b8bcc8;
+  line-height: 1.55;
+  max-width: 54ch;
+}
+
+.hub-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0 0 1rem;
+}
+
+.hub-stats div {
+  padding: 0.7rem 0.75rem;
+  border-radius: 10px;
+  background: #12131a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hub-stats strong {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hub-stats span {
+  color: #8f8f98;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hub-section {
+  margin-top: 1.45rem;
+}
+
+.hub-section h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1.08rem;
+}
+
+.hub-about p {
+  margin: 0 0 0.7rem;
+  color: #b8bcc8;
+  line-height: 1.55;
+}
+
+.hub-about a,
+.guide-section a,
+.values-seo-hubs a,
+.values-seo-guides a {
+  color: #ff8a94;
+  font-weight: 700;
+}
+
+.hub-top-grid,
+.hub-item-grid {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.hub-top-card,
+.hub-item-card {
+  display: grid;
+  grid-template-columns: auto 48px minmax(0, 1fr) auto;
+  gap: 0.65rem;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: #0c0d11;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hub-item-card {
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+}
+
+.hub-top-card em {
+  font-style: normal;
+  font-weight: 800;
+  color: #8f8f98;
+  width: 1.6rem;
+}
+
+.hub-top-card img,
+.hub-item-card img,
+.hub-top-empty {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  background: #12131a;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  color: #5a5a64;
+}
+
+.hub-top-card span,
+.hub-item-card span {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.hub-top-card strong,
+.hub-item-card strong {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hub-top-card small,
+.hub-item-card small {
+  color: #8f8f98;
+  font-size: 0.78rem;
+}
+
+.hub-top-card b,
+.hub-item-card b {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #f0f0f3;
+}
+
+.hub-other {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.hub-other a {
+  display: inline-flex;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0c0d11;
+  color: #e8e8ee;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.hub-other a:hover {
+  border-color: rgba(225, 29, 46, 0.45);
+  color: #fff;
+}
+
+.values-seo-hubs {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto 2.5rem;
+  padding-top: 0.5rem;
+}
+
+.values-seo-hubs h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.values-seo-hubs > p {
+  margin: 0 0 0.75rem;
+  color: #8f8f98;
+  font-size: 0.9rem;
+}
+
+.values-seo-guides {
+  margin: 0.9rem 0 0;
+  color: #8f8f98;
+  font-size: 0.9rem;
+}
+
+.guide-cards {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.guide-card {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  background: #0c0d11;
+  color: inherit;
+  text-decoration: none;
+}
+
+.guide-card:hover {
+  border-color: rgba(225, 29, 46, 0.35);
+}
+
+.guide-card strong {
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+
+.guide-card p {
+  margin: 0;
+  color: #8f8f98;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.guide-section {
+  margin-top: 1.4rem;
+}
+
+.guide-section h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.08rem;
+}
+
+.guide-section p,
+.guide-section li {
+  color: #b8bcc8;
+  line-height: 1.55;
+}
+
+.guide-section ul {
+  margin: 0.4rem 0 0.7rem;
+  padding-left: 1.2rem;
+}
+
+.guide-section li {
+  margin: 0.25rem 0;
+}
+
+.guide-cta {
+  padding: 1rem 1.05rem;
+  border-radius: 14px;
+  background: #0c0d11;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 640px) {
+  .hub-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hub-top-card {
+    grid-template-columns: auto 40px minmax(0, 1fr);
+  }
+
+  .hub-top-card b {
+    grid-column: 2 / -1;
   }
 }
 

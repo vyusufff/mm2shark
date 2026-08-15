@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import { GUIDES } from '../../data/guides'
+import { seoMonthYear } from '../../data/seo'
+
+const month = seoMonthYear()
+---
+
+<Layout
+  title={`MM2 Guides (${month}) | MM2Shark`}
+  description="Murder Mystery 2 guides — summer event, how to trade, and scam safety. Pair every tip with the MM2Shark value list and trade calculator."
+>
+  <article class="guide-index">
+    <header class="legal-head">
+      <p class="legal-kicker">Guides</p>
+      <h1>MM2 Guides</h1>
+      <p>Event notes, trading basics, and safety — wired to the live value list and calculator.</p>
+    </header>
+
+    <div class="guide-cards">
+      {
+        GUIDES.map((g) => (
+          <a class="guide-card" href={`/guides/${g.slug}/`}>
+            <span class="legal-kicker">{g.kicker}</span>
+            <strong>{g.title}</strong>
+            <p>{g.description}</p>
+          </a>
+        ))
+      }
+    </div>
+  </article>
+</Layout>

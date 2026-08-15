@@ -1,4 +1,5 @@
 import type { Mm2Item } from './catalog'
+import { HUB_SLUGS } from './hubs'
 import { ALL_TRADEABLES } from './items'
 
 const YEAR_SUFFIX = /\s+(19|20)\d{2}\s*$/
@@ -54,6 +55,8 @@ export function buildSlugEntries(items: Mm2Item[] = ALL_TRADEABLES): {
   for (const item of items) {
     const display = resolveDisplayName(item.name, names)
     let base = slugifyName(display) || `item-${shortId(item.id)}`
+    // Never collide with /values/godly-style hub routes
+    if (HUB_SLUGS.has(base)) base = `${base}-${shortId(item.id)}`
     const seen = used.get(base) || 0
     used.set(base, seen + 1)
     const slug = seen === 0 ? base : `${base}-${shortId(item.id)}`
