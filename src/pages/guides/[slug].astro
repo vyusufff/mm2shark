@@ -25,6 +25,11 @@ const title = `${guide.title} | MM2Shark`
     <header class="legal-head">
       <p class="legal-kicker">{guide.kicker}</p>
       <h1>{guide.title}</h1>
+      <p class="guide-lead">{guide.teaser}</p>
+      <div class="item-actions guide-actions">
+        <a class="btn btn-primary" href="/values/">Open Value List</a>
+        <a class="btn btn-ghost" href="/calculator/">Trade Calculator</a>
+      </div>
     </header>
 
     {
@@ -45,12 +50,13 @@ const title = `${guide.title} | MM2Shark`
       ))
     }
 
-    <p class="guide-foot">
-      <a href="/values/">Value list</a>
-      <span aria-hidden="true">·</span>
-      <a href="/calculator/">Calculator</a>
-      <span aria-hidden="true">·</span>
-      <a href="/guides/">All guides</a>
-    </p>
+    <section class="guide-cta">
+      <h2>Check the numbers</h2>
+      <p>Done reading? Look up the items, then compare both sides.</p>
+      <div class="item-actions">
+        <a class="btn btn-primary" href="/values/">Value List</a>
+        <a class="btn btn-ghost" href="/calculator/">Calculator</a>
+      </div>
+    </section>
   </article>
 </Layout>

@@ -1675,6 +1675,17 @@ img {
   margin-bottom: 0.15rem;
 }
 
+.guide-lead {
+  margin: 0.45rem 0 0;
+  color: #8f8f98;
+  max-width: 36rem;
+  line-height: 1.45;
+}
+
+.guide-actions {
+  margin-top: 1rem;
+}
+
 .guide-section {
   margin-top: 1.4rem;
 }
@@ -1699,6 +1710,25 @@ img {
   margin: 0.25rem 0;
 }
 
+.guide-cta {
+  margin-top: 2rem;
+  padding: 1.1rem 1.15rem;
+  border-radius: 14px;
+  background: #0c0d11;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.guide-cta h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.guide-cta p {
+  margin: 0 0 0.9rem;
+  color: #8f8f98;
+  line-height: 1.45;
+}
+
 .guide-foot {
   display: flex;
   flex-wrap: wrap;
@@ -1719,13 +1749,6 @@ img {
 
 .guide-foot a:hover {
   color: #fff;
-}
-
-.guide-cta {
-  padding: 1rem 1.05rem;
-  border-radius: 14px;
-  background: #0c0d11;
-  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 @media (max-width: 640px) {
