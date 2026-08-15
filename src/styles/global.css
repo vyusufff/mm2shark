@@ -1664,6 +1664,17 @@ img {
   line-height: 1.45;
 }
 
+.guide-strips {
+  margin-top: 0.5rem;
+}
+
+.guide-strip-title {
+  display: block;
+  color: #ececef;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
 .guide-section {
   margin-top: 1.4rem;
 }
@@ -1686,6 +1697,28 @@ img {
 
 .guide-section li {
   margin: 0.25rem 0;
+}
+
+.guide-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.75rem;
+  align-items: center;
+  margin: 2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #6f6f78;
+  font-size: 0.9rem;
+}
+
+.guide-foot a {
+  color: #ff8a94;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.guide-foot a:hover {
+  color: #fff;
 }
 
 .guide-cta {

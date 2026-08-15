@@ -1,29 +1,29 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import { GUIDES } from '../../data/guides'
-import { seoMonthYear } from '../../data/seo'
-
-const month = seoMonthYear()
 ---
 
 <Layout
-  title={`MM2 Guides (${month}) | MM2Shark`}
-  description="Murder Mystery 2 guides — summer event, how to trade, and scam safety. Pair every tip with the MM2Shark value list and trade calculator."
+  title="Guides | MM2Shark"
+  description="Short MM2 notes — summer event, how trading works, and common scams."
 >
   <article class="guide-index">
     <header class="legal-head">
       <p class="legal-kicker">Guides</p>
-      <h1>MM2 Guides</h1>
-      <p>Event notes, trading basics, and safety — wired to the live value list and calculator.</p>
+      <h1>Guides</h1>
+      <p>Short notes. Values and the calculator stay on their own pages.</p>
     </header>
 
-    <div class="guide-cards">
+    <div class="strips guide-strips">
       {
         GUIDES.map((g) => (
-          <a class="guide-card" href={`/guides/${g.slug}/`}>
-            <span class="legal-kicker">{g.kicker}</span>
-            <strong>{g.title}</strong>
-            <p>{g.description}</p>
+          <a class="strip" href={`/guides/${g.slug}/`}>
+            <strong>{g.kicker}</strong>
+            <p>
+              <span class="guide-strip-title">{g.title}</span>
+              {g.teaser}
+            </p>
+            <em>Read →</em>
           </a>
         ))
       }

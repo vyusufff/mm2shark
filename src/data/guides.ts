@@ -1,140 +1,132 @@
 export type Guide = {
   slug: string
   title: string
+  /** Short line on the guides index */
+  teaser: string
+  /** Meta description */
   description: string
   kicker: string
   updated: string
-  /** HTML-safe paragraphs / sections rendered in Astro */
   sections: Array<{
     h2: string
     paragraphs: string[]
     bullets?: string[]
-    table?: { headers: string[]; rows: string[][] }
   }>
 }
 
 export const GUIDES: Guide[] = [
   {
     slug: 'mm2-summer-event-2026',
-    title: 'MM2 Summer Event 2026: Shells, Summer Box & Item Values',
+    title: 'Summer Event 2026',
+    teaser: 'Shells, the Summer Box, and why event prices swing so hard.',
     description:
-      'Murder Mystery 2 Summer Event 2026 guide — Shells, Summer Box odds, Beach Bundle notes, and how to check live item values on MM2Shark.',
-    kicker: 'Event guide',
+      'Quick notes on the MM2 Summer Event 2026 — Shells, box opens, and checking values before you trade.',
+    kicker: 'Event',
     updated: '2026-08-16',
     sections: [
       {
-        h2: 'What is live right now',
+        h2: 'What’s going on',
         paragraphs: [
-          'The Murder Mystery 2 Summer Event 2026 brought a seasonal lobby, the Pier map, daily Shells quests, the Summer Box ’26, and limited Robux bundle items. Event windows move prices fast — always confirm the latest number on the value list before you trade.',
-          'Community reports put the event end around late August 2026. Treat end dates as unofficial until Nikilis posts a final notice in-game or on socials.',
+          'Summer Event is live: seasonal lobby, Pier map, daily Shells, Summer Box ’26, plus limited Robux bundle stuff. Prices move every day while it’s on — check the list before you accept anything big.',
+          'People are saying it wraps around late August. Treat that as unofficial until it’s confirmed in-game.',
         ],
       },
       {
-        h2: 'Shells and daily quests',
+        h2: 'Shells',
         paragraphs: [
-          'Shells are the summer currency. You earn them from daily quests (typically coin collection style objectives during rounds). Caps and quest refresh follow the in-game timer — finish dailies if you are targeting box opens.',
-        ],
-        bullets: [
-          'Prioritize quests you can finish in normal play so you do not burn sessions on inefficient tasks.',
-          'Gems can sometimes substitute for Shells on the box — check the live shop prompt in MM2.',
-          'When the event ends, Shells stop mattering; only the items you unboxed keep trade value.',
+          'Shells come from daily quests. Do the ones you finish naturally in normal rounds. When the event ends, Shells are useless — only the items you opened keep value.',
         ],
       },
       {
-        h2: 'Summer Box ’26 — what to watch',
+        h2: 'Summer Box',
         paragraphs: [
-          'The Summer Box is the main loot source for this event’s commons through godlies. Exact odds are shown in-game on the box UI; they can include a Godly knife (Icecream) and a rare Chroma roll.',
-          'Box items spike during the event and often correct afterward. Use MM2Shark item pages for each drop name, then run both sides through the trade calculator.',
+          'The box is where most of this event’s new items come from. Odds are on the box screen in MM2. Icecream (and chroma if it hits) are the ones people hype; everything else is filler until the market settles.',
+          'Event week prices are noisy. Search the item, then run the trade in the calculator if you’re unsure.',
         ],
       },
       {
-        h2: 'Beach Bundle and Robux items',
+        h2: 'Robux bundles',
         paragraphs: [
-          'Limited Robux bundles (for example Beachy / Sands style godlies plus effects) are priced on hype and supply. Compare the bundle cost in Robux against current trade values of the pieces — sometimes buying is worse than trading for the same flex.',
+          'Beach-style bundles look cool and disappear after the event. Compare Robux cost to what the pieces actually trade for — buying isn’t always cheaper than waiting for a fair trade.',
         ],
       },
       {
-        h2: 'How to trade event items safely',
+        h2: 'Don’t get cooked',
         paragraphs: [
-          'Search each item on the MM2Shark value list, open its page for demand, then paste both inventories into the calculator. Event week is peak scam season — never go first with high-value pieces, and ignore “trusted middleman” DMs outside official Discord contexts you already know.',
+          'Event weeks are scam season. Re-check the window before confirm, don’t go first on heavy pieces with strangers, and ignore middleman DMs you didn’t ask for.',
         ],
       },
     ],
   },
   {
     slug: 'how-to-trade-in-mm2',
-    title: 'How to Trade in Murder Mystery 2 (2026 Beginner Guide)',
+    title: 'How trading works',
+    teaser: 'Unlock trades, send a request, and check values before you confirm.',
     description:
-      'Learn how trading works in Roblox Murder Mystery 2 — unlock trading, send requests, read values, and use a trade calculator so you do not get underpaid.',
-    kicker: 'Beginner guide',
+      'How to unlock and use trading in Murder Mystery 2, plus how to read values so you don’t get underpaid.',
+    kicker: 'Basics',
     updated: '2026-08-16',
     sections: [
       {
-        h2: 'Unlock trading',
+        h2: 'Unlock it',
         paragraphs: [
-          'Murder Mystery 2 locks trading until you reach the required level (commonly Level 10). Play rounds, level up, then open the trade UI from the menu once it unlocks.',
+          'Trading unlocks around Level 10. Grind rounds until the trade option shows up in the menu.',
         ],
       },
       {
-        h2: 'Sending and accepting trades',
+        h2: 'Sending a trade',
         paragraphs: [
-          'Walk up to a player (or use the trade list), send a request, and wait for them to accept. Both sides add items, confirm, and the game swaps inventories when both ready up.',
-          'Double-check every slot before you confirm — scammers rely on last-second swaps and lookalike items.',
+          'Request a trade, both sides add items, both ready up, then the game swaps. Watch the window until the end — last-second swaps are common.',
         ],
       },
       {
-        h2: 'Read values before you accept',
+        h2: 'Values aren’t official',
         paragraphs: [
-          'Community value lists (including MM2Shark) estimate what traders usually ask. They are not official Roblox prices. Demand stars and rarity help you judge how easy an item is to flip.',
+          'Lists like ours are community references, not Roblox or Nikilis prices. Use them to see if a deal is roughly fair, not as a guarantee.',
         ],
         bullets: [
-          'Open the value list and search both sides.',
-          'Use the trade calculator for Win / Fair / Lose on totals.',
-          'Be careful with duplex / chrome lookalikes and set pieces listed separately.',
-        ],
-      },
-      {
-        h2: 'Where MM2Shark helps',
-        paragraphs: [
-          'Browse the full MM2 value list, open per-item pages for demand, filter by rarity hubs like Godly or Chroma, then compare the deal in the calculator. That loop is enough for most beginner and mid-tier trades.',
+          'Search both sides on the value list',
+          'Totals go in the calculator (Win / Fair / Lose)',
+          'Watch for lookalike names and set pieces listed separately',
         ],
       },
     ],
   },
   {
     slug: 'mm2-trading-scams',
-    title: 'MM2 Trading Scams to Avoid (2026)',
+    title: 'Common trade scams',
+    teaser: 'Swaps, lookalikes, fake middlemen — the boring stuff that still works.',
     description:
-      'Common Murder Mystery 2 trading scams — last-second swaps, fake middlemen, Discord phishing, and how to protect high-value items.',
+      'Common Murder Mystery 2 trade scams: last-second swaps, lookalike items, and fake Discord middlemen.',
     kicker: 'Safety',
     updated: '2026-08-16',
     sections: [
       {
-        h2: 'Last-second item swaps',
+        h2: 'Last-second swap',
         paragraphs: [
-          'A player adds a high-value item, you ready up, then they swap to junk right before confirm. Always re-check the trade window after any change. If something feels rushed, decline.',
+          'They show something good, you ready, they swap to junk. Any change = re-check every slot. Feel rushed? Decline.',
         ],
       },
       {
-        h2: 'Lookalike and low-tier bait',
+        h2: 'Lookalikes',
         paragraphs: [
-          'Similar names and recolors get people to overpay. Confirm rarity tags and open the exact item page on MM2Shark when the name looks familiar but the value feels wrong.',
+          'Similar names and recolors trick people into overpaying. Check rarity and the real value before you confirm.',
         ],
       },
       {
-        h2: 'Fake middlemen and Discord links',
+        h2: 'Fake middlemen / Discord',
         paragraphs: [
-          'Nobody reputable needs you to “verify” by trading first or logging into a cloned site. Official-looking Discord DMs that ask for passwords, cookies, or .ROBLOSECURITY tokens are theft. MM2Shark will never ask for your Roblox password.',
+          'Nobody needs your password, cookies, or “verify” trade first. We will never ask for your Roblox login.',
         ],
       },
       {
-        h2: 'Quick safety checklist',
-        paragraphs: ['Before any large trade:'],
+        h2: 'Before a big trade',
+        paragraphs: [],
         bullets: [
-          'Compare both sides in the MM2 trade calculator.',
-          'Screenshot the window if you need proof later.',
-          'Do not go first with ancients, chromas, or uniques for strangers.',
-          'Ignore pressure tactics (“only 10 seconds left”).',
+          'Run both sides in the calculator',
+          'Screenshot if you need proof later',
+          'Don’t go first on ancients / chromas with strangers',
+          'Ignore “10 seconds left” pressure',
         ],
       },
     ],
