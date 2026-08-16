@@ -7,8 +7,8 @@ interface Props {
 }
 
 const {
-  title = 'MM2 Values List & Trade Calculator | MM2Shark',
-  description = 'MM2Shark.com — Murder Mystery 2 value list and trade calculator. Check godlies, chromas, knives, guns, and sets, then compare trades before you accept. Updated regularly.',
+  title = 'MM2Shark — MM2 Value List & Trade Calculator',
+  description = 'MM2Shark.com — Murder Mystery 2 value list and trade calculator. Check godlies, chromas, knives, guns, and sets, then compare trades before you accept.',
 } = Astro.props
 
 const canonical = Astro.site
@@ -46,8 +46,30 @@ const isTools =
     <meta name="theme-color" content="#060607" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="application-name" content="MM2Shark" />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap.xml" />
+    {
+      path === '/' && (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'MM2Shark',
+            alternateName: ['MM2Shark.com', 'MM2 Shark'],
+            url: 'https://mm2shark.com/',
+            description:
+              'Murder Mystery 2 value list and trade calculator on MM2Shark.com.',
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: 'https://mm2shark.com/values/?q={search_term_string}',
+              'query-input': 'required name=search_term_string',
+            },
+          })}
+        />
+      )
+    }
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} />

@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import { faqs } from '../data/faqs'
-import { seoMonthYear } from '../data/seo'
 import { ITEMS_META } from '../data/items'
 
 const strips = [
@@ -26,7 +25,6 @@ const strips = [
 ]
 
 const homeFaqs = faqs.slice(0, 4)
-const month = seoMonthYear()
 const count = ITEMS_META.count || 0
 
 const props = [
@@ -39,8 +37,8 @@ const props = [
 ---
 
 <Layout
-  title={`MM2 Values List (${month}) — Updated Daily | MM2Shark`}
-  description={`Murder Mystery 2 value list and trade calculator — ${count}+ items, godlies, chromas, pets, and sets. Updated regularly. Never get underpaid.`}
+  title="MM2Shark — MM2 Value List & Trade Calculator"
+  description={`MM2Shark.com — Murder Mystery 2 value list and trade calculator. ${count}+ items, godlies, chromas, pets, and sets. Check demand, then compare trades.`}
 >
   <section class="hero">
     <div class="hero-media" aria-hidden="true">
@@ -65,7 +63,7 @@ const props = [
     </div>
 
     <div class="hero-inner">
-      <p class="hero-kicker">For Nikilis’ Murder Mystery 2 · {month}</p>
+      <p class="hero-kicker">For Nikilis’ Murder Mystery 2</p>
       <p class="hero-brand">MM2<span>Shark</span>.com</p>
       <h1 class="hero-title">Murder Mystery 2 Values</h1>
       <p class="hero-sub">

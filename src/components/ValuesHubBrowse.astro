@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import { ValueList } from './react/ValueList'
 import { itemsForHub, hubStats, type ValueHub } from '../data/hubs'
-import { formatAvg, formatValue, seoMonthYear } from '../data/seo'
+import { formatAvg, formatValue } from '../data/seo'
 import { itemHref } from '../data/slugs'
 
 interface Props {
@@ -10,11 +10,10 @@ interface Props {
 }
 
 const { hub } = Astro.props
-const month = seoMonthYear()
 const list = itemsForHub(hub).sort((a, b) => b.value - a.value)
 const stats = hubStats(list)
-const title = `${hub.label} MM2 Values (${month}) — Full List | MM2Shark`
-const description = `${hub.plural} Murder Mystery 2 values — ${stats.count} items, avg ${formatAvg(stats.avg)}, top ${formatValue(stats.max)}. ${hub.about}`
+const title = `MM2Shark — ${hub.label} Values`
+const description = `MM2Shark ${hub.plural.toLowerCase()} list — ${stats.count} items, avg ${formatAvg(stats.avg)}, top ${formatValue(stats.max)}. ${hub.about}`
 const origin = Astro.site?.toString().replace(/\/$/, '') || 'https://mm2shark.com'
 const jsonLd = {
   '@context': 'https://schema.org',

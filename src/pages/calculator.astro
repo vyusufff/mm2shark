@@ -1,14 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import { Calculator } from '../components/react/Calculator'
-import { seoMonthYear } from '../data/seo'
-
-const month = seoMonthYear()
 ---
 
 <Layout
-  title={`MM2 Trade Calculator (${month}) | MM2Shark`}
-  description="MM2 trade calculator for Murder Mystery 2. Compare both sides, stack amounts, and see Win, Fair, or Lose. Uses the same daily-updated values as the MM2Shark list."
+  title="MM2Shark Trade Calculator — Win, Fair, or Lose"
+  description="MM2Shark trade calculator for Murder Mystery 2. Add both sides, stack amounts, and see Win, Fair, or Lose using the same values as the list."
 >
   <Calculator client:load />
 </Layout>

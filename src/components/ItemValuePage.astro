@@ -4,7 +4,7 @@ import { DemandStars } from './react/DemandStars'
 import { ITEMS_META, ALL_TRADEABLES } from '../data/items'
 import { itemHref } from '../data/slugs'
 import { VALUE_HUBS, hubBySlug, hubHref } from '../data/hubs'
-import { formatValue, seoMonthYear } from '../data/seo'
+import { formatValue } from '../data/seo'
 import type { Mm2Item } from '../data/catalog'
 
 interface Props {
@@ -12,11 +12,10 @@ interface Props {
 }
 
 const { item } = Astro.props
-const month = seoMonthYear()
 const valueLabel = formatValue(item.value)
 const isChroma = item.rarity === 'Chroma' || !!item.chroma
-const title = `${item.name} MM2 Value (${month}) | MM2Shark`
-const description = `${item.name} Murder Mystery 2 value is ${valueLabel} (${item.rarity}${item.type ? ` · ${item.type}` : ''}, demand ${item.demand}/10). Check demand and compare trades on MM2Shark.`
+const title = `${item.name} Value | MM2Shark`
+const description = `${item.name} on MM2Shark: Murder Mystery 2 value ${valueLabel} (${item.rarity}${item.type ? ` · ${item.type}` : ''}, demand ${item.demand}/10). Compare trades on MM2Shark.com.`
 const rarityHub =
   item.type === 'Pet'
     ? hubBySlug('pets')
@@ -58,7 +57,7 @@ const related = ALL_TRADEABLES.filter(
         }
       </div>
       <div class="item-copy">
-        <p class="legal-kicker">MM2 item value · {month}</p>
+        <p class="legal-kicker">MM2Shark item value</p>
         <h1>{item.name}</h1>
         <p
           class={isChroma ? 'rarity-chroma item-tags' : 'item-tags'}
