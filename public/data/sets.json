@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T00:57:31Z",
+  "updatedAt": "2026-08-16T05:22:49Z",
   "source": "traderie",
   "note": "Small Set and Full Small Set excluded.",
   "count": 133,
@@ -93,17 +93,6 @@
       "image": "/items/evergreen-set.jpg"
     },
     {
-      "id": "chroma-sweet-treat-set",
-      "name": "Chroma Sweet Treat Set",
-      "value": 4700.0,
-      "demand": 5,
-      "rarity": "Chroma",
-      "rarityColor": "#ff4dc4",
-      "type": "Set",
-      "chroma": true,
-      "image": "/items/chroma-sweet-treat-set.jpg"
-    },
-    {
       "id": "celestial-set",
       "name": "Celestial Set",
       "value": 4700.0,
@@ -113,6 +102,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/celestial-set.jpg"
+    },
+    {
+      "id": "chroma-sweet-treat-set",
+      "name": "Chroma Sweet Treat Set",
+      "value": 4700.0,
+      "demand": 5,
+      "rarity": "Chroma",
+      "rarityColor": "#ff4dc4",
+      "type": "Set",
+      "chroma": true,
+      "image": "/items/chroma-sweet-treat-set.jpg"
     },
     {
       "id": "alien-set-2025",
@@ -434,17 +434,6 @@
       "image": "/items/bats-set.jpg"
     },
     {
-      "id": "full-luger-set",
-      "name": "Full Luger Set",
-      "value": 185.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/full-luger-set.jpg"
-    },
-    {
       "id": "pearl-set",
       "name": "Pearl Set",
       "value": 185.0,
@@ -454,6 +443,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/pearl-set.jpg"
+    },
+    {
+      "id": "full-luger-set",
+      "name": "Full Luger Set",
+      "value": 185.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/full-luger-set.jpg"
     },
     {
       "id": "bat-set",
@@ -489,17 +489,6 @@
       "image": "/items/sparkle-set.jpg"
     },
     {
-      "id": "chroma-bringer-set",
-      "name": "Chroma Bringer Set",
-      "value": 125.0,
-      "demand": 1,
-      "rarity": "Chroma",
-      "rarityColor": "#ff4dc4",
-      "type": "Set",
-      "chroma": true,
-      "image": "/items/chroma-bringer-set.jpg"
-    },
-    {
       "id": "zombified-set",
       "name": "Zombified Set",
       "value": 125.0,
@@ -509,6 +498,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/zombified-set.jpg"
+    },
+    {
+      "id": "chroma-bringer-set",
+      "name": "Chroma Bringer Set",
+      "value": 125.0,
+      "demand": 1,
+      "rarity": "Chroma",
+      "rarityColor": "#ff4dc4",
+      "type": "Set",
+      "chroma": true,
+      "image": "/items/chroma-bringer-set.jpg"
     },
     {
       "id": "full-fire-pet-set",
@@ -577,6 +577,17 @@
       "image": "/items/chroma-slasher-set.jpg"
     },
     {
+      "id": "elderwood-set",
+      "name": "Elderwood Set",
+      "value": 71.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/elderwood-set.jpg"
+    },
+    {
       "id": "collectible-set",
       "name": "Collectible Set",
       "value": 71.0,
@@ -597,17 +608,6 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/full-swirly-set.jpg"
-    },
-    {
-      "id": "elderwood-set",
-      "name": "Elderwood Set",
-      "value": 71.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/elderwood-set.jpg"
     },
     {
       "id": "spectre-set",
@@ -775,17 +775,6 @@
       "image": "/items/iceflake-set.jpg"
     },
     {
-      "id": "icicles-set",
-      "name": "Icicles Set",
-      "value": 35.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/icicles-set.jpg"
-    },
-    {
       "id": "plasma-set",
       "name": "Plasma Set",
       "value": 35.0,
@@ -795,6 +784,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/plasma-set.jpg"
+    },
+    {
+      "id": "icicles-set",
+      "name": "Icicles Set",
+      "value": 35.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/icicles-set.jpg"
     },
     {
       "id": "xmas-collectible-set",
@@ -962,15 +962,15 @@
       "image": "/items/elf-set.jpg"
     },
     {
-      "id": "hallows-set",
-      "name": "Hallow's Set",
+      "id": "colored-seer-set",
+      "name": "Colored Seer Set",
       "value": 16.0,
       "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/hallows-set.jpg"
+      "image": "/items/colored-seer-set.jpg"
     },
     {
       "id": "pals-set",
@@ -984,15 +984,15 @@
       "image": "/items/pals-set.jpg"
     },
     {
-      "id": "colored-seer-set",
-      "name": "Colored Seer Set",
+      "id": "hallows-set",
+      "name": "Hallow's Set",
       "value": 16.0,
       "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/colored-seer-set.jpg"
+      "image": "/items/hallows-set.jpg"
     },
     {
       "id": "wrapping-paper-set",
@@ -1039,17 +1039,6 @@
       "image": "/items/halloween-2017-set.jpg"
     },
     {
-      "id": "pumpkin-set-2019",
-      "name": "Pumpkin Set 2019",
-      "value": 11.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/pumpkin-set-2019.jpg"
-    },
-    {
       "id": "aurora-set",
       "name": "Aurora Set",
       "value": 11.0,
@@ -1059,6 +1048,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/aurora-set.jpg"
+    },
+    {
+      "id": "pumpkin-set-2019",
+      "name": "Pumpkin Set 2019",
+      "value": 11.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/pumpkin-set-2019.jpg"
     },
     {
       "id": "eye-set",
