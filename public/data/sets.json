@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T00:53:53Z",
+  "updatedAt": "2026-08-19T11:26:39Z",
   "source": "traderie",
   "note": "Small Set and Full Small Set excluded.",
   "count": 135,
@@ -93,17 +93,6 @@
       "image": "/items/evergreen-set.jpg"
     },
     {
-      "id": "celestial-set",
-      "name": "Celestial Set",
-      "value": 4700.0,
-      "demand": 5,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/celestial-set.jpg"
-    },
-    {
       "id": "chroma-sweet-treat-set",
       "name": "Chroma Sweet Treat Set",
       "value": 4700.0,
@@ -113,6 +102,17 @@
       "type": "Set",
       "chroma": true,
       "image": "/items/chroma-sweet-treat-set.jpg"
+    },
+    {
+      "id": "celestial-set",
+      "name": "Celestial Set",
+      "value": 4700.0,
+      "demand": 5,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/celestial-set.jpg"
     },
     {
       "id": "chroma-beach-set-2026",
@@ -456,17 +456,6 @@
       "image": "/items/bats-set.jpg"
     },
     {
-      "id": "full-luger-set",
-      "name": "Full Luger Set",
-      "value": 185.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/full-luger-set.jpg"
-    },
-    {
       "id": "pearl-set",
       "name": "Pearl Set",
       "value": 185.0,
@@ -476,6 +465,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/pearl-set.jpg"
+    },
+    {
+      "id": "full-luger-set",
+      "name": "Full Luger Set",
+      "value": 185.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/full-luger-set.jpg"
     },
     {
       "id": "bat-set",
@@ -511,17 +511,6 @@
       "image": "/items/sparkle-set.jpg"
     },
     {
-      "id": "zombified-set",
-      "name": "Zombified Set",
-      "value": 125.0,
-      "demand": 3,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/zombified-set.jpg"
-    },
-    {
       "id": "chroma-bringer-set",
       "name": "Chroma Bringer Set",
       "value": 125.0,
@@ -531,6 +520,17 @@
       "type": "Set",
       "chroma": true,
       "image": "/items/chroma-bringer-set.jpg"
+    },
+    {
+      "id": "zombified-set",
+      "name": "Zombified Set",
+      "value": 125.0,
+      "demand": 3,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/zombified-set.jpg"
     },
     {
       "id": "full-fire-pet-set",
@@ -610,17 +610,6 @@
       "image": "/items/elderwood-set.jpg"
     },
     {
-      "id": "full-swirly-set",
-      "name": "Full Swirly Set",
-      "value": 71.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/full-swirly-set.jpg"
-    },
-    {
       "id": "collectible-set",
       "name": "Collectible Set",
       "value": 71.0,
@@ -630,6 +619,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/collectible-set.jpg"
+    },
+    {
+      "id": "full-swirly-set",
+      "name": "Full Swirly Set",
+      "value": 71.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/full-swirly-set.jpg"
     },
     {
       "id": "spectre-set",
@@ -852,15 +852,15 @@
       "image": "/items/shadow-set.jpg"
     },
     {
-      "id": "ginger-set-godly",
-      "name": "Ginger Set (Godly)",
+      "id": "virtual-set",
+      "name": "Virtual Set",
       "value": 30.0,
       "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ginger-set-godly.jpg"
+      "image": "/items/virtual-set.jpg"
     },
     {
       "id": "skate-set",
@@ -874,15 +874,15 @@
       "image": "/items/skate-set.jpg"
     },
     {
-      "id": "virtual-set",
-      "name": "Virtual Set",
+      "id": "ginger-set-godly",
+      "name": "Ginger Set (Godly)",
       "value": 30.0,
       "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/virtual-set.jpg"
+      "image": "/items/ginger-set-godly.jpg"
     },
     {
       "id": "clockwork-set",
@@ -918,17 +918,6 @@
       "image": "/items/battleaxe-set.jpg"
     },
     {
-      "id": "eternalcane-set",
-      "name": "Eternalcane Set",
-      "value": 26.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/eternalcane-set.jpg"
-    },
-    {
       "id": "cookie-set",
       "name": "Cookie Set",
       "value": 26.0,
@@ -938,6 +927,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/cookie-set.jpg"
+    },
+    {
+      "id": "eternalcane-set",
+      "name": "Eternalcane Set",
+      "value": 26.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/eternalcane-set.jpg"
     },
     {
       "id": "8-bit-set",
@@ -962,17 +962,6 @@
       "image": "/items/ice-shard-set.jpg"
     },
     {
-      "id": "full-valentine-set",
-      "name": "Full Valentine Set",
-      "value": 18.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/full-valentine-set.jpg"
-    },
-    {
       "id": "elf-set",
       "name": "Elf Set",
       "value": 18.0,
@@ -982,6 +971,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/elf-set.jpg"
+    },
+    {
+      "id": "full-valentine-set",
+      "name": "Full Valentine Set",
+      "value": 18.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/full-valentine-set.jpg"
     },
     {
       "id": "hallows-set",
