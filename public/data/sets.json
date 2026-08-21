@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T00:57:46Z",
+  "updatedAt": "2026-08-21T10:23:27Z",
   "source": "traderie",
   "note": "Small Set and Full Small Set excluded.",
   "count": 136,
@@ -599,6 +599,17 @@
       "image": "/items/chroma-slasher-set.jpg"
     },
     {
+      "id": "full-swirly-set",
+      "name": "Full Swirly Set",
+      "value": 71.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/full-swirly-set.jpg"
+    },
+    {
       "id": "collectible-set",
       "name": "Collectible Set",
       "value": 71.0,
@@ -619,17 +630,6 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/elderwood-set.jpg"
-    },
-    {
-      "id": "full-swirly-set",
-      "name": "Full Swirly Set",
-      "value": 71.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/full-swirly-set.jpg"
     },
     {
       "id": "spectre-set",
@@ -764,17 +764,6 @@
       "image": "/items/full-old-glory-set.jpg"
     },
     {
-      "id": "old-glory-set",
-      "name": "Old Glory Set",
-      "value": 38.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/old-glory-set.jpg"
-    },
-    {
       "id": "slasher-set",
       "name": "Slasher Set",
       "value": 38.0,
@@ -784,6 +773,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/slasher-set.jpg"
+    },
+    {
+      "id": "old-glory-set",
+      "name": "Old Glory Set",
+      "value": 38.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/old-glory-set.jpg"
     },
     {
       "id": "iceflake-set",
@@ -797,17 +797,6 @@
       "image": "/items/iceflake-set.jpg"
     },
     {
-      "id": "plasma-set",
-      "name": "Plasma Set",
-      "value": 35.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/plasma-set.jpg"
-    },
-    {
       "id": "icicles-set",
       "name": "Icicles Set",
       "value": 35.0,
@@ -817,6 +806,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/icicles-set.jpg"
+    },
+    {
+      "id": "plasma-set",
+      "name": "Plasma Set",
+      "value": 35.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/plasma-set.jpg"
     },
     {
       "id": "xmas-collectible-set",
@@ -863,17 +863,6 @@
       "image": "/items/ginger-set-godly.jpg"
     },
     {
-      "id": "virtual-set",
-      "name": "Virtual Set",
-      "value": 30.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/virtual-set.jpg"
-    },
-    {
       "id": "skate-set",
       "name": "Skate Set",
       "value": 30.0,
@@ -883,6 +872,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/skate-set.jpg"
+    },
+    {
+      "id": "virtual-set",
+      "name": "Virtual Set",
+      "value": 30.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/virtual-set.jpg"
     },
     {
       "id": "clockwork-set",
@@ -918,17 +918,6 @@
       "image": "/items/battleaxe-set.jpg"
     },
     {
-      "id": "cookie-set",
-      "name": "Cookie Set",
-      "value": 26.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/cookie-set.jpg"
-    },
-    {
       "id": "8-bit-set",
       "name": "8-Bit Set",
       "value": 26.0,
@@ -938,6 +927,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/8-bit-set.jpg"
+    },
+    {
+      "id": "cookie-set",
+      "name": "Cookie Set",
+      "value": 26.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/cookie-set.jpg"
     },
     {
       "id": "eternalcane-set",
