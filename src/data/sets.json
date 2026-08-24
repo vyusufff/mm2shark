@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T00:56:06Z",
+  "updatedAt": "2026-08-24T05:33:27Z",
   "source": "traderie",
   "note": "Small Set and Full Small Set excluded.",
   "count": 136,
@@ -93,17 +93,6 @@
       "image": "/items/evergreen-set.jpg"
     },
     {
-      "id": "chroma-sweet-treat-set",
-      "name": "Chroma Sweet Treat Set",
-      "value": 4700.0,
-      "demand": 5,
-      "rarity": "Chroma",
-      "rarityColor": "#ff4dc4",
-      "type": "Set",
-      "chroma": true,
-      "image": "/items/chroma-sweet-treat-set.jpg"
-    },
-    {
       "id": "celestial-set",
       "name": "Celestial Set",
       "value": 4700.0,
@@ -113,6 +102,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/celestial-set.jpg"
+    },
+    {
+      "id": "chroma-sweet-treat-set",
+      "name": "Chroma Sweet Treat Set",
+      "value": 4700.0,
+      "demand": 5,
+      "rarity": "Chroma",
+      "rarityColor": "#ff4dc4",
+      "type": "Set",
+      "chroma": true,
+      "image": "/items/chroma-sweet-treat-set.jpg"
     },
     {
       "id": "chroma-beach-set-2026",
@@ -764,17 +764,6 @@
       "image": "/items/full-old-glory-set.jpg"
     },
     {
-      "id": "slasher-set",
-      "name": "Slasher Set",
-      "value": 38.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/slasher-set.jpg"
-    },
-    {
       "id": "old-glory-set",
       "name": "Old Glory Set",
       "value": 38.0,
@@ -784,6 +773,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/old-glory-set.jpg"
+    },
+    {
+      "id": "slasher-set",
+      "name": "Slasher Set",
+      "value": 38.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/slasher-set.jpg"
     },
     {
       "id": "iceflake-set",
@@ -852,6 +852,17 @@
       "image": "/items/logchopper-set.jpg"
     },
     {
+      "id": "virtual-set",
+      "name": "Virtual Set",
+      "value": 30.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/virtual-set.jpg"
+    },
+    {
       "id": "ginger-set-godly",
       "name": "Ginger Set (Godly)",
       "value": 30.0,
@@ -872,17 +883,6 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/skate-set.jpg"
-    },
-    {
-      "id": "virtual-set",
-      "name": "Virtual Set",
-      "value": 30.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/virtual-set.jpg"
     },
     {
       "id": "clockwork-set",
