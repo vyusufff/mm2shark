@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T21:03:45Z",
+  "updatedAt": "2026-08-29T14:53:40Z",
   "source": "traderie",
   "note": "Small Set and Full Small Set excluded.",
   "count": 136,
@@ -456,17 +456,6 @@
       "image": "/items/bats-set.jpg"
     },
     {
-      "id": "pearl-set",
-      "name": "Pearl Set",
-      "value": 185.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/pearl-set.jpg"
-    },
-    {
       "id": "full-luger-set",
       "name": "Full Luger Set",
       "value": 185.0,
@@ -476,6 +465,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/full-luger-set.jpg"
+    },
+    {
+      "id": "pearl-set",
+      "name": "Pearl Set",
+      "value": 185.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/pearl-set.jpg"
     },
     {
       "id": "bat-set",
@@ -511,17 +511,6 @@
       "image": "/items/sparkle-set.jpg"
     },
     {
-      "id": "zombified-set",
-      "name": "Zombified Set",
-      "value": 125.0,
-      "demand": 3,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/zombified-set.jpg"
-    },
-    {
       "id": "chroma-bringer-set",
       "name": "Chroma Bringer Set",
       "value": 125.0,
@@ -531,6 +520,17 @@
       "type": "Set",
       "chroma": true,
       "image": "/items/chroma-bringer-set.jpg"
+    },
+    {
+      "id": "zombified-set",
+      "name": "Zombified Set",
+      "value": 125.0,
+      "demand": 3,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/zombified-set.jpg"
     },
     {
       "id": "full-fire-pet-set",
@@ -863,17 +863,6 @@
       "image": "/items/virtual-set.jpg"
     },
     {
-      "id": "skate-set",
-      "name": "Skate Set",
-      "value": 30.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/skate-set.jpg"
-    },
-    {
       "id": "ginger-set-godly",
       "name": "Ginger Set (Godly)",
       "value": 30.0,
@@ -883,6 +872,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/ginger-set-godly.jpg"
+    },
+    {
+      "id": "skate-set",
+      "name": "Skate Set",
+      "value": 30.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/skate-set.jpg"
     },
     {
       "id": "clockwork-set",
@@ -918,17 +918,6 @@
       "image": "/items/battleaxe-set.jpg"
     },
     {
-      "id": "8-bit-set",
-      "name": "8-Bit Set",
-      "value": 26.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/8-bit-set.jpg"
-    },
-    {
       "id": "cookie-set",
       "name": "Cookie Set",
       "value": 26.0,
@@ -949,6 +938,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/eternalcane-set.jpg"
+    },
+    {
+      "id": "8-bit-set",
+      "name": "8-Bit Set",
+      "value": 26.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/8-bit-set.jpg"
     },
     {
       "id": "ice-shard-set",
