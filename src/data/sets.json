@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T02:32:36Z",
+  "updatedAt": "2026-09-03T09:23:32Z",
   "source": "traderie",
   "note": "Small Set and Full Small Set excluded.",
   "count": 136,
@@ -599,6 +599,17 @@
       "image": "/items/chroma-slasher-set.jpg"
     },
     {
+      "id": "collectible-set",
+      "name": "Collectible Set",
+      "value": 71.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/collectible-set.jpg"
+    },
+    {
       "id": "elderwood-set",
       "name": "Elderwood Set",
       "value": 71.0,
@@ -619,17 +630,6 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/full-swirly-set.jpg"
-    },
-    {
-      "id": "collectible-set",
-      "name": "Collectible Set",
-      "value": 71.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/collectible-set.jpg"
     },
     {
       "id": "spectre-set",
@@ -907,17 +907,6 @@
       "image": "/items/battleaxe-set.jpg"
     },
     {
-      "id": "8-bit-set",
-      "name": "8-Bit Set",
-      "value": 26.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/8-bit-set.jpg"
-    },
-    {
       "id": "eternalcane-set",
       "name": "Eternalcane Set",
       "value": 26.0,
@@ -927,6 +916,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/eternalcane-set.jpg"
+    },
+    {
+      "id": "8-bit-set",
+      "name": "8-Bit Set",
+      "value": 26.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/8-bit-set.jpg"
     },
     {
       "id": "cookie-set",
@@ -973,17 +973,6 @@
       "image": "/items/ice-shard-set.jpg"
     },
     {
-      "id": "full-valentine-set",
-      "name": "Full Valentine Set",
-      "value": 18.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/full-valentine-set.jpg"
-    },
-    {
       "id": "elf-set",
       "name": "Elf Set",
       "value": 18.0,
@@ -993,6 +982,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/elf-set.jpg"
+    },
+    {
+      "id": "full-valentine-set",
+      "name": "Full Valentine Set",
+      "value": 18.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/full-valentine-set.jpg"
     },
     {
       "id": "hallows-set",
@@ -1039,17 +1039,6 @@
       "image": "/items/halloween-2017-set.jpg"
     },
     {
-      "id": "ghost-set-godly",
-      "name": "Ghost Set (Godly)",
-      "value": 13.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/ghost-set-godly.jpg"
-    },
-    {
       "id": "frostbite-set",
       "name": "Frostbite Set",
       "value": 13.0,
@@ -1061,15 +1050,15 @@
       "image": "/items/frostbite-set.jpg"
     },
     {
-      "id": "aurora-set",
-      "name": "Aurora Set",
-      "value": 11.0,
-      "demand": 2,
+      "id": "ghost-set-godly",
+      "name": "Ghost Set (Godly)",
+      "value": 13.0,
+      "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/aurora-set.jpg"
+      "image": "/items/ghost-set-godly.jpg"
     },
     {
       "id": "pumpkin-set-2019",
@@ -1083,6 +1072,17 @@
       "image": "/items/pumpkin-set-2019.jpg"
     },
     {
+      "id": "aurora-set",
+      "name": "Aurora Set",
+      "value": 11.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/aurora-set.jpg"
+    },
+    {
       "id": "wrapped-set",
       "name": "Wrapped Set",
       "value": 10.0,
@@ -1094,17 +1094,6 @@
       "image": "/items/wrapped-set.jpg"
     },
     {
-      "id": "eye-set",
-      "name": "Eye Set",
-      "value": 10.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/eye-set.jpg"
-    },
-    {
       "id": "godly-pet-set",
       "name": "Godly Pet Set",
       "value": 10.0,
@@ -1114,6 +1103,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/godly-pet-set.jpg"
+    },
+    {
+      "id": "eye-set",
+      "name": "Eye Set",
+      "value": 10.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/eye-set.jpg"
     },
     {
       "id": "toxic-set",
