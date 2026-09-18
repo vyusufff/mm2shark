@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T18:00:39Z",
+  "updatedAt": "2026-09-18T22:10:13Z",
   "source": "traderie",
   "note": "Small Set and Full Small Set excluded.",
   "count": 136,
@@ -456,17 +456,6 @@
       "image": "/items/bats-set.jpg"
     },
     {
-      "id": "pearl-set",
-      "name": "Pearl Set",
-      "value": 165.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/pearl-set.jpg"
-    },
-    {
       "id": "full-luger-set",
       "name": "Full Luger Set",
       "value": 165.0,
@@ -476,6 +465,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/full-luger-set.jpg"
+    },
+    {
+      "id": "pearl-set",
+      "name": "Pearl Set",
+      "value": 165.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/pearl-set.jpg"
     },
     {
       "id": "bat-set",
@@ -500,17 +500,6 @@
       "image": "/items/sparkle-set.jpg"
     },
     {
-      "id": "chroma-bringer-set",
-      "name": "Chroma Bringer Set",
-      "value": 125.0,
-      "demand": 1,
-      "rarity": "Chroma",
-      "rarityColor": "#ff4dc4",
-      "type": "Set",
-      "chroma": true,
-      "image": "/items/chroma-bringer-set.jpg"
-    },
-    {
       "id": "zombified-set",
       "name": "Zombified Set",
       "value": 125.0,
@@ -520,6 +509,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/zombified-set.jpg"
+    },
+    {
+      "id": "chroma-bringer-set",
+      "name": "Chroma Bringer Set",
+      "value": 125.0,
+      "demand": 1,
+      "rarity": "Chroma",
+      "rarityColor": "#ff4dc4",
+      "type": "Set",
+      "chroma": true,
+      "image": "/items/chroma-bringer-set.jpg"
     },
     {
       "id": "full-fire-pet-set",
@@ -599,17 +599,6 @@
       "image": "/items/chroma-slasher-set.jpg"
     },
     {
-      "id": "collectible-set",
-      "name": "Collectible Set",
-      "value": 71.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/collectible-set.jpg"
-    },
-    {
       "id": "full-swirly-set",
       "name": "Full Swirly Set",
       "value": 71.0,
@@ -630,6 +619,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/elderwood-set.jpg"
+    },
+    {
+      "id": "collectible-set",
+      "name": "Collectible Set",
+      "value": 71.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/collectible-set.jpg"
     },
     {
       "id": "spectre-set",
@@ -775,17 +775,6 @@
       "image": "/items/old-glory-set.jpg"
     },
     {
-      "id": "iceflake-set",
-      "name": "Iceflake Set",
-      "value": 37.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/iceflake-set.jpg"
-    },
-    {
       "id": "slasher-set",
       "name": "Slasher Set",
       "value": 37.0,
@@ -795,6 +784,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/slasher-set.jpg"
+    },
+    {
+      "id": "iceflake-set",
+      "name": "Iceflake Set",
+      "value": 37.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/iceflake-set.jpg"
     },
     {
       "id": "icicles-set",
@@ -852,17 +852,6 @@
       "image": "/items/shadow-set.jpg"
     },
     {
-      "id": "ginger-set-godly",
-      "name": "Ginger Set (Godly)",
-      "value": 30.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/ginger-set-godly.jpg"
-    },
-    {
       "id": "virtual-set",
       "name": "Virtual Set",
       "value": 30.0,
@@ -872,6 +861,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/virtual-set.jpg"
+    },
+    {
+      "id": "ginger-set-godly",
+      "name": "Ginger Set (Godly)",
+      "value": 30.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/ginger-set-godly.jpg"
     },
     {
       "id": "clockwork-set",
@@ -907,17 +907,6 @@
       "image": "/items/battleaxe-set.jpg"
     },
     {
-      "id": "8-bit-set",
-      "name": "8-Bit Set",
-      "value": 26.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/8-bit-set.jpg"
-    },
-    {
       "id": "eternalcane-set",
       "name": "Eternalcane Set",
       "value": 26.0,
@@ -927,6 +916,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/eternalcane-set.jpg"
+    },
+    {
+      "id": "8-bit-set",
+      "name": "8-Bit Set",
+      "value": 26.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/8-bit-set.jpg"
     },
     {
       "id": "cookie-set",
@@ -973,17 +973,6 @@
       "image": "/items/ice-shard-set.jpg"
     },
     {
-      "id": "full-valentine-set",
-      "name": "Full Valentine Set",
-      "value": 18.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/full-valentine-set.jpg"
-    },
-    {
       "id": "elf-set",
       "name": "Elf Set",
       "value": 18.0,
@@ -993,6 +982,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/elf-set.jpg"
+    },
+    {
+      "id": "full-valentine-set",
+      "name": "Full Valentine Set",
+      "value": 18.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/full-valentine-set.jpg"
     },
     {
       "id": "hallows-set",
@@ -1061,17 +1061,6 @@
       "image": "/items/frostbite-set.jpg"
     },
     {
-      "id": "aurora-set",
-      "name": "Aurora Set",
-      "value": 11.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/aurora-set.jpg"
-    },
-    {
       "id": "pumpkin-set-2019",
       "name": "Pumpkin Set 2019",
       "value": 11.0,
@@ -1083,15 +1072,15 @@
       "image": "/items/pumpkin-set-2019.jpg"
     },
     {
-      "id": "wrapped-set",
-      "name": "Wrapped Set",
-      "value": 10.0,
+      "id": "aurora-set",
+      "name": "Aurora Set",
+      "value": 11.0,
       "demand": 2,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/wrapped-set.jpg"
+      "image": "/items/aurora-set.jpg"
     },
     {
       "id": "eye-set",
@@ -1116,6 +1105,17 @@
       "image": "/items/godly-pet-set.jpg"
     },
     {
+      "id": "wrapped-set",
+      "name": "Wrapped Set",
+      "value": 10.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/wrapped-set.jpg"
+    },
+    {
       "id": "toxic-set",
       "name": "Toxic Set",
       "value": 9.0,
@@ -1138,17 +1138,6 @@
       "image": "/items/fire-pet-set.jpg"
     },
     {
-      "id": "cavern-set",
-      "name": "Cavern Set",
-      "value": 8.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/cavern-set.jpg"
-    },
-    {
       "id": "zombie-set",
       "name": "Zombie Set",
       "value": 8.0,
@@ -1158,6 +1147,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/zombie-set.jpg"
+    },
+    {
+      "id": "cavern-set",
+      "name": "Cavern Set",
+      "value": 8.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/cavern-set.jpg"
     },
     {
       "id": "ghost-set-legendary",
@@ -1182,6 +1182,17 @@
       "image": "/items/ginger-set-legendary.jpg"
     },
     {
+      "id": "valentine-set",
+      "name": "Valentine Set",
+      "value": 6.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/valentine-set.jpg"
+    },
+    {
       "id": "icecracker-set-2020",
       "name": "Icecracker Set",
       "value": 6.0,
@@ -1191,17 +1202,6 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/icecracker-set-2020.jpg"
-    },
-    {
-      "id": "full-elite-set",
-      "name": "Full Elite Set",
-      "value": 6.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/full-elite-set.jpg"
     },
     {
       "id": "santas-set-legendary",
@@ -1215,17 +1215,6 @@
       "image": "/items/santas-set-legendary.jpg"
     },
     {
-      "id": "valentine-set",
-      "name": "Valentine Set",
-      "value": 6.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/valentine-set.jpg"
-    },
-    {
       "id": "scratch-set",
       "name": "Scratch Set",
       "value": 6.0,
@@ -1235,6 +1224,17 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/scratch-set.jpg"
+    },
+    {
+      "id": "full-elite-set",
+      "name": "Full Elite Set",
+      "value": 6.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/full-elite-set.jpg"
     },
     {
       "id": "jack-set",
@@ -1248,17 +1248,6 @@
       "image": "/items/jack-set.jpg"
     },
     {
-      "id": "marble-set",
-      "name": "Marble Set",
-      "value": 4.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/marble-set.jpg"
-    },
-    {
       "id": "frozen-set",
       "name": "Frozen Set",
       "value": 4.0,
@@ -1268,39 +1257,6 @@
       "type": "Set",
       "chroma": false,
       "image": "/items/frozen-set.jpg"
-    },
-    {
-      "id": "easter-set",
-      "name": "Easter Set",
-      "value": 4.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/easter-set.jpg"
-    },
-    {
-      "id": "vampire-set",
-      "name": "Vampire Set",
-      "value": 4.0,
-      "demand": 2,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/vampire-set.jpg"
-    },
-    {
-      "id": "potion-set",
-      "name": "Potion Set",
-      "value": 4.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/potion-set.jpg"
     },
     {
       "id": "candy-swirl-set",
@@ -1314,6 +1270,39 @@
       "image": "/items/candy-swirl-set.jpg"
     },
     {
+      "id": "marble-set",
+      "name": "Marble Set",
+      "value": 4.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/marble-set.jpg"
+    },
+    {
+      "id": "easter-set",
+      "name": "Easter Set",
+      "value": 4.0,
+      "demand": 2,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/easter-set.jpg"
+    },
+    {
+      "id": "potion-set",
+      "name": "Potion Set",
+      "value": 4.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/potion-set.jpg"
+    },
+    {
       "id": "snakebite-set",
       "name": "Snakebite Set",
       "value": 4.0,
@@ -1325,37 +1314,15 @@
       "image": "/items/snakebite-set.jpg"
     },
     {
-      "id": "slime-set",
-      "name": "Slime Set",
-      "value": 3.0,
-      "demand": 1,
+      "id": "vampire-set",
+      "name": "Vampire Set",
+      "value": 4.0,
+      "demand": 2,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/slime-set.jpg"
-    },
-    {
-      "id": "grave-set",
-      "name": "Grave Set",
-      "value": 3.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/grave-set.jpg"
-    },
-    {
-      "id": "fire-set",
-      "name": "Fire Set",
-      "value": 3.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/fire-set.jpg"
+      "image": "/items/vampire-set.jpg"
     },
     {
       "id": "mummy-set",
@@ -1369,6 +1336,17 @@
       "image": "/items/mummy-set.jpg"
     },
     {
+      "id": "fire-set",
+      "name": "Fire Set",
+      "value": 3.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/fire-set.jpg"
+    },
+    {
       "id": "lights-set",
       "name": "Lights Set",
       "value": 3.0,
@@ -1380,48 +1358,37 @@
       "image": "/items/lights-set.jpg"
     },
     {
-      "id": "ornament-set",
-      "name": "Ornament1 Set",
-      "value": 2.0,
-      "demand": 6,
+      "id": "grave-set",
+      "name": "Grave Set",
+      "value": 3.0,
+      "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/ornament-set.jpg"
+      "image": "/items/grave-set.jpg"
     },
     {
-      "id": "santa-set",
-      "name": "Santa Set",
+      "id": "slime-set",
+      "name": "Slime Set",
+      "value": 3.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/slime-set.jpg"
+    },
+    {
+      "id": "haunted-set",
+      "name": "Haunted Set",
       "value": 2.0,
       "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/santa-set.jpg"
-    },
-    {
-      "id": "ornament2-set",
-      "name": "Ornament2 Set",
-      "value": 2.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/ornament2-set.jpg"
-    },
-    {
-      "id": "nutcracker-set",
-      "name": "Nutcracker Set",
-      "value": 2.0,
-      "demand": 1,
-      "rarity": "Set",
-      "rarityColor": "#ff9f1a",
-      "type": "Set",
-      "chroma": false,
-      "image": "/items/nutcracker-set.jpg"
+      "image": "/items/haunted-set.jpg"
     },
     {
       "id": "tree-set",
@@ -1435,6 +1402,39 @@
       "image": "/items/tree-set.jpg"
     },
     {
+      "id": "snowman-set",
+      "name": "Snowman Set",
+      "value": 2.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/snowman-set.jpg"
+    },
+    {
+      "id": "ornament2-set",
+      "name": "Ornament2 Set",
+      "value": 2.0,
+      "demand": 1,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/ornament2-set.jpg"
+    },
+    {
+      "id": "ornament-set",
+      "name": "Ornament1 Set",
+      "value": 2.0,
+      "demand": 6,
+      "rarity": "Set",
+      "rarityColor": "#ff9f1a",
+      "type": "Set",
+      "chroma": false,
+      "image": "/items/ornament-set.jpg"
+    },
+    {
       "id": "web-set",
       "name": "Web Set",
       "value": 2.0,
@@ -1446,15 +1446,15 @@
       "image": "/items/web-set.jpg"
     },
     {
-      "id": "snowman-set",
-      "name": "Snowman Set",
+      "id": "santa-set",
+      "name": "Santa Set",
       "value": 2.0,
       "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/snowman-set.jpg"
+      "image": "/items/santa-set.jpg"
     },
     {
       "id": "cane-set-2015",
@@ -1468,15 +1468,15 @@
       "image": "/items/cane-set-2015.jpg"
     },
     {
-      "id": "haunted-set",
-      "name": "Haunted Set",
+      "id": "nutcracker-set",
+      "name": "Nutcracker Set",
       "value": 2.0,
       "demand": 1,
       "rarity": "Set",
       "rarityColor": "#ff9f1a",
       "type": "Set",
       "chroma": false,
-      "image": "/items/haunted-set.jpg"
+      "image": "/items/nutcracker-set.jpg"
     },
     {
       "id": "ginger-set-rare",
